@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+## resource 全部轉發的方式 : get post等
+## 第一個參數 URL相對網址
+## 第二個參數 Controller控制器
+
+## app/Http/Controllers/QQController.php
+Route::resource('QQ','QQController');
