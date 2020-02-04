@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 ## 新增兩行
 use Route;
 use View;
+## 新增資料庫用-問號2?
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
 class QQController extends Controller
 {
