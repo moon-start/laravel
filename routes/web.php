@@ -16,10 +16,14 @@ Route::get('/', function () {
 });
 
 
+Route::resource('QQ','QQController');
+
 
 ## resource 全部轉發的方式 : get post等
 ## 第一個參數 URL相對網址
 ## 第二個參數 Controller控制器
 
-## app/Http/Controllers/QQController.php
-Route::resource('QQ','QQController');
+
+
+## 專案/app/Http/Controllers/QQController.php
+// Route::resource('QQ','QQController');
