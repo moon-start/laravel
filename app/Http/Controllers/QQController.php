@@ -17,8 +17,19 @@ class QQController extends Controller
      */
     public function index()
     {
+        ## 專案/resources/views (等於) View::make
+
+        ## 第一個
         ##  專案/resources/views/board.blade.php
-        return View::make('board');
+        ## ############ make('board');
+        ## return View::make('board');
+
+        ## 第二個 ## from 資料表名稱
+        $SS = DB::select('select * from Invoice');
+        // 可綁定參數
+        // $customers = DB::select('select * from customers where Name = :names', ['names' => "Peter"]);
+        ## ######### make('SQL'); ## SQL.blade.php
+        return View::make('SQL',['Invoice' => $SS]);
     }
 
     /**
