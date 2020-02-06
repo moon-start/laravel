@@ -27,3 +27,10 @@ Route::resource('QQ','QQController');
 
 ## 專案/app/Http/Controllers/QQController.php
 // Route::resource('QQ','QQController');
+
+
+
+##### edit 表單
+# KKController.php 控制表的 edit方法
+Route::get('edit/{Cusid}','KKController@edit');
+// Route::post('edit/{Cusid}', 'CustomerController@update');
