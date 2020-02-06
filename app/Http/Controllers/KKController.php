@@ -15,8 +15,11 @@ class KKController extends Controller
 {
     ## 加上
     public function index(){
-      
-      ##return View::make('board');
+      return View::make('board');
+    }
+
+    ## 加上
+    public function edit(){
       $validator = Validator::make(
       $request->all(),[
         'Name' => 'required|string',
