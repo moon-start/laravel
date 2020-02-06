@@ -24,9 +24,9 @@ Route::resource('QQ','QQController');
 ## 第二個參數 Controller控制器
 
 
-
-## 專案/app/Http/Controllers/QQController.php
-// Route::resource('QQ','QQController');
+#### 
+# KKController.php 控制表的 in方法
+Route::resource('customer','KKController');
 
 
 
