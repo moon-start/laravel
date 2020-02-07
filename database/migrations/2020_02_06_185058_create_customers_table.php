@@ -12,6 +12,7 @@ class CreateCustomersTable extends Migration
     {
       //$table->bigIncrements('id'); 這欄位會形成 Primary Key
       // $table->bigIncrements('id');
+      ## int(10)
       $table->increments('id');
       $table->char('Cusid',100)->unique()->index();
       $table->char('Name',50)->index();

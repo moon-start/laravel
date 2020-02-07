@@ -14,7 +14,7 @@
                 <th>客戶電話</th>
               </tr>
             </thead>
-            <tbody>
+            <!-- <tbody>
               <tr>
                 <td>A001</td>
                 <td>王小明</td>
@@ -24,6 +24,18 @@
                   <a href="{{ action('SchoolController@edit', ['Cusid'=> $Cusid-> customer -> Cusid]) }}" class="btn btn-success btn-sm">編輯</a>
                 </td>
               </tr>
+            </tbody> -->
+            <tbody>
+              <?php
+                foreach ($customers as $customer){
+              ?>
+                <tr>
+                      <td><?php echo $customer->Cusid; ?></td>
+                      <td><?php echo $customer->Name; ?></td>
+                  <td><?php echo $customer->Phone; ?></td>
+                </tr>
+              
+              <?php }  ?>
             </tbody>
           </table>
         </div>  

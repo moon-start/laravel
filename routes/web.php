@@ -16,7 +16,10 @@ Route::get('/', function () {
 });
 
 
+
+## 執行 QQ控制器  的index()
 Route::resource('QQ','QQController');
+
 
 
 ## resource 全部轉發的方式 : get post等

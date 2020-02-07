@@ -2,14 +2,21 @@
 
 namespace App\Http\Controllers;
 
+## 附加新增 --model
+## 或者單獨 php artisan make:model Customer 
+## 建議是一個 資料表名稱
 use App\QQ;
+
+
 use Illuminate\Http\Request;
-## 新增兩行
+## 新增兩行 (一-二-三行 都用到)
 use Route;
 use View;
 ## 新增資料庫用-問號2?
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+
+
 
 class QQController extends Controller
 {
@@ -28,11 +35,16 @@ class QQController extends Controller
         ## return View::make('board');
 
         ## 第二個 ## from 資料表名稱
-        $SS = DB::select('select * from Invoice');
-        // 可綁定參數
-        // $customers = DB::select('select * from customers where Name = :names', ['names' => "Peter"]);
-        ## ######### make('SQL'); ## SQL.blade.php
-        return View::make('SQL',['Invoice' => $SS]);
+        // $SS = DB::select('select * from Invoice');
+        // // 可綁定參數
+        // // $customers = DB::select('select * from customers where Name = :names', ['names' => "Peter"]);
+        // ## ######### make('SQL'); ## SQL.blade.php
+        // return View::make('SQL',['Invoice' => $SS]);
+
+
+        ## 第三個
+        $customers = QQ::all();
+        return View::make('board',['customers' => $customers]);
     }
 
     /**
