@@ -49,16 +49,8 @@ class QQController extends Controller
 
 
         ## 第三個
-        $customers = QQ::all();
+        $customers = QQ::all()->isEmpty();
         
-        ####### 取出資料表 第一筆資料 ##### 修改
-        $post = QQ::find(1);
-        // $post->Name = 'James';
-        $post->Name = 'PeterXP';
-        #$post->Phone = '0912345678';
-        $post->save();
-
-
 
         ## 只能執行一次 不然資料會重複的錯誤
         ## 新增一筆資料 ## 因為欄位(不可以空值)
@@ -69,6 +61,18 @@ class QQController extends Controller
         // $post->Address = '1234';
         // $post->Phone = '0955';
         // $post->save();
+
+
+        ####### 取出資料表 第一筆資料 ##### 修改
+        $post = QQ::find(1);
+        // $post->Name = 'James';
+        $post->Name = 'PeterXP';
+        #$post->Phone = '0912345678';
+        $post->save();
+
+
+
+        
 
 
         ## 軟刪除
