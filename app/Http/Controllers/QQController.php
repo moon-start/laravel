@@ -11,6 +11,9 @@ use App\QQ;
 ## 多了這行? 這好像是語法自動新增..
 ## use Illuminate\Database\QueryException;
 
+
+### index(Request $request)
+### $request->all() ....?
 use Illuminate\Http\Request;
 ## 新增兩行 (一-二-三行 都用到)
 use Route;
@@ -67,6 +70,13 @@ class QQController extends Controller
         // $post->Phone = '0955';
         // $post->save();
 
+
+        ## 軟刪除
+        $post = App\Customer::withTrashed()->get();
+        // // 確認是否經刪除
+        // if ($flight->trashed()) {
+        //   //
+        // }
 
 
         
