@@ -46,6 +46,11 @@ class QQController extends Controller
         ## 第三個
         $customers = QQ::all();
         
+        $post = App\QQ::find(1);
+        $post->Name = 'James';
+        $post->Phone = '0912345678'
+        $post->save();
+
         ## 追加的SQL語法
         $customers = QQ::where('Name', '=', 'PeterXP') // 取 Name 為 Peter 
         ->orderBy('Name', 'desc') // 根據price由高到低排列
@@ -73,11 +78,11 @@ class QQController extends Controller
     public function store(Request $request)
     {
         //
-        ## 新增一筆資料
-        $post = new QQ;
-        $post->GGGid = 15;
-        $post->Name = 'PeterXP';
-        $post->save();
+        // ## 新增一筆資料
+        // $post = new QQ;
+        // $post->GGGid = 15;
+        // $post->Name = 'PeterXP';
+        // $post->save();
 
     }
 
