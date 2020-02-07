@@ -56,7 +56,7 @@ class QQController extends Controller
         $post->save();
 
 
-        ## 新增一筆資料
+        ## 新增一筆資料 ## 因為欄位(不可以空值)
         $post = new QQ;
         $post->id = 15;
         $post->Cusid = '1';
