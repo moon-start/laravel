@@ -7,6 +7,7 @@ namespace App\Http\Controllers;
 ## 建議是一個 資料表名稱
 use App\QQ;
 
+use Illuminate\Database\QueryException;
 
 use Illuminate\Http\Request;
 ## 新增兩行 (一-二-三行 都用到)
