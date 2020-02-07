@@ -13,7 +13,6 @@ class QQ extends Model
   //如果有依照命名規則，此行程式不必撰寫
 //   protected $primarykey = 'id';
   protected $primarykey = 'Cusid';
-
   
   //如果沒有設定 created_at 與 updated_at欄位，則可以設成 false
   public $timestamps = true;

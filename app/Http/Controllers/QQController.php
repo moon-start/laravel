@@ -44,15 +44,16 @@ class QQController extends Controller
 
         ## 第三個
         $customers = QQ::all();
-        ## 追加的SQL語法
-        $customers = QQ::where('Name', '=', 'Peter') // 取 Name 為 Peter 
-        ->orderBy('Name', 'desc') // 根據price由高到低排列
-        ->take(10) // 只取前10筆資料
-        ->get();
         ## 新增一筆資料
         $post = new App\QQ;
         $post->Name = 'PeterXP';
         $post->save();
+
+        ## 追加的SQL語法
+        $customers = QQ::where('Name', '=', 'PeterXP') // 取 Name 為 Peter 
+        ->orderBy('Name', 'desc') // 根據price由高到低排列
+        ->take(10) // 只取前10筆資料
+        ->get();
         return View::make('board',['customers' => $customers]);
     }
 
