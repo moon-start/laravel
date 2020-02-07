@@ -54,6 +54,8 @@ class QQController extends Controller
         if( $customers ){
           ## 只能執行一次 不然資料會重複的錯誤
           ## 新增一筆資料 ## 因為欄位(不可以空值)
+          
+        } else{
           $post = new QQ;
           $post->id = 15;
           $post->Cusid = '1';
@@ -61,8 +63,6 @@ class QQController extends Controller
           $post->Address = '1234';
           $post->Phone = '0955';
           $post->save();
-
-        } else{
 
         }
 
