@@ -8,7 +8,7 @@ class QQ extends Model
 {
   //定義相關連結的資料表
   //如果有依照命名規則，此行程式不必撰寫
-  protected $table = 'customers';
+  protected $table = 'customers'; 
   
   //定義主鍵的欄位
   //如果有依照命名規則，此行程式不必撰寫

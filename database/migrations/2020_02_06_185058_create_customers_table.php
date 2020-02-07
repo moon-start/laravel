@@ -11,7 +11,8 @@ class CreateCustomersTable extends Migration
     Schema::create('customers', function (Blueprint $table)
     {
       //$table->bigIncrements('id'); 這欄位會形成 Primary Key
-      $table->bigIncrements('id');
+      // $table->bigIncrements('id');
+      $table->increments('id');
       $table->char('Cusid',100)->unique()->index();
       $table->char('Name',50)->index();
       $table->char('Address',255);
