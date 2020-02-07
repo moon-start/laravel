@@ -48,7 +48,8 @@ class KKController extends Controller
     }
 
   ###### 更新 資料庫
-  public function update($Cusid, EditCustomer $request){
+  # public function update($Cusid, EditCustomer $request){
+  public function update($Cusid, KKRequest $request){
     //改寫後，就輕快多了！
     $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
     $customer->Phone = $request->Phone;

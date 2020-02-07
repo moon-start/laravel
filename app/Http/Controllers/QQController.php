@@ -75,7 +75,30 @@ class QQController extends Controller
      */
     public function edit(QQ $qQ)
     {
-        //
+        $validator = Validator::make(
+            $request->all(),[
+              'Name' => 'required|string',
+              'Phone' => 'required|string'
+            ],[
+              'required' => '不可為空白',
+              'required' => '須為字串'
+            ]
+            );
+      
+      
+            // 判斷方式
+            if ($validator->fail()){
+              return redirect()->back()->withErrors($validator);
+            } else {
+              $customer = CustomerEloquent::where('Cusid',$cusid)->firstOrFail();
+              $customer->Phone = $request->Phone;
+              $customer->save();
+      
+              return View::make('edit',[
+                'customer' => $customer,
+                'msg' => '修改成功'
+              ]);
+        }
     }
 
     /**
@@ -87,7 +110,17 @@ class QQController extends Controller
      */
     public function update(Request $request, QQ $qQ)
     {
-        //
+    // public function update($Cusid, EditCustomer $request){
+    //     //
+    //      //改寫後，就輕快多了！
+    //     $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
+    //     $customer->Phone = $request->Phone;
+    //     $customer->save();
+
+    //     return View::make('edit',[
+    //     'customer' => $customer,
+    //     'msg' => '修改成功'
+    //     ]);
     }
 
     /**
