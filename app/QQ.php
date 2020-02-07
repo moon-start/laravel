@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class QQ extends Model
 {
   ### 軟刪除
-  use SoftDeletes;
+  #use SoftDeletes;
   ## 指定要  連結的資料表
   protected $table = 'customers'; 
   
@@ -33,5 +33,5 @@ class QQ extends Model
     // protected $dateFormat = 'U';
 
   ### 軟刪除
-  protected $dates = ['deleted_at'];
+  #protected $dates = ['deleted_at'];
 }

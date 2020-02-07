@@ -72,7 +72,7 @@ class QQController extends Controller
 
 
         ## 軟刪除
-        $post = QQ::withTrashed()->get();
+        #$post = QQ::withTrashed()->get();
         // // 確認是否經刪除
         // if ($flight->trashed()) {
         //   //
