@@ -20,8 +20,8 @@
                 <td>王小明</td>
                 <td>0912345678</td>
                 <td>
-                  <a href="{{ route('customers',['Cusid' => $Cusid -> customer -> Cusid]) }}" class="btn btn-info btn-sm">查看</a>
-                  <a href="{{ action('SchoolController@edit', ['Cusid'=> $Cusid-> customer -> Cusid]) }}" class="btn btn-success btn-sm">編輯</a>
+                #  <a href="{{ route('customers',['Cusid' => $Cusid -> customer -> Cusid]) }}" class="btn btn-info btn-sm">查看</a>
+                #  <a href="{{ action('SchoolController@edit', ['Cusid'=> $Cusid-> customer -> Cusid]) }}" class="btn btn-success btn-sm">編輯</a>
                 </td>
               </tr>
             </tbody> -->
