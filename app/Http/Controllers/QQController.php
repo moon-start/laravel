@@ -48,7 +48,7 @@ class QQController extends Controller
         
         $post = App\QQ::find(1);
         $post->Name = 'James';
-        $post->Phone = '0912345678'
+        $post->Phone = '0912345678';
         $post->save();
 
         ## 追加的SQL語法
