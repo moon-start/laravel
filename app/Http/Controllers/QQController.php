@@ -46,7 +46,7 @@ class QQController extends Controller
         ## 第三個
         $customers = QQ::all();
         
-        $post = App\QQ::find(1);
+        $post = QQ::find(1);
         $post->Name = 'James';
         $post->Phone = '0912345678';
         $post->save();
