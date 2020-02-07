@@ -51,17 +51,22 @@ class QQController extends Controller
         ## 第三個
         $customers = QQ::all()->isEmpty();
         
+        if( $customers ){
+          ## 只能執行一次 不然資料會重複的錯誤
+          ## 新增一筆資料 ## 因為欄位(不可以空值)
+          $post = new QQ;
+          $post->id = 15;
+          $post->Cusid = '1';
+          $post->Name = 'PeterXP';
+          $post->Address = '1234';
+          $post->Phone = '0955';
+          $post->save();
 
-        ## 只能執行一次 不然資料會重複的錯誤
-        ## 新增一筆資料 ## 因為欄位(不可以空值)
-        // $post = new QQ;
-        // $post->id = 15;
-        // $post->Cusid = '1';
-        // $post->Name = 'PeterXP';
-        // $post->Address = '1234';
-        // $post->Phone = '0955';
-        // $post->save();
+        } else{
 
+        }
+
+       
 
         ####### 取出資料表 第一筆資料 ##### 修改
         $post = QQ::find(1);
