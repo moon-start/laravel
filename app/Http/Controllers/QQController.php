@@ -45,7 +45,7 @@ class QQController extends Controller
         ## 第三個
         $customers = QQ::all();
         ## 追加的SQL語法
-        $customers = Customer::where('Name', '=', 'Peter') // 取 Name 為 Peter 
+        $customers = QQ::where('Name', '=', 'Peter') // 取 Name 為 Peter 
         ->orderBy('Name', 'desc') // 根據price由高到低排列
         ->take(10) // 只取前10筆資料
         ->get();
