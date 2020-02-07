@@ -55,6 +55,18 @@ class QQController extends Controller
         #$post->Phone = '0912345678';
         $post->save();
 
+
+        ## 新增一筆資料
+        $post = new QQ;
+        $post->id = 15;
+        $post->Cusid = '1';
+        $post->Name = 'PeterXP';
+        $post->Address = '1234';
+        $post->Phone = '0955';
+        $post->save();
+
+
+
         
         ## 追加的SQL語法
         $customers = QQ::where('Name', '=', 'PeterXP') // 取 Name 為 Peter 
