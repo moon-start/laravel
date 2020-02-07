@@ -49,6 +49,10 @@ class QQController extends Controller
         ->orderBy('Name', 'desc') // 根據price由高到低排列
         ->take(10) // 只取前10筆資料
         ->get();
+        ## 新增一筆資料
+        $post = new App\QQ;
+        $post->Name = 'PeterXP';
+        $post->save();
         return View::make('board',['customers' => $customers]);
     }
 
