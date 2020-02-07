@@ -45,7 +45,7 @@ class QQController extends Controller
         ## 第三個
         $customers = QQ::all();
         ## 新增一筆資料
-        $post = App\QQ;
+        $post = new QQ;
         $post->Name = 'PeterXP';
         $post->save();
 
