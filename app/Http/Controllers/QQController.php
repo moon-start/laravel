@@ -48,9 +48,10 @@ class QQController extends Controller
         ## 第三個
         $customers = QQ::all();
         
-        ####### 取出資料表 第一筆資料
+        ####### 取出資料表 第一筆資料 ##### 修改
         $post = QQ::find(1);
-        $post->Name = 'James';
+        // $post->Name = 'James';
+        $post->Name = 'PeterXP';
         #$post->Phone = '0912345678';
         $post->save();
 
