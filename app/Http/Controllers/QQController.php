@@ -177,7 +177,7 @@ class QQController extends Controller
         //   ]);
         // }
 
-        $customer = QQ::where('Cusid',$cusid)->firstOrFail();
+        $customer = QQ::where('Cusid',$Cusid)->firstOrFail();
         $customer->Phone = $request->Phone;
         $customer->save();
 
