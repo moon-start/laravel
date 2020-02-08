@@ -21,7 +21,10 @@
                 <td>王小明</td>
                 <td>0912345678</td>
                 <td>
-                  <a href="{{ route('customers',['Cusid' => $Cusid -> customer -> Cusid]) }}" class="btn btn-info btn-sm">查看</a>
+                <!-- Route::get($uri, $callback); -->
+                <!-- 參數:: Cusid -->
+                <!-- ['Cusid' => $Cusid -> customer -> Cusid] -->
+                  <a href="{{ route('QQ',['Cusid' => $Cusid -> customers -> Cusid]) }}" class="btn btn-info btn-sm">查看</a>
                 
                 </td>
               </tr>
