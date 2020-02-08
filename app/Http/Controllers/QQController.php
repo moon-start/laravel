@@ -58,7 +58,7 @@ class QQController extends Controller
         // } else{   }
         
         $post = new QQ;
-        $post->id = 15;
+        $post->id = 1;
         $post->Cusid = '1';
         $post->Name = 'PeterXP';
         $post->Address = '1234';
@@ -157,8 +157,9 @@ class QQController extends Controller
             // 判斷方式
             if ($validator->fail()){
               return redirect()->back()->withErrors($validator);
-            } else {
-              $customer = CustomerEloquent::where('Cusid',$cusid)->firstOrFail();
+            } else {  
+              // $customer = CustomerEloquent::where('Cusid',$cusid)->firstOrFail();
+              $customer = customers::where('Cusid',$cusid)->firstOrFail();
               $customer->Phone = $request->Phone;
               $customer->save();
       
@@ -178,17 +179,16 @@ class QQController extends Controller
      */
     public function update(Request $request, QQ $qQ)
     {
-    // public function update($Cusid, EditCustomer $request){
-    //     //
-    //      //改寫後，就輕快多了！
-    //     $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
-    //     $customer->Phone = $request->Phone;
-    //     $customer->save();
+      //改寫後，就輕快多了！
+      $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
+      $customer->Phone = $request->Phone;
+      $customer->save();
 
-    //     return View::make('edit',[
-    //     'customer' => $customer,
-    //     'msg' => '修改成功'
-    //     ]);
+      return View::make('edit',[
+        'customer' => $customer,
+        'msg' => '修改成功'
+      ]);
+      
     }
 
     /**

@@ -35,5 +35,5 @@ Route::resource('customer','KKController');
 
 ##### edit 表單
 # KKController.php 控制表的 edit方法
-Route::get('edit/{Cusid}','KKController@edit');
-// Route::post('edit/{Cusid}', 'CustomerController@update');
+Route::get('edit/{Cusid}','QQController@edit');
+Route::post('edit/{Cusid}', 'QQController@update');

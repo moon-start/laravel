@@ -16,7 +16,7 @@
           </div>
           @endisset
 
-          <form action="{{ action('CustomerController@update', ['Cusid' => $Cusid]) }}" method="POST">
+          <form action="{{ action('QQController@update', ['Cusid' => $Cusid]) }}" method="POST">
             {{ csrf_field() }}
             <div class="form-group">
               <label for="name">客戶姓名</label>
