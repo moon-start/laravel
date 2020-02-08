@@ -4,6 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+
+
 class customers extends Model
 {
     ## 指定要  連結的資料表
