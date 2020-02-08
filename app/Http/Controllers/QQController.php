@@ -194,7 +194,9 @@ class QQController extends Controller
      * @param  \App\QQ  $qQ
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, QQ $qQ)
+
+    ######################## 注意這個方法的參數
+    public function update($Cusid, KKRequest $request)
     {
       //改寫後，就輕快多了！
       $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
