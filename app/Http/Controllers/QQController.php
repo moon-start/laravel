@@ -151,31 +151,40 @@ class QQController extends Controller
      */
     public function edit(Request $request)
     {
-        $validator = Validator::make(
-            $request->all(),[
-              'Name' => 'required|string',
-              'Phone' => 'required|string'
-            ],[
-              'required' => '不可為空白',
-              'required' => '須為字串'
-            ]
-            );
+        // $validator = Validator::make(
+        //     $request->all(),[
+        //       'Name' => 'required|string',
+        //       'Phone' => 'required|string'
+        //     ],[
+        //       'required' => '不可為空白',
+        //       'required' => '須為字串'
+        //     ]
+        // );
       
       
-            // 判斷方式
-            if ($validator->fail()){
-              return redirect()->back()->withErrors($validator);
-            } else {  
-              // $customer = CustomerEloquent::where('Cusid',$cusid)->firstOrFail();
-              $customer = customers::where('Cusid',$cusid)->firstOrFail();
-              $customer->Phone = $request->Phone;
-              $customer->save();
-      
-              return View::make('edit',[
-                'customer' => $customer,
-                'msg' => '修改成功'
-              ]);
-        }
+        // // 判斷方式
+        // if ($validator->fail()){
+        //     return redirect()->back()->withErrors($validator);
+        // } else {  
+        //   // $customer = CustomerEloquent::where('Cusid',$cusid)->firstOrFail();
+        //   $customer = customers::where('Cusid',$cusid)->firstOrFail();
+        //   $customer->Phone = $request->Phone;
+        //   $customer->save();
+  
+        //   return View::make('edit',[
+        //     'customer' => $customer,
+        //     'msg' => '修改成功'
+        //   ]);
+        // }
+
+        $customer = customers::where('Cusid',$cusid)->firstOrFail();
+        $customer->Phone = $request->Phone;
+        $customer->save();
+
+        return View::make('edit',[
+          'customer' => $customer,
+          'msg' => '修改成功'
+        ]);
     }
 
     /**
