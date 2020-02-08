@@ -149,7 +149,7 @@ class QQController extends Controller
      * @param  \App\QQ  $qQ
      * @return \Illuminate\Http\Response
      */
-    public function edit(Request $request)
+    public function edit($Cusid, KKRequest $request)
     {
         // $validator = Validator::make(
         //     $request->all(),[
