@@ -149,7 +149,7 @@ class QQController extends Controller
      * @param  \App\QQ  $qQ
      * @return \Illuminate\Http\Response
      */
-    public function edit($Cusid)
+    public function edit(QQ $Cusid)
     {
         // $validator = Validator::make(
         //     $request->all(),[
@@ -196,7 +196,7 @@ class QQController extends Controller
      */
 
     ######################## 注意這個方法的參數
-    public function update($Cusid, KKRequest $request)
+    public function update(QQ $Cusid, KKRequest $request)
     {
       //改寫後，就輕快多了！
       $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
