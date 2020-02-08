@@ -10,7 +10,9 @@ use App\QQ;
 
 ## 多了這行? 這好像是語法自動新增..
 // use Illuminate\Database\QueryException;
-use Illuminate\Support\Facades\Validator;
+// use Illuminate\Support\Facades\Validator;
+use Validator,Input,Redirect; 
+// use 
 
 
 ### index(Request $request)
