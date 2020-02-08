@@ -9,9 +9,9 @@ use App\QQ;
 // use App\customers;
 
 ## 多了這行? 這好像是語法自動新增..
-use Illuminate\Database\QueryException;
-// use Illuminate\Support\Facades\Validator;
-
+// use Illuminate\Database\QueryException;
+use Illuminate\Support\Facades\Validator;
+// use App\Http\Controllers\Validator;
 
 ### index(Request $request)
 ### $request->all() ....?
@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
 
-use App\Http\Controllers\Validator;
+
 
 
 
