@@ -57,13 +57,15 @@ class QQController extends Controller
           
         // } else{   }
         
-        $post = new QQ;
-        $post->id = 1;
-        $post->Cusid = '1';
-        $post->Name = 'PeterXP';
-        $post->Address = '1234';
-        $post->Phone = '0955';
-        $post->save();
+
+        ###### 寫入一筆資料
+        // $post = new QQ;
+        // $post->id = 1;
+        // $post->Cusid = '1';
+        // $post->Name = 'PeterXP';
+        // $post->Address = '1234';
+        // $post->Phone = '0955';
+        // $post->save();
 
         
        
