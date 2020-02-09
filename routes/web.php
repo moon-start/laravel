@@ -46,7 +46,7 @@ Route::resource('QQ','QQController');
 
 
 ## 路由 目錄參數
-Route::get('user/{id}', function ($id = "moon") {
+Route::get('user/{id?}', function ($id = "moon") {
     return 'User '.$id;
 });
 ## http://192.168.1.114/users/11/score/44
