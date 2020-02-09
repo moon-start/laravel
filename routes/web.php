@@ -28,7 +28,7 @@ Route::resource('QQ','QQController');
 
 
 #### 
-# KKController.php 控制表的 in方法
+# KKController.php 的 in方法
 Route::resource('customer','KKController');
 
 
