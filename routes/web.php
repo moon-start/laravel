@@ -30,7 +30,7 @@ Route::resource('QQ','QQController');
 
 #### 
 # KKController.php 的 in方法
-Route::resource('customer','KKController');
+// Route::resource('customer','KKController');
 
 
 
@@ -41,4 +41,4 @@ Route::resource('customer','KKController');
 
 
 
-Route::post('edit/{Cusid}', 'CustomerController@update');
+// Route::post('edit/{Cusid}', 'CustomerController@update');
