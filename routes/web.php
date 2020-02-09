@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 
 ## 執行 QQ控制器  的index()
-Route::resource('QQ','QQController');
+Route::resource('QQ','QQController@index');
 
 
 

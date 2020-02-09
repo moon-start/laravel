@@ -35,6 +35,7 @@ class KKController extends Controller
       if ($validator->fail()){
         return redirect()->back()->withErrors($validator);
       } else {
+        #### firstOrFail(); 找不到模型資料時拋出例外
         $customer = CustomerEloquent::where('Cusid',$cusid)->firstOrFail();
         $customer->Phone = $request->Phone;
         $customer->save();

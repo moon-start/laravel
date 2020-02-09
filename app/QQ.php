@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 ### 進行軟刪除
-use Illuminate\Database\Eloquent\SoftDeletes;
+#use Illuminate\Database\Eloquent\SoftDeletes;
 
 
 class QQ extends Model

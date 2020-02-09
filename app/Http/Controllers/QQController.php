@@ -103,7 +103,11 @@ class QQController extends Controller
         ->orderBy('Name', 'desc') // 根據price由高到低排列
         ->take(10) // 只取前10筆資料
         ->get();
-        return View::make('board',['customers' => $customers,'Cusid' => $customer->Cusid]);
+
+        $Cusid = QQ::where('Cusid', '=', '1'); // 取 Name 為 Peter 
+
+        ###### 傳送一個 參數customers
+        return View::make('board',['customers' => $customers,'Cusid' => $Cusid]);
     }
 
     /**
