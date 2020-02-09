@@ -26,7 +26,8 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
 
-
+### update()
+use App\Http\Request\KKRequest;
 
 
 
@@ -181,6 +182,8 @@ class QQController extends Controller
         $customer->Phone = $request->Phone;
         $customer->save();
 
+
+        // ->with('user' => $user);
         return View::make('edit',[
           'customer' => $customer,
           'msg' => '修改成功'
