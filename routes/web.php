@@ -45,11 +45,11 @@ Route::resource('QQ','QQController');
 
 
 
-## 路由參數
-Route::get('user/{id}', function ($id) {
+## 路由 目錄參數
+Route::get('user/{id}', function ($id = "moon") {
     return 'User '.$id;
 });
-## 同時多個參數傳入
+## http://192.168.1.114/users/11/score/44
 Route::get('users/{name?}/score/{project}', function ($name = 'Peter', $project){
     return 'Hello ,'.$name. ' Your project : '.$project;
 });
