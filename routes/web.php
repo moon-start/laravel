@@ -42,3 +42,14 @@ Route::resource('QQ','QQController');
 
 
 // Route::post('edit/{Cusid}', 'CustomerController@update');
+
+
+
+## 路由參數
+Route::get('user/{id}', function ($id) {
+    return 'User '.$id;
+});
+## 同時多個參數傳入
+Route::get('users/{name?}/score/{project}', function ($name = 'Peter', $project){
+    return 'Hello ,'.$name. ' Your project : '.$project;
+});
