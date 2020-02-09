@@ -49,7 +49,7 @@ Route::resource('QQ','QQController');
 // {name?} 表示這個是有 初始值的 不會是null空值
 Route::get('user/{id?}', function ($id = "moon") {
     return 'User '.$id;
-});
+})->name('user');
 ## http://192.168.1.114/users/11/score/44
 // 注意：路由參數不能包含 - 字元。請使用底線 (_) 。
 Route::get('users/{name?}/score/{project}', function ($name = 'Peter', $project){
