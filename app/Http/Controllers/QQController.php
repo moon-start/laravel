@@ -109,7 +109,9 @@ class QQController extends Controller
         ###### 傳送一個參數  POST 只1參數customers
         // return View::make('board',['customers' => $customers]);
         // return View::make('boardB',['name' => "123"]);
-        return View::make('boardC',['Cusid' => "123"]);
+        
+        ##### 在boardC.php  定義一個 $id
+        return View::make('boardC',['id' => "123"]);
     }
 
     /**
