@@ -21,6 +21,11 @@ Route::get('/', function () {
 ## @index  錯誤??
 Route::resource('QQ','QQController');
 // Route::get('edit/{Cusid}','QQController@edit')->name('edit');
+##### edit 表單
+# KKController.php 控制表的 edit方法
+// Route::get('edit/{Cusid}','QQController@edit')->name('edit');
+// Route::post('edit/{Cusid}', 'QQController@update');
+
 
 
 
@@ -35,10 +40,6 @@ Route::resource('QQ','QQController');
 
 
 
-##### edit 表單
-# KKController.php 控制表的 edit方法
-// Route::get('edit/{Cusid}','QQController@edit')->name('edit');
-// Route::post('edit/{Cusid}', 'QQController@update');
 
 
 

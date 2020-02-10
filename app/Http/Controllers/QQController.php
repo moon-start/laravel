@@ -15,6 +15,11 @@ use Validator,Input,Redirect;
 // use 
 
 
+// use Illuminate\Http\Request;
+// 或抽像類擴展的類。
+use Illuminate\Foundation\Http\FormRequest;
+
+
 ### index(Request $request)
 ### $request->all() ....?
 use Illuminate\Http\Request;
