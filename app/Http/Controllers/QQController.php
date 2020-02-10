@@ -183,14 +183,16 @@ class QQController extends Controller
         //   ]);
         // }
 
+        ############
         // $customer = QQ::where('Cusid',$Cusid)->firstOrFail();
         // $customer->Phone = $request->Phone;
         // $customer->save();
 
-
-        // ->with('user' => $user);
-        // return View::make('boardB',['customer' => $customer,'msg' => '修改成功']);
-        return View::make('boardB',['name' => "123"]);
+        // return View::make('edit',[
+        //   'customer' => $customer,
+        //   'msg' => '修改成功'
+        // ]);
+        return View::make('edit');
     }
 
     /**

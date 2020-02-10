@@ -25,7 +25,7 @@
 
               http://192.168.1.114/QQ = {{action('QQController@index')}}  .<br>
 
-              {{ action('SchoolController@edit', ['Cusid'=> $Cusid-> customer -> Cusid]) }}  .<br>
+              {{ action('QQController@edit', ['Cusid'=> $Cusid-> customer -> Cusid]) }}  .<br>
               </td>
             </tr>
             </tbody>  
