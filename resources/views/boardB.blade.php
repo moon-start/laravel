@@ -23,7 +23,9 @@
               <td>
               Hello, {{ $name }}.<br>
 
-              http://192.168.1.114/QQ = {{action('QQController@index')}}
+              http://192.168.1.114/QQ = {{action('QQController@index')}}  .<br>
+
+              {{ action('SchoolController@edit', ['Cusid'=> $Cusid-> customer -> Cusid]) }}  .<br>
               </td>
             </tr>
             </tbody>  
