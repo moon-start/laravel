@@ -29,18 +29,7 @@
             </tbody>  
          
 
-            <tbody>
-              <?php
-                foreach ($customers as $customer){
-              ?>
-                <tr>
-                      <td><?php echo $customer->Cusid; ?></td>
-                      <td><?php echo $customer->Name; ?></td>
-                  <td><?php echo $customer->Phone; ?></td>
-                </tr>
-              
-              <?php }  ?>
-            </tbody>
+            
           </table>
         </div>  
       </div>
