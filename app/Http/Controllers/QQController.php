@@ -111,9 +111,9 @@ class QQController extends Controller
         // // return View::make('boardB',['name' => "123"]);
         
         // ##### 在boardC.php  定義一個 $id
-        // return View::make('boardC',['id' => "123"]);
+        return View::make('boardC',['id' => "123"]);
 
-          return View::make('boardD',['id' => $GG]);
+          // return View::make('boardD',['id' => $GG]);
     }
 
     ### 導向 http://192.168.1.1/user
