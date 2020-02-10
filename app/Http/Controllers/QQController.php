@@ -98,11 +98,11 @@ class QQController extends Controller
 
 
         
-        // ## 追加的SQL語法
-        // $customers = QQ::where('Name', '=', 'PeterXP') // 取 Name 為 Peter 
-        // ->orderBy('Name', 'desc') // 根據price由高到低排列
-        // ->take(10) // 只取前10筆資料
-        // ->get();
+        ## 追加的SQL語法
+        $customers = QQ::where('Name', '=', 'PeterXP') // 取 Name 為 Peter 
+        ->orderBy('Name', 'desc') // 根據price由高到低排列
+        ->take(10) // 只取前10筆資料
+        ->get();
 
         // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
 
