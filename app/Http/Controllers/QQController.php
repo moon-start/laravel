@@ -155,7 +155,7 @@ class QQController extends Controller
      * @param  \App\QQ  $qQ
      * @return \Illuminate\Http\Response
      */
-    public function edit(QQ $Cusid)
+    public function edit()
     {
         // $validator = Validator::make(
         //     $request->all(),[
@@ -183,9 +183,9 @@ class QQController extends Controller
         //   ]);
         // }
 
-        $customer = QQ::where('Cusid',$Cusid)->firstOrFail();
-        $customer->Phone = $request->Phone;
-        $customer->save();
+        // $customer = QQ::where('Cusid',$Cusid)->firstOrFail();
+        // $customer->Phone = $request->Phone;
+        // $customer->save();
 
 
         // ->with('user' => $user);
