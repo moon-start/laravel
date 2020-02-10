@@ -21,7 +21,7 @@
               <td>王小明</td>
               <td>0912345678</td>
               <td>
-              <a href="{{ action('QQController@edit', ['$customers'=> $customers-> Cusid]) }}" class="btn btn-success btn-sm">編輯</a>
+              <a href="{{ action('QQController@edit', ['$customers'=> '1']) }}" class="btn btn-success btn-sm">編輯</a>
     
     
               </td>
