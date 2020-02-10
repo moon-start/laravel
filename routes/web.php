@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 ## 執行 QQ控制器  的index() 
 ## @index  錯誤??
-Route::resource('QQ','QQController')->name('QQ.index');
+Route::resource('QQ','QQController');
 // Route::get('edit/{Cusid}','QQController@edit')->name('edit');
 ##### edit 表單
 # KKController.php 控制表的 edit方法
