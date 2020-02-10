@@ -19,7 +19,8 @@ Route::get('/', function () {
 
 ## 執行 QQ控制器  的index() 
 ## @index  錯誤??
-Route::resource('QQ','QQController');
+// Route::resource('QQ','QQController');
+Route::get('QQ/{Cusid}','QQController@edit')->name('edit');
 
 
 
