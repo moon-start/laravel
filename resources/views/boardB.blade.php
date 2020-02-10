@@ -21,7 +21,9 @@
               <td>王小明</td>
               <td>0912345678</td>
               <td>
-              Hello, {{ $name }}.{{{action('QQController@index')}}}
+              Hello, {{ $name }}.<br>
+
+              http://192.168.1.114/QQ = {{action('QQController@index')}}
               </td>
             </tr>
             </tbody>  
