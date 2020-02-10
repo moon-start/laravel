@@ -21,7 +21,7 @@
               <td>王小明</td>
               <td>0912345678</td>
               <td>
-              Hello, {{ $name }}.
+              Hello, {{ $name }}.{{action('QQController@index')}}
               </td>
             </tr>
             </tbody>  
