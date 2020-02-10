@@ -23,6 +23,7 @@
               <td>
               <a href="{{ action('QQController@edit', ['Cusid'=> '1']) }}" class="btn btn-success btn-sm">編輯</a>
     
+              <a href="{{ route('customers',['Cusid' => '1']) }}" class="btn btn-info btn-sm">查看</a>
     
               </td>
             </tr>
