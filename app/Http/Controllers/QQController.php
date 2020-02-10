@@ -40,78 +40,78 @@ class QQController extends Controller
      */
     public function index($GG)
     {
-        ## 專案/resources/views (等於) View::make
+        // ## 專案/resources/views (等於) View::make
 
-        ## 第一個
-        ##  專案/resources/views/board.blade.php
-        ## ############ make('board');
-        ## return View::make('board');
+        // ## 第一個
+        // ##  專案/resources/views/board.blade.php
+        // ## ############ make('board');
+        // ## return View::make('board');
 
-        ## 第二個 ## from 資料表名稱
-        // $SS = DB::select('select * from Invoice');
-        // // 可綁定參數
-        // // $customers = DB::select('select * from customers where Name = :names', ['names' => "Peter"]);
-        // ## ######### make('SQL'); ## SQL.blade.php
-        // return View::make('SQL',['Invoice' => $SS]);
+        // ## 第二個 ## from 資料表名稱
+        // // $SS = DB::select('select * from Invoice');
+        // // // 可綁定參數
+        // // // $customers = DB::select('select * from customers where Name = :names', ['names' => "Peter"]);
+        // // ## ######### make('SQL'); ## SQL.blade.php
+        // // return View::make('SQL',['Invoice' => $SS]);
 
 
-        ## 第三個
-        $customers = QQ::all();  //->isEmpty();
+        // ## 第三個
+        // $customers = QQ::all();  //->isEmpty();
         
-        // if( $customers ){
-        //   ## 只能執行一次 不然資料會重複的錯誤
-        //   ## 新增一筆資料 ## 因為欄位(不可以空值)
+        // // if( $customers ){
+        // //   ## 只能執行一次 不然資料會重複的錯誤
+        // //   ## 新增一筆資料 ## 因為欄位(不可以空值)
           
-        // } else{   }
+        // // } else{   }
         
 
-        ###### 寫入一筆資料
-        // $post = new QQ;
-        // $post->id = 1;
-        // $post->Cusid = '1';
-        // $post->Name = 'PeterXP';
-        // $post->Address = '1234';
-        // $post->Phone = '0955';
-        // $post->save();
+        // ###### 寫入一筆資料
+        // // $post = new QQ;
+        // // $post->id = 1;
+        // // $post->Cusid = '1';
+        // // $post->Name = 'PeterXP';
+        // // $post->Address = '1234';
+        // // $post->Phone = '0955';
+        // // $post->save();
 
         
        
 
-        ####### 取出資料表 第一筆資料 ##### 修改
-        $post = QQ::find(1);
-        // $post->Name = 'James';
-        $post->Name = 'PeterXP';
-        #$post->Phone = '0912345678';
-        $post->save();
+        // ####### 取出資料表 第一筆資料 ##### 修改
+        // $post = QQ::find(1);
+        // // $post->Name = 'James';
+        // $post->Name = 'PeterXP';
+        // #$post->Phone = '0912345678';
+        // $post->save();
 
 
 
         
 
 
-        ## 軟刪除
-        #$post = QQ::withTrashed()->get();
-        // // 確認是否經刪除
-        // if ($flight->trashed()) {
-        //   //
-        // }
+        // ## 軟刪除
+        // #$post = QQ::withTrashed()->get();
+        // // // 確認是否經刪除
+        // // if ($flight->trashed()) {
+        // //   //
+        // // }
 
 
         
-        ## 追加的SQL語法
-        $customers = QQ::where('Name', '=', 'PeterXP') // 取 Name 為 Peter 
-        ->orderBy('Name', 'desc') // 根據price由高到低排列
-        ->take(10) // 只取前10筆資料
-        ->get();
+        // ## 追加的SQL語法
+        // $customers = QQ::where('Name', '=', 'PeterXP') // 取 Name 為 Peter 
+        // ->orderBy('Name', 'desc') // 根據price由高到低排列
+        // ->take(10) // 只取前10筆資料
+        // ->get();
 
-        $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
+        // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
 
-        ###### 傳送一個參數  POST 只1參數customers
-        // return View::make('board',['customers' => $customers]);
-        // return View::make('boardB',['name' => "123"]);
+        // ###### 傳送一個參數  POST 只1參數customers
+        // // return View::make('board',['customers' => $customers]);
+        // // return View::make('boardB',['name' => "123"]);
         
-        ##### 在boardC.php  定義一個 $id
-        return View::make('boardC',['id' => "123"]);
+        // ##### 在boardC.php  定義一個 $id
+        // return View::make('boardC',['id' => "123"]);
     }
 
     ### 導向 http://192.168.1.1/user
