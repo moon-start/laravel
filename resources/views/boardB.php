@@ -21,25 +21,12 @@
               <td>王小明</td>
               <td>0912345678</td>
               <td>
-                <a href="{{ route('edit',['Cusid' => $Cusid -> customer -> Cusid]) }}" class="btn btn-info btn-sm">查看</a>
+                <a href="{{ route('QQController',['Cusid' => $Cusid]) }}" class="btn btn-info btn-sm">查看</a>
                 <a href="{{ route('user',['id' => 'XP' ]) }}" class="btn btn-info btn-sm">查看</a>
               </td>
             </tr>
             </tbody>  
          
-
-            <tbody>
-              <?php
-                foreach ($customers as $customer){
-              ?>
-                <tr>
-                      <td><?php echo $customer->Cusid; ?></td>
-                      <td><?php echo $customer->Name; ?></td>
-                  <td><?php echo $customer->Phone; ?></td>
-                </tr>
-              
-              <?php }  ?>
-            </tbody>
           </table>
         </div>  
       </div>
