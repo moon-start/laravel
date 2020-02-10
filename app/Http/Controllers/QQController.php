@@ -127,7 +127,7 @@ class QQController extends Controller
      */
     public function create()
     {
-        //
+      return view('post.create');
     }
 
     /**
@@ -138,12 +138,10 @@ class QQController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // ## 新增一筆資料
-        // $post = new QQ;
-        // $post->GGGid = 15;
-        // $post->Name = 'PeterXP';
-        // $post->save();
+      $validatedData = $request->validate([
+        'title' => 'required|unique:posts|max:255',
+        'body' => 'required',
+      ]);
 
     }
 

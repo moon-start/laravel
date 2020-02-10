@@ -60,3 +60,8 @@ Route::get('users/{name?}/score/{project}', function ($name = 'Peter', $project)
 });
 
 
+
+
+## 驗證
+Route::get('post/create', 'QQController@create');
+Route::post('post', 'QQController@store');
