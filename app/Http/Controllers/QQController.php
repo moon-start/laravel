@@ -158,7 +158,7 @@ class QQController extends Controller
 
     ## Route::get('edit/{Cusid}','QQController@edit')->name('edit');
     ## 表示 $Cusid,
-    public function edit($Cusid, KKRequest $request)
+    public function edit($Cusid, Request $request)
     {
         // $validator = Validator::make(
         //     $request->all(),[
