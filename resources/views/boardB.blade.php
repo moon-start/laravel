@@ -25,7 +25,7 @@
 
               http://192.168.1.114/QQ = {{action('QQController@index')}}  .<br>
 
-              {{ action('QQController@edit') }}  .<br>
+              {{ action('QQ.edit') }}  .<br>
 
               
               </td>
