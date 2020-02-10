@@ -22,6 +22,7 @@
               <td>0912345678</td>
               <td>
                 <a href="{{ action('QQController@edit', ['Cusid'=> $Cusid-> customer -> Cusid]) }}" class="btn btn-success btn-sm">編輯</a>
+    
               </td>
             </tr>
             </tbody>  
