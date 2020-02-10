@@ -21,7 +21,7 @@
               <td>王小明</td>
               <td>0912345678</td>
               <td>
-                <a href="{{ route('edit',['Cusid' => $Cusid]) }}" class="btn btn-info btn-sm">查看</a>
+                <a href="{{ route('edit',['Cusid' => $Cusid -> customers -> Cusid]) }}" class="btn btn-info btn-sm">查看</a>
                 <a href="{{ route('user',['id' => 'XP' ]) }}" class="btn btn-info btn-sm">查看</a>
               </td>
             </tr>
