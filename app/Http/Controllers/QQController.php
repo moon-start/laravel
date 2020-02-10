@@ -38,7 +38,7 @@ class QQController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($Cusid)
     {
         ## 專案/resources/views (等於) View::make
 
@@ -107,7 +107,7 @@ class QQController extends Controller
         $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
 
         ###### 傳送一個  POST 只1參數customers
-        return View::make('board',['customers' => $customers]);
+        return View::make('board',['customers' => $customers,'Cusid' => $Cusid]);
         // return View::make('boardB',['name' => "123"]);
     }
 
