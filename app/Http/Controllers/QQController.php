@@ -107,8 +107,8 @@ class QQController extends Controller
         $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
 
         ###### 傳送一個  POST 只1參數customers
-        return View::make('board',['customers' => $customers,'Cusid' => $Cusid]);
-        // return View::make('boardB',['name' => "123"]);
+        // return View::make('board',['customers' => $customers]);
+        return View::make('boardC',['name' =>  $Cusid]);
     }
 
     /**
