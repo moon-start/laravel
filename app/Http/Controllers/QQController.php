@@ -38,7 +38,7 @@ class QQController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($GG)
+    public function index()
     {
         // ## 專案/resources/views (等於) View::make
 
@@ -107,13 +107,13 @@ class QQController extends Controller
         // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
 
         // ###### 傳送一個參數  POST 只1參數customers
-        // // return View::make('board',['customers' => $customers]);
+        return View::make('board',['customers' => $customers]);
         // // return View::make('boardB',['name' => "123"]);
         
         // ##### 在boardC.php  定義一個 $id
-        return View::make('boardC',['id' => "123"]);
+        // return View::make('boardC',['id' => "123"]);
 
-          // return View::make('boardD',['id' => $GG]);
+     
     }
 
     ### 導向 http://192.168.1.1/user
