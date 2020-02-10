@@ -155,7 +155,7 @@ class QQController extends Controller
      * @param  \App\QQ  $qQ
      * @return \Illuminate\Http\Response
      */
-    public function edit()
+    public function edit($Cusid)
     {
         // $validator = Validator::make(
         //     $request->all(),[
@@ -184,15 +184,15 @@ class QQController extends Controller
         // }
 
         ############
-        // $customer = QQ::where('Cusid',$Cusid)->firstOrFail();
-        // $customer->Phone = $request->Phone;
-        // $customer->save();
+        $customer = QQ::where('Cusid',$Cusid)->firstOrFail();
+        $customer->Phone = $request->Phone;
+        $customer->save();
 
-        // return View::make('edit',[
-        //   'customer' => $customer,
-        //   'msg' => '修改成功'
-        // ]);
-        return View::make('edit');
+        return View::make('edit',[
+          'customer' => $customer,
+          'msg' => '修改成功'
+        ]);
+        // return View::make('edit');
     }
 
     /**
