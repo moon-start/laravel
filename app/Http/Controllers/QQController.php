@@ -104,10 +104,12 @@ class QQController extends Controller
         ->take(10) // 只取前10筆資料
         ->get();
 
+        // foreach ($customers as $customer){
+
         // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
 
         // ###### 傳送一個參數  POST 只1參數customers
-        return View::make('board',['customers' => $customers]);
+        return View::make('board',['customers' => $customers,'Cusid'=>'1']);
         // // return View::make('boardB',['name' => "123"]);
         
         // ##### 在boardC.php  定義一個 $id
