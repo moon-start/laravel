@@ -114,6 +114,10 @@ class QQController extends Controller
         return View::make('boardC',['id' => "123"]);
     }
 
+    ### 導向 http://192.168.1.1/user
+    // {{ route('user',['id' => 'XP' ]) }}"
+
+
     /**
      * Show the form for creating a new resource.
      *
