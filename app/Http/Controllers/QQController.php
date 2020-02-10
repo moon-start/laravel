@@ -189,10 +189,7 @@ class QQController extends Controller
 
 
         // ->with('user' => $user);
-        return View::make('edit',[
-          'customer' => $customer,
-          'msg' => '修改成功'
-        ]);
+        return View::make('boardB',['customer' => $customer,'msg' => '修改成功']);
     }
 
     /**
