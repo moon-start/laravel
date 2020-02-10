@@ -108,7 +108,7 @@ class QQController extends Controller
 
         ###### 傳送一個  POST 只1參數customers
         // return View::make('board',['customers' => $customers]);
-        return View::make('board',['name' => "123"]);
+        return View::make('boardB',['name' => "123"]);
     }
 
     /**
