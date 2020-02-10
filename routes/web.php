@@ -36,8 +36,8 @@ Route::resource('QQ','QQController');
 
 ##### edit 表單
 # KKController.php 控制表的 edit方法
-// Route::get('edit/{Cusid}','QQController@edit');
-// Route::post('edit/{Cusid}', 'QQController@update');
+Route::get('edit/{Cusid}','QQController@edit')->name('edit');
+Route::post('edit/{Cusid}', 'QQController@update');
 
 
 
@@ -47,6 +47,8 @@ Route::resource('QQ','QQController');
 
 ## 路由 目錄參數
 // {name?} 表示這個是有 初始值的 不會是null空值
+## "{{ route('user',['id' => 'XP' ]) }}"
+## http://192.168.1.114/user/XP 
 Route::get('user/{id?}', function ($id = "moon") {
     return 'User '.$id;
 })->name('user');
@@ -55,3 +57,5 @@ Route::get('user/{id?}', function ($id = "moon") {
 Route::get('users/{name?}/score/{project}', function ($name = 'Peter', $project){
     return 'Hello ,'.$name. ' Your project : '.$project;
 });
+
+
