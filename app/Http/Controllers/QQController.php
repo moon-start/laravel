@@ -31,7 +31,7 @@ use View;
 ## 新增資料庫用-問號2?
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-use Auth;
+
 
 ### update()
 use App\Http\Request\KKRequest;
@@ -201,23 +201,25 @@ class QQController extends Controller
         //   ]);
         // }
 
-        $validator = $request->getValidatorInstance();
-        if ($validator->fails()) {
-            $errorMessage = $validator->getMessageBag()->getMessages();
-            // ...
-            return redirect()->back()->withErrors(  $errorMessage);
-        }
+
+        ####
+        // $validator = $request->getValidatorInstance();
+        // if ($validator->fails()) {
+        //     $errorMessage = $validator->getMessageBag()->getMessages();
+        //     // // ...
+        //     // return redirect()->back()->withErrors(  $errorMessage);
+        // }
 
         ############
         ## firstOrFail()返回在數據庫中找到的第一條記錄。如果不存在匹配的模型，則會引發錯誤。它會拋出一個error。
-        $customer = QQ::where('Cusid',$Cusid)->firstOrFail();
-        $customer->Phone = $request->Phone;
-        $customer->save();
+        // $customer = QQ::where('Cusid',$Cusid)->firstOrFail();
+        // $customer->Phone = $request->Phone;
+        // $customer->save();
 
-        return View::make('edit',[
-          'customer' => $customer,
-          'msg' => '修改成功'
-        ]);
+        // return View::make('edit',[
+        //   'customer' => $customer,
+        //   'msg' => '修改成功'
+        // ]);
         // return View::make('edit');
     }
 
