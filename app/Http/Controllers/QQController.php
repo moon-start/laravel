@@ -35,7 +35,7 @@ use App\Http\Controllers\Controller;
 
 ### update()
 use App\Http\Request\KKRequest;
-use App\Http\Request\EditRequest;
+use App\Http\Request\EditCustomer;
 
 
 
@@ -175,7 +175,7 @@ class QQController extends Controller
 
     ## Route::get('edit/{Cusid}','QQController@edit')->name('edit');
     ## 表示 $Cusid,
-    public function edit(EditRequest $request)
+    public function edit(EditCustomer $request)
     {
         // $validator = Validator::make(
         //     $request->all(),[
