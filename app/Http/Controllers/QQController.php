@@ -33,6 +33,7 @@ use App\Http\Controllers\Controller;
 
 ### update()
 use App\Http\Request\KKRequest;
+use App\Http\Request\EditRequest;
 
 
 
@@ -222,7 +223,7 @@ class QQController extends Controller
      */
 
     ######################## 注意這個方法的參數
-    public function update(QQ $Cusid, KKRequest $request)
+    public function update(QQ $Cusid, EditRequest $request)
     {
       //改寫後，就輕快多了！
       ## firstOrFail()返回在數據庫中找到的第一條記錄。如果不存在匹配的模型，則會引發錯誤。它會拋出一個error。
