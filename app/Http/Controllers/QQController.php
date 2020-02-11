@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+
+
 ## 附加新增 --model
 ## 或者單獨 php artisan make:model Customer 
 ## 建議是一個 資料表名稱
@@ -29,7 +31,7 @@ use View;
 ## 新增資料庫用-問號2?
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-
+use App\Http\Controllers\Auth;
 
 ### update()
 use App\Http\Request\KKRequest;
