@@ -31,7 +31,7 @@ use View;
 ## 新增資料庫用-問號2?
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\Auth;
+use Auth;
 
 ### update()
 use App\Http\Request\KKRequest;
