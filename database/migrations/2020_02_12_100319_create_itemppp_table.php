@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateItemOKTable extends Migration
+class CreateItempppTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateItemOKTable extends Migration
      */
     public function up()
     {
-        Schema::create('_item_o_k', function (Blueprint $table) {
+        Schema::create('itemppp', function (Blueprint $table) {
             $table->increments('Item_id');  //int 主見
             $table->integer('Invoice_ID')->index();
             $table->string('Item_num',20)->index();
-            ## 加上長度 會錯誤
+            ## integer 加上長度 會錯誤
             $table->integer('Points')->index();
         });
     }
@@ -29,6 +29,6 @@ class CreateItemOKTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_item_o_k');
+        Schema::dropIfExists('itemppp');
     }
 }

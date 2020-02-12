@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateInvoiceOKTable extends Migration
+class CreateInvoicepppTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,7 @@ class CreateInvoiceOKTable extends Migration
      */
     public function up()
     {
-     
-        Schema::create('_invoice_o_k', function (Blueprint $table)
-        {
+        Schema::create('invoiceppp', function (Blueprint $table) {
         //   $table->bigIncrements('id');
         //   $table->timestamps();
           ## int(10)
@@ -38,6 +36,6 @@ class CreateInvoiceOKTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_invoice_o_k');
+        Schema::dropIfExists('invoiceppp');
     }
 }
