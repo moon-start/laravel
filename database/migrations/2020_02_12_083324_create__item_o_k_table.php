@@ -17,7 +17,8 @@ class CreateItemOKTable extends Migration
             $table->increments('Item_id');  //int 主見
             $table->integer('Invoice_ID')->index();
             $table->string('Item_num',20)->index();
-            $table->integer('Points',5)->index();
+            ## 加上長度 會錯誤
+            $table->integer('Points')->index();
         });
     }
 
