@@ -105,21 +105,29 @@ class QQController extends Controller
         // // }
 
 
-        
-        ## 追加的SQL語法
-        $customers = QQ::where('Name', '=', 'PeterXP') // 取 Name 為 Peter 
-        ->orderBy('Name', 'desc') // 根據price由高到低排列
-        ->take(10) // 只取前10筆資料
-        ->get();
-        // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
-        #### 原始
-        // ###### 傳送一個參數  POST 只1參數customers
-        return View::make('board',['customers' => $customers]);
+
+        // ## A
+        // ## 追加的SQL語法
+        // $customers = QQ::where('Name', '=', 'PeterXP') // 取 Name 為 Peter 
+        // ->orderBy('Name', 'desc') // 根據price由高到低排列
+        // ->take(10) // 只取前10筆資料
+        // ->get();
+        // // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
+        // #### 原始
+        // // ###### 傳送一個參數  POST 只1參數customers
+        // return View::make('board',['customers' => $customers]);
 
 
         ### B
-        // return View::make('boardB',['name' => "123"]);
+        $customer = App\Payment::find(1)->invoice;
+        //get 付款方式
+        $customer = App\Payment::find(1)->invoice->Payment_name;
+        ## B
+        //return View::make('boardB',['name' => "123"]);
+        return View::make('boardB',['name' => $customer]);
+       
         
+        //## C
         // ##### 在boardC.php  定義一個 $id
         // return View::make('boardC',['id' => "123"]);
 
