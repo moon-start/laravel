@@ -16,14 +16,14 @@ class CreateInvoiceOKTable extends Migration
      
         Schema::create('_invoice_o_k', function (Blueprint $table)
         {
-          $table->bigIncrements('id');
-          $table->timestamps();
+        //   $table->bigIncrements('id');
+        //   $table->timestamps();
           ## int(10)
           $table->increments('Invoice_id');  //int
           $table->string('Invoice_name',11)->unique()->index();
           $table->string('Shop_name',20)->index();
           
-          $table->integer('Payment_ID',11)->unique()->index();
+          $table->integer('Payment_ID')->unique()->index();
           //協助建立追踪的時間
           $table->timestamps();
           ## 軟刪除的欄位
