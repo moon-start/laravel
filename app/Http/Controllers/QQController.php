@@ -122,9 +122,10 @@ class QQController extends Controller
 
 
         ### B
-        $customer = Payment::find(1)->invoiceppp;
+        $customer = Payment::find(1);
+        // $customer = Payment::find(1)->invoiceppp;
         //get 付款方式
-        $customer = Payment::find(1)->invoiceppp->Payment_name;
+        // $customer = Payment::find(1)->invoiceppp->Payment_name;
         ## B
         //return View::make('boardB',['name' => "123"]);
         return View::make('boardB',['name' => $customer]);
