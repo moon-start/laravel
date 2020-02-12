@@ -14,8 +14,10 @@ class CreatePaymentOKTable extends Migration
     public function up()
     {
         Schema::create('_payment_o_k', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->increments('Payment_id');  //int 主見
+            $table->string('Invoice_ID',20)->index();
+            $table->string('Payment_name',20)->index();
+            $table->integer('Payment_price')->index();
         });
     }
 
