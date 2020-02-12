@@ -9,6 +9,9 @@ namespace App\Http\Controllers;
 ## 建議是一個 資料表名稱
 use App\QQ;
 // use App\customers;
+use App\Payment;
+
+
 
 ## 多了這行? 這好像是語法自動新增..
 // use Illuminate\Database\QueryException;
@@ -119,9 +122,9 @@ class QQController extends Controller
 
 
         ### B
-        $customer = App\Payment::find(1)->invoice;
+        $customer = Payment::find(1)->invoice;
         //get 付款方式
-        $customer = App\Payment::find(1)->invoice->Payment_name;
+        $customer = Payment::find(1)->invoice->Payment_name;
         ## B
         //return View::make('boardB',['name' => "123"]);
         return View::make('boardB',['name' => $customer]);
