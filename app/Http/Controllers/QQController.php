@@ -10,7 +10,7 @@ namespace App\Http\Controllers;
 use App\QQ;
 // use App\customers;
 use App\Payment;
-
+use App\Invoice;
 
 
 ## 多了這行? 這好像是語法自動新增..
