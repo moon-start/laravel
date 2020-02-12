@@ -13,10 +13,11 @@ class CreateInvoiceOKTable extends Migration
      */
     public function up()
     {
+     
         Schema::create('_invoice_o_k', function (Blueprint $table)
         {
-          //$table->bigIncrements('id'); 這欄位會形成 Primary Key
-          // $table->bigIncrements('id');
+          $table->bigIncrements('id');
+          $table->timestamps();
           ## int(10)
           $table->increments('Invoice_id');  //int
           $table->string('Invoice_name',11)->unique()->index();
