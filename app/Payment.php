@@ -14,7 +14,8 @@ class Payment extends Model
         ### 和 Payment 做一對一關聯
         ### 一對一的連接欄位
         // return $this->hasOne('App\Invoice','Payment_id','Payment_ID');
-        return $this->hasOne('App\Invoice','id','Payment_ID');
+        // return $this->hasOne('App\Invoice','id','Payment_ID');
+        return $this->hasOne('App\Invoice','Payment_ID');
 
         
         ##  使用方式
