@@ -25,7 +25,7 @@ class CreateInvoiceOKTable extends Migration
           
           $table->integer('Payment_ID')->unique()->index();
           //協助建立追踪的時間
-          $table->timestamps();
+          //$table->timestamps();
           ## 軟刪除的欄位
           //$table->softDeletes();
         });
