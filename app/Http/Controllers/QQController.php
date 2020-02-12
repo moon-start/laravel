@@ -124,8 +124,8 @@ class QQController extends Controller
 
         ### B
         // $customer = Payment::find(1);
-        // $customer = Payment::find(1)->invoice->Shop_name;
-        $customer = Payment::find(1)->invoice;
+        $customer = Payment::find(1)->invoice->Shop_name;
+        // $customer = Payment::find(1)->invoice;
 
         //get 付款方式...............->外部資料表->欄位
         // $customer = Payment::find(1)->invoiceppp->Shop_name;
