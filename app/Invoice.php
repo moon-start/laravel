@@ -11,7 +11,8 @@ class Invoice extends Model
     ### 和 Payment 做一對多關聯  
     ### 一(Invoice)對多(payment)
     ### 一對多的連接
-    return $this->hasMany('App\Item','Invoice_id','Invoice_ID');
+    // return $this->hasMany('App\Item','Invoice_id','Invoice_ID');
+    return $this->hasMany('App\Item','id','Invoice_ID');
 
     ## 使用A
     // $cars = App\Invoice::find(1)->item;

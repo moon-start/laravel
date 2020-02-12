@@ -14,7 +14,9 @@ class CreateItempppTable extends Migration
     public function up()
     {
         Schema::create('itemppp', function (Blueprint $table) {
-            $table->increments('Item_id');  //int 主見
+            // $table->increments('Item_id');  //int 主見
+            $table->bigIncrements('id');
+
             $table->integer('Invoice_ID')->index();
             $table->string('Item_num',20)->index();
             ## integer 加上長度 會錯誤
