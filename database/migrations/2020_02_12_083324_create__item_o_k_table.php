@@ -14,8 +14,10 @@ class CreateItemOKTable extends Migration
     public function up()
     {
         Schema::create('_item_o_k', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->increments('Item_id');  //int 主見
+            $table->integer('Invoice_ID')->index();
+            $table->string('Item_num',20)->index();
+            $table->integer('Points')->index();
         });
     }
 
