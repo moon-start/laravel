@@ -15,8 +15,8 @@ class CreatePaymentpppTable extends Migration
     {
         Schema::create('paymentppp', function (Blueprint $table) {
             // $table->increments('Payment_id');  //int 主見
-            // $table->increments('id');  //int 主見
-            $table->integer('Payment_id')->index();
+            $table->increments('id');  //int 主見
+            // $table->integer('Payment_id')->index();  //主見
             $table->string('Invoice_ID',20)->index();
             $table->string('Payment_name',20)->index();
             $table->integer('Payment_price')->index();
