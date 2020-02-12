@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-use App\Invoice;
+
 
 class Payment extends Model
 {
@@ -24,6 +24,7 @@ class Payment extends Model
     }
 
     protected $table = 'paymentppp'; 
-    protected $primarykey = 'id';
+    ### 注意ID是否有改 否則這行修改
+    protected $primarykey = 'Payment_id';
     public $timestamps = true;
 }
