@@ -14,7 +14,7 @@ class CreateCustomersTable extends Migration
       // $table->bigIncrements('id');
       ## int(10)
       $table->increments('id');
-      $table->char('Cusid',100)->unique()->index();
+      $table->char('Cusid',100)->unique()->index();  //unique 唯一
       $table->char('Name',50)->index();
       $table->char('Address',255);
       $table->char('Phone',10)->index();
