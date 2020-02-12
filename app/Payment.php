@@ -13,7 +13,7 @@ class Payment extends Model
         ### 和 Payment 做一對一關聯
         ### 一對一的連接欄位
         // return $this->hasOne('App\Invoice','Payment_id','Payment_ID');
-        return $this->hasOne('App\Invoice','id','Payment_ID');
+        return $this->hasOne('App\Invoice','Payment_id','Payment_ID');
 
         
         ##  使用方式
@@ -26,6 +26,6 @@ class Payment extends Model
 
     protected $table = 'paymentppp'; 
     ### 注意ID是否有改 否則這行修改
-    protected $primarykey = 'id';
+    protected $primarykey = 'Payment_id';
     public $timestamps = true;
 }
