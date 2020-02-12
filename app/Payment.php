@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
-
+use App\Invoice;
 
 class Payment extends Model
 {
