@@ -27,11 +27,13 @@ Route::resource('QQ/{id}/end','QQController');
 // ## 驗證
 // Route::get('post/create', 'QQController@create');
 // Route::post('post', 'QQController@store');
-Route::get('edit/{Cusid}','QQController@edit');
-Route::post('edit/{Cusid}', 'QQController@update');
+
 ##### edit 表單
 # KKController.php 控制表的 edit方法
-// Route::get('edit/{Cusid}','QQController@edit')->name('edit');
+###############################################  route('edit',['Cusid' => '1']) 用到
+Route::get('edit/{Cusid}','QQController@edit')->name('edit');
+// Route::get('edit/{Cusid}','QQController@edit');
+Route::post('edit/{Cusid}', 'QQController@update');
 
 
 
