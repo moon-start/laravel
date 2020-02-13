@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 ## 執行 QQ控制器  的index() 
 ## @index  錯誤??
-Route::resource('QQ/{id}','QQController')->name('QQ');;
+Route::resource('QQ','QQController')->name('QQ');;
 
 // ## 驗證
 // Route::get('post/create', 'QQController@create');
@@ -30,6 +30,7 @@ Route::resource('QQ/{id}','QQController')->name('QQ');;
 
 ##### edit 表單
 # KKController.php 控制表的 edit方法
+### blabe版..Cusid參數
 ###############################################  route('edit',['Cusid' => '1']) 用到
 Route::get('edit/{Cusid}','QQController@edit')->name('edit');
 // Route::get('edit/{Cusid}','QQController@edit');

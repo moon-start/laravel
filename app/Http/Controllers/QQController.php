@@ -13,6 +13,8 @@ use App\Payment;
 use App\Invoice;
 use App\Item;
 
+use App\CustomerEloquent;
+
 
 ## 多了這行? 這好像是語法自動新增..
 // use Illuminate\Database\QueryException;
@@ -119,7 +121,7 @@ class QQController extends Controller
         // // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
         // #### 原始
         // // ###### 傳送一個參數  POST 只1參數customers
-        return View::make('board',['customers' => $customers,'id'=>'123']);
+        return View::make('board',['customers' => $customers]);
 
 
         // ### B
@@ -189,31 +191,30 @@ class QQController extends Controller
 
     ## Route::get('edit/{Cusid}','QQController@edit')->name('edit');
     ## 表示 $Cusid,
-    public function edit(App\Http\Requests\EditCustomer $request)
-    {
-        // $validator = Validator::make(
-        //     $request->all(),[
-        //       'Name' => 'required|string',
-        //       'Phone' => 'required|string'
-        //     ],[
-        //       'required' => '不可為空白',
-        //       'required' => '須為字串'
-        //     ]
-        // );
-        // // 判斷方式
-        // if ($validator->fail()){
-        //     return redirect()->back()->withErrors($validator);
-        // } else {  
-        //   // $customer = CustomerEloquent::where('Cusid',$cusid)->firstOrFail();
-        //   $customer = customers::where('Cusid',$cusid)->firstOrFail();
-        //   $customer->Phone = $request->Phone;
-        //   $customer->save();
-  
-        //   return View::make('edit',[
-        //     'customer' => $customer,
-        //     'msg' => '修改成功'
-        //   ]);
-        // }
+    public function edit($Cusid,EditCustomer $request)
+    {   
+        $validator = Validator::make(
+          $request->all(),[
+            'Name' => 'required|string',
+            'Phone' => 'required|string'
+          ],[
+            'required' => '不可為空白',
+            'required' => '須為字串'
+          ]
+        );
+        // 判斷方式
+        if ($validator->fail()){
+          return redirect()->back()->withErrors($validator);
+        } else {
+          $customer = CustomerEloquent::where('Cusid',$Cusid)->firstOrFail();
+          $customer->Phone = $request->Phone;
+          $customer->save();
+        
+          return View::make('edit',[
+            'customer' => $customer,
+            'msg' => '修改成功'
+          ]);
+        }
 
 
         ####
@@ -246,7 +247,7 @@ class QQController extends Controller
      */
 
     ######################## 注意這個方法的參數
-    public function update(QQ $Cusid, EditRequest $request)
+    public function update($Cusid, EditCustomer $request)
     {
       //改寫後，就輕快多了！
       ## firstOrFail()返回在數據庫中找到的第一條記錄。如果不存在匹配的模型，則會引發錯誤。它會拋出一個error。
