@@ -52,7 +52,7 @@ class QQController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
         // ## 專案/resources/views (等於) View::make
 
