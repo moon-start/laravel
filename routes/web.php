@@ -32,8 +32,9 @@ Route::resource('QQ','QQController');
 # KKController.php 控制表的 edit方法
 ### blabe版..Cusid參數
 ###############################################  route('edit',['Cusid' => '1']) 用到
-Route::get('edit/{Cusid}','QQController@edit')->name('edit');
-// Route::get('edit/{Cusid}','QQController@edit');
+## route('資料表的名稱')  ......... route('customers',
+// Route::get('edit/{Cusid}','QQController@edit')->name('edit');  
+Route::get('edit/{Cusid}','QQController@edit');
 Route::post('edit/{Cusid}', 'QQController@update');
 
 

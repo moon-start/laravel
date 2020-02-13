@@ -26,14 +26,14 @@ class RegisterController extends Controller
 
     /**
      * Where to redirect users after registration.
-     *
+     * 註冊後的轉址網頁
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
-     *
+     * 經登入的使用者，無法使用該實例
      * @return void
      */
     public function __construct()
@@ -43,7 +43,7 @@ class RegisterController extends Controller
 
     /**
      * Get a validator for an incoming registration request.
-     *
+     * 如何驗證註冊
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
@@ -58,7 +58,7 @@ class RegisterController extends Controller
 
     /**
      * Create a new user instance after a valid registration.
-     *
+     * 建立使用者
      * @param  array  $data
      * @return \App\User
      */
