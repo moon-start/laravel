@@ -191,51 +191,9 @@ class QQController extends Controller
 
     ## Route::get('edit/{Cusid}','QQController@edit')->name('edit');
     ## 表示 $Cusid,
-    public function edit($Cusid,EditCustomer $request)
+    public function edit(QQ $qQ)
     {   
-        $validator = Validator::make(
-          $request->all(),[
-            'Name' => 'required|string',
-            'Phone' => 'required|string'
-          ],[
-            'required' => '不可為空白',
-            'required' => '須為字串'
-          ]
-        );
-        // 判斷方式
-        if ($validator->fail()){
-          return redirect()->back()->withErrors($validator);
-        } else {
-          $customer = CustomerEloquent::where('Cusid',$Cusid)->firstOrFail();
-          $customer->Phone = $request->Phone;
-          $customer->save();
         
-          return View::make('edit',[
-            'customer' => $customer,
-            'msg' => '修改成功'
-          ]);
-        }
-
-
-        ####
-        // $validator = $request->getValidatorInstance();
-        // if ($validator->fails()) {
-        //     $errorMessage = $validator->getMessageBag()->getMessages();
-        //     // // ...
-        //     // return redirect()->back()->withErrors(  $errorMessage);
-        // }
-
-        ############
-        ## firstOrFail()返回在數據庫中找到的第一條記錄。如果不存在匹配的模型，則會引發錯誤。它會拋出一個error。
-        // $customer = QQ::where('Cusid',$Cusid)->firstOrFail();
-        // $customer->Phone = $request->Phone;
-        // $customer->save();
-
-        // return View::make('edit',[
-        //   'customer' => $customer,
-        //   'msg' => '修改成功'
-        // ]);
-        // return View::make('edit');
     }
 
     /**
