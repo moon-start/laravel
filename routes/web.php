@@ -22,12 +22,17 @@ Route::get('/', function () {
 
 ## 執行 QQ控制器  的index() 
 ## @index  錯誤??
-Route::resource('QQ','QQController');
-// Route::get('edit/{Cusid}','QQController@edit');
+Route::resource('QQ/{id}','QQController');
+
+// ## 驗證
+// Route::get('post/create', 'QQController@create');
+// Route::post('post', 'QQController@store');
+Route::get('edit/{Cusid}','QQController@edit');
+Route::post('edit/{Cusid}', 'QQController@update');
 ##### edit 表單
 # KKController.php 控制表的 edit方法
-Route::get('edit/{Cusid}','QQController@edit')->name('edit');
-// Route::post('edit/{Cusid}', 'QQController@update');
+// Route::get('edit/{Cusid}','QQController@edit')->name('edit');
+
 
 
 
@@ -35,17 +40,9 @@ Route::get('edit/{Cusid}','QQController@edit')->name('edit');
 ## resource 全部轉發的方式 : get post等
 ## 第一個參數 URL相對網址
 ## 第二個參數 Controller控制器
-
-
 #### 
 # KKController.php 的 in方法
 // Route::resource('customer','KKController');
-
-
-
-
-
-
 // Route::post('edit/{Cusid}', 'CustomerController@update');
 
 
@@ -66,6 +63,3 @@ Route::get('users/{name?}/score/{project}', function ($name = 'Peter', $project)
 
 
 
-## 驗證
-Route::get('post/create', 'QQController@create');
-Route::post('post', 'QQController@store');
