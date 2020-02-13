@@ -119,23 +119,18 @@ class QQController extends Controller
         // // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
         // #### 原始
         // // ###### 傳送一個參數  POST 只1參數customers
-        // return View::make('board',['customers' => $customers]);
+        return View::make('board',['customers' => $customers]);
 
 
-        ### B
-        // $customer = Payment::find(1);
-        $customer = Payment::find(1)->invoiceA->Shop_name;
-        // $customer = Payment::find(1)->invoice();
-        // $post->first()->user()->get()
-
-        // $customer = Payment::find(1)->invoice;
-
-        //get 付款方式...............->定義的方法->欄位
-        // $customer = Payment::find(1)->invoiceppp->Shop_name;
-        // $customer = Payment::find(1)->invoiceppp->find(1);;
-        ## B
-        // return View::make('boardB',['name' => "123"]);
-        return View::make('boardB',['name' => $customer]);
+        // ### B
+        // // $customer = Payment::find(1);
+        // ### 呼叫 invoice() 這是一對一關聯的方法物件
+        // //get 付款方式...............->定義的方法->欄位
+        // $customer = Payment::find(1)->invoice->Shop_name;
+        // // $post->first()->user()->get() ...????
+        // ## B
+        // // return View::make('boardB',['name' => "123"]);
+        // return View::make('boardB',['name' => $customer]);
        
         
         //## C
