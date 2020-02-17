@@ -22,11 +22,24 @@
               <td>0912345678</td>
               <td>
               <a href="{{ route('edit',['Cusid' => $cusid]) }}" class="btn btn-info btn-sm">查看</a>
-              <a href="{{ action('QQController@edit', ['Cusid'=> $Cusid]) }}" class="btn btn-success btn-sm">編輯</a>
+              <a href="{{ action('QQController@edit', ['Cusid'=> $cusid]) }}" class="btn btn-success btn-sm">編輯</a>
               
               </td>
             </tr>
             </tbody>  
+
+            <tbody>
+              <?php
+                foreach ($customers as $customer){
+              ?>
+                <tr>
+                      <td><?php echo $customer->Cusid; ?></td>
+                      <td><?php echo $customer->Name; ?></td>
+                  <td><?php echo $customer->Phone; ?></td>
+                </tr>
+              
+              <?php }  ?>
+            </tbody>
          
           </table>
         </div>  
