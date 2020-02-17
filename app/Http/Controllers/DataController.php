@@ -15,7 +15,7 @@ class DataController extends Controller
     //客戶列表
     public function index() {
         $customers = Data::all();
-        return View::make('board',['customers' => $customers]);
+        return View::make('boardA',['customers' => $customers]);
     }
 
     //新增客戶資料
