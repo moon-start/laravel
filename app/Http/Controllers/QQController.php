@@ -126,8 +126,8 @@ class QQController extends Controller
         // $data = ['name' => 'ray','age' => 25];
         // $title = '自我介紹';
         $Cusid = QQ::find(1);  ##### QQ::find(1)->invoice->Shop_name
-        // return view('board', compact('customers', 'Cusid'));
-        return View::make('board',['Cusid' => $Cusud]);
+        return view('board', compact(['customers', 'Cusid']));
+        // return View::make('board',['Cusid' => $Cusud]);
 
 
         // ### B
