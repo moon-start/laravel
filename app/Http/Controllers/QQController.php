@@ -119,9 +119,14 @@ class QQController extends Controller
         ->take(10) // 只取前10筆資料
         ->get();
         // // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
+        
         // #### 原始
         // // ###### 傳送一個參數  POST 只1參數customers
-        return View::make('board',['customers' => $customers]);
+        // return View::make('board',['customers' => $customers]);
+        // $data = ['name' => 'ray','age' => 25];
+        // $title = '自我介紹';
+        $Cusid = QQ::find(1);  ##### QQ::find(1)->invoice->Shop_name
+        return view('board', compact('customers', 'Cusid'));
 
 
         // ### B
