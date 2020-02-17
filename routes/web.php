@@ -67,3 +67,9 @@ Route::get('users/{name?}/score/{project}', function ($name = 'Peter', $project)
 
 
 
+
+
+### 新增紀錄
+//Route::resource('customer', 'CustomerController');
+Route::get('data', 'DataController@index');
+Route::post('data', 'DataController@new');
