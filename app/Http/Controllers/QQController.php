@@ -118,6 +118,7 @@ class QQController extends Controller
         ->orderBy('Name', 'desc') // 根據price由高到低排列
         ->take(10) // 只取前10筆資料
         ->get();
+        $cusid = '1';
         // // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
         
         // #### 原始
@@ -134,7 +135,7 @@ class QQController extends Controller
         // // $customer = Payment::find(1);
         // ### 呼叫 invoice() 這是一對一關聯的方法物件
         // //get 付款方式...............->定義的方法->欄位
-        // $customer = Payment::find(1)->invoice->Shop_name;
+        // $customer = Payment::find(1)->invoiceOf->Shop_name;
         // // $post->first()->user()->get() ...????
         // ## B
         // // return View::make('boardB',['name' => "123"]);
