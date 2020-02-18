@@ -19,4 +19,10 @@ class ForgotPasswordController extends Controller
     */
 
     use SendsPasswordResetEmails;
+
+    //以下自行加入
+    //沒登入的使用者，才可以進行密碼忘記的處理
+    public function __construct(){
+        $this->middleware('guest');
+    }
 }

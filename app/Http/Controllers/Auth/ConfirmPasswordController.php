@@ -22,17 +22,17 @@ class ConfirmPasswordController extends Controller
     use ConfirmsPasswords;
 
     /**
-     * Where to redirect users when the intended url fails.
-     *
-     * @var string
-     */
+    * Where to redirect users when the intended url fails.
+    * 驗證或網址有誤，重導回指定的頁面
+    * @var string
+    */
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+    * Create a new controller instance.
+    * 進行身份驗證工作
+    * @return void
+    */
     public function __construct()
     {
         $this->middleware('auth');

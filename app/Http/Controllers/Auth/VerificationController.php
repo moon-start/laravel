@@ -22,17 +22,17 @@ class VerificationController extends Controller
     use VerifiesEmails;
 
     /**
-     * Where to redirect users after verification.
-     *
+    * Where to redirect users after verification.
+    * 驗證完成後，重導使用者到指定的網址
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+    * Create a new controller instance.
+    * 進行驗證、或是重送的動作
+    * @return void
+    */
     public function __construct()
     {
         $this->middleware('auth');

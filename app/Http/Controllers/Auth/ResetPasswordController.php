@@ -22,9 +22,15 @@ class ResetPasswordController extends Controller
     use ResetsPasswords;
 
     /**
-     * Where to redirect users after resetting their password.
-     *
-     * @var string
-     */
+    * Where to redirect users after resetting their password.
+    * 引導使用者在修改好密碼時，導到相關的網址
+    * @var string
+    */
     protected $redirectTo = RouteServiceProvider::HOME;
+
+    //以下自行加入
+    //沒登入的使用者，才可以進行密碼忘記的處理
+    public function __construct(){
+        $this->middleware('guest');
+    }
 }
