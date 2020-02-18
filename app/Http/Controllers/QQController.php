@@ -200,7 +200,20 @@ class QQController extends Controller
     ## 表示 $Cusid,
     public function edit(QQ $qQ)
     {   
-        
+      $customers = QQ::where('Name', '=', 'PeterXP') // 取 Name 為 Peter 
+      ->orderBy('Name', 'desc') // 根據price由高到低排列
+      ->take(10) // 只取前10筆資料
+      ->get();
+      $cusid = '1';
+      // // $Cusid = QQ::where('Cusid', '=', '1')->get(); // 取 Name 為 Peter 
+      
+      // #### 原始
+      // // ###### 傳送一個參數  POST 只1參數customers
+      // return View::make('board',['customers' => $customers]);
+      // $data = ['name' => 'ray','age' => 25];
+      // $title = '自我介紹';
+      $cusid = QQ::find(1);  ##### QQ::find(1)->invoice->Shop_name
+      return view('board', compact(['customers', 'cusid']));
     }
 
     /**
