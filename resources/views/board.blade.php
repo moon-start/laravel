@@ -22,8 +22,8 @@
               <td>0912345678</td>
               <td>
               {{ $RR }}  <br>
-              <a href="{{ route('edit',['Cusid' => $cusid]) }}" class="btn btn-info btn-sm">查看</a>
-              <a href="{{ action('QQController@edit', ['Cusid'=> $cusid]) }}" class="btn btn-success btn-sm">編輯</a>
+              <a href="{{ route('edit',['Cusid' => $cusid]) }}" class="btn btn-info btn-sm">查看update</a>
+              <a href="{{ action('QQController@edit', ['Cusid'=> $cusid]) }}" class="btn btn-success btn-sm">編輯edit</a>
               
               </td>
             </tr>
