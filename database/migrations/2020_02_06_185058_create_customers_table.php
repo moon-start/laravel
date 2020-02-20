@@ -23,8 +23,9 @@ class CreateCustomersTable extends Migration
       // ## 軟刪除的欄位
       // $table->softDeletes();
 
-      
+
       //$table->bigIncrements('id'); 這欄位會形成 Primary Key，所以註解
+      ###### char(20) ## Cusid
       $table->char('Cusid',20)->primary();
       $table->char('Name',50)->index();
       $table->char('Address',255)->nullable();
