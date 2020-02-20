@@ -129,7 +129,14 @@ class QQController extends Controller
         $cusid = QQ::find(1);  ##### QQ::find(1)->invoice->Shop_name
 
         $RR = 'QQP';
-        return view('board', compact(['customers', 'cusid' ,'RR' ]));
+
+        # 客戶列表 # 取出紀錄
+        $customers = QQ::all(); 
+        return View::make('board',['customers' => $customers]);
+        # 多個參數(boardOK.blade.php)
+        # return view('board', compact(['customers', 'cusid' ,'RR' ]));
+
+
         // return View::make('board',['Cusid' => $Cusud]);
 
 

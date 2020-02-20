@@ -21,14 +21,13 @@
               <td>王小明</td>
               <td>0912345678</td>
               <td>
-              <a href="{{ action('QQController@edit', ['Cusid'=> '1']) }}" class="btn btn-success btn-sm">編輯</a>
-    
-              <a href="{{ route('edit',['Cusid' => '1']) }}" class="btn btn-info btn-sm">查看</a>
-    
+              {{ $RR }}  <br>
+              <a href="{{ route('edit',['Cusid' => $cusid]) }}" class="btn btn-info btn-sm">查看update</a>
+              <a href="{{ action('QQController@edit', ['Cusid'=> $cusid]) }}" class="btn btn-success btn-sm">編輯edit</a>
+              
               </td>
             </tr>
             </tbody>  
-         
 
             <tbody>
               <?php
@@ -42,6 +41,7 @@
               
               <?php }  ?>
             </tbody>
+         
           </table>
         </div>  
       </div>

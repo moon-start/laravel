@@ -22,7 +22,12 @@ Route::get('/', function () {
 
 ## 執行 QQ控制器  的index() 
 ## @index  錯誤??
-Route::resource('QQ','QQController');
+// Route::resource('QQ','QQController');
+## 客戶列表
+Route::get('QQ','QQController@index');
+
+
+
 
 // ## 驗證
 // Route::get('post/create', 'QQController@create');
