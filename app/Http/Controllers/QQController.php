@@ -172,9 +172,9 @@ class QQController extends Controller
       return view('post.create');
     }
 
-    
+
     //新增客戶資料
-    public function new() {
+    public function new(){
       //$customers = Customer::all();
       //return View::make('new',['customers' => $customers]);
       return View::make('new');
