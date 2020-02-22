@@ -173,6 +173,7 @@ class QQController extends Controller
     }
 
 
+    ##### URL::192.168.1.1/new
     //新增客戶資料
     public function new(){
       //$customers = Customer::all();

@@ -23,9 +23,11 @@ Route::get('/', function () {
 ## 執行 QQ控制器  的index() 
 ## @index  錯誤??
 // Route::resource('QQ','QQController');
+
+########### 表示在 QQController.php 宣告方法,如沒宣告控制器不能使用
 ## 客戶列表
 Route::get('QQ','QQController@index');
-// Route::get('new','CustomerController@new');
+Route::get('new','CustomerController@new');
 // Route::post('store','CustomerController@store');
 // Route::get('edit','CustomerController@edit');
 // Route::post('update','CustomerController@update');
