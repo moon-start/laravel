@@ -9,11 +9,7 @@
                 客戶列表
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="{{ action('QQController@new') }}" class="nav-link">
-                新增客戶
-                </a>
-            </li>
+            
         </ul>
     </div>
 </nav>
