@@ -33,7 +33,7 @@ Route::get('/', function () {
 ## 客戶列表
 Route::get('QQ','QQController@index');
 Route::get('new','QQController@new');
-// Route::post('store','CustomerController@store');
+Route::post('store','QQController@store');
 Route::get('edit','QQController@edit');
 Route::post('update','QQController@update');
 Route::get('delete','QQController@delete');
