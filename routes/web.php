@@ -32,7 +32,7 @@ Route::get('/', function () {
 ########### 註冊 new方法...在QQController@new'
 ## 客戶列表
 Route::get('QQ','QQController@index');
-Route::get('new','QQController@new');
+Route::get('new','QQController@new')->name('new123');
 Route::post('store','QQController@store');
 ## 修改客戶資料表格(進入deit)
 Route::get('edit','QQController@edit');

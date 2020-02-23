@@ -37,10 +37,10 @@
                 <!-- http://192.168.1.115/board -->
                 </td>
                 <td>
-                {{action('QQController@new')}}
+                {{ action('QQController@new') }}
                 </td>
                 <td>
-                {{action('QQController@store')}}
+                {{ route('new123') }}
                 </td>
                 <!-- <td> 顯示測試
                  action('QQController@update') 
