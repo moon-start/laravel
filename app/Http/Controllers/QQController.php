@@ -284,7 +284,8 @@ class QQController extends Controller
                                     'Address'=> $request->input('Address'),
                                     'Phone'=> $request->input('Phone')
         ]);
-        $customers = Customer::all();
+        ### 傳入 Cusid
+        $customers = QQ::all();
         return View::make('board',['customers' => $customers]); 
     }
 
