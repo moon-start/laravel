@@ -32,12 +32,7 @@
                 
                     <a href="{{ action('QQController@delete', ['Cusid'=>$customer->Cusid]) }}" class="btn btn-danger btn-sm">刪除</a>
                 </td>
-                <td>
-                {{ url('/board') }}
-                </td>
-                <td>
-                {{ action('QQController@update') }}
-                </td>
+               
             </tr>
             <?php }  ?>
 
