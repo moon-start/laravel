@@ -33,8 +33,10 @@ Route::get('/', function () {
 ## 客戶列表
 Route::get('QQ','QQController@index');
 Route::get('new','QQController@new');
-Route::post('store','QQController@store');
+// Route::post('store','QQController@store');
+## 修改客戶資料表格(進入deit)
 Route::get('edit','QQController@edit');
+## 更新客戶資料(送出)
 Route::post('update','QQController@update');
 Route::get('delete','QQController@delete');
 
@@ -54,6 +56,7 @@ Route::get('delete','QQController@delete');
 
 
 ### 會影響上面的
+### ~~缺少 Cusid 參數.....get???
 // Route::get('edit/{Cusid}','QQController@edit');
 // Route::post('edit/{Cusid}', 'QQController@update')->name('edit');
 

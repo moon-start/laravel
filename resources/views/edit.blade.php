@@ -2,6 +2,8 @@
 @section('title','編輯客戶資料')
 @section('content')
 <td>
+<!-- 會傳回web.php 設定的URL -->
+<!-- http://192.168.1.115/update -->
 {{action('QQController@update')}}
 </td>
 <form action="{{ action('QQController@update') }}" method="post">
