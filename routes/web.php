@@ -35,7 +35,7 @@ Route::get('QQ','QQController@index');
 Route::get('new','QQController@new');
 // Route::post('store','CustomerController@store');
 Route::get('edit','QQController@edit');
-// Route::post('update','CustomerController@update');
+Route::post('update','QQController@update');
 Route::get('delete','QQController@delete');
 
 
