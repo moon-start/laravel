@@ -24,13 +24,17 @@ Route::get('/', function () {
 ## @index  錯誤??
 // Route::resource('QQ','QQController');
 
+
+########### {{action('註冊'}}
+########### 註冊::QQController@new
+##################################
 ########### 表示在 QQController.php 宣告方法,如沒宣告控制器不能使用
 ########### 註冊 new方法...在QQController@new'
 ## 客戶列表
 Route::get('QQ','QQController@index');
 Route::get('new','QQController@new');
 // Route::post('store','CustomerController@store');
-// Route::get('edit','CustomerController@edit');
+Route::get('edit','QQController@edit');
 // Route::post('update','CustomerController@update');
 Route::get('delete','QQController@delete');
 
