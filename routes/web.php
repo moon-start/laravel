@@ -51,8 +51,11 @@ Route::get('delete','QQController@delete');
 ###############################################  route('edit',['Cusid' => '1']) 用到
 ## route('資料表的名稱')  ......... route('customers',
 // Route::get('edit/{Cusid}','QQController@edit')->name('edit');  
-Route::get('edit/{Cusid}','QQController@edit');
-Route::post('edit/{Cusid}', 'QQController@update')->name('edit');
+
+
+### 會影響上面的
+// Route::get('edit/{Cusid}','QQController@edit');
+// Route::post('edit/{Cusid}', 'QQController@update')->name('edit');
 
 
 
