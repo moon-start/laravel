@@ -37,7 +37,7 @@
                 <!-- http://192.168.1.115/board -->
                 </td>
                 <!-- <td>
-                {{ action('QQController@update') }}
+                 action('QQController@update') 
                 </td> -->
             </tr>
             <?php }  ?>
