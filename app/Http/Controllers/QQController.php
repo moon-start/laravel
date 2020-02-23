@@ -257,21 +257,38 @@ class QQController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    ######################## 注意這個方法的參數
-    public function update($Cusid, EditCustomer $request)
-    {
-      //改寫後，就輕快多了！
-      ## firstOrFail()返回在數據庫中找到的第一條記錄。如果不存在匹配的模型，則會引發錯誤。它會拋出一個error。
-      $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
-      $customer->Phone = $request->Phone;
-      $customer->save();
+    // ######################## 注意這個方法的參數
+    // public function update($Cusid, EditCustomer $request)
+    // {
+    //   //改寫後，就輕快多了！
+    //   ## firstOrFail()返回在數據庫中找到的第一條記錄。如果不存在匹配的模型，則會引發錯誤。它會拋出一個error。
+    //   $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
+    //   $customer->Phone = $request->Phone;
+    //   $customer->save();
 
-      return View::make('edit',[
-        'customer' => $customer,
-        'msg' => '修改成功'
-      ]);
+    //   return View::make('edit',[
+    //     'customer' => $customer,
+    //     'msg' => '修改成功'
+    //   ]);
       
+    // }
+     ## 更新客戶資料
+     public function update(Request $request){
+        if ($request->cancel){
+            $customers = QQ::all();
+            return View::make('board',['customers' => $customers]);
+        } 
+        $customers = QQ::where('Cusid',$request->input('oldId'))
+                                    ->update(['Cusid'=> $request->input('Cusid'),
+                                    'Name'=> $request->input('Name'),
+                                    'Address'=> $request->input('Address'),
+                                    'Phone'=> $request->input('Phone')
+        ]);
+        $customers = Customer::all();
+        return View::make('board',['customers' => $customers]); 
     }
+
+
 
     /**
      * Remove the specified resource from storage.
