@@ -36,7 +36,13 @@
                 {{ url('/board') }}
                 <!-- http://192.168.1.115/board -->
                 </td>
-                <!-- <td>
+                <td>
+                {{action('QQController@new')}}
+                </td>
+                <td>
+                {{action('QQController@store')}}
+                </td>
+                <!-- <td> 顯示測試
                  action('QQController@update') 
                 </td> -->
             </tr>
