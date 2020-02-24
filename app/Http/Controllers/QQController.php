@@ -199,10 +199,10 @@ class QQController extends Controller
     // }
     ## 將新客戶資料寫入資料庫
     public function storeABC(Request $request){
-        // if ($request->cancel){
-        //     $customers = QQ::all();
-        //     return View::make('board',['customers' => $customers]);
-        // }
+        if ($request->cancel){
+            $customers = QQ::all();
+            return View::make('board',['customers' => $customers]);
+        }
 
         ## 新增  一筆紀錄
         $customers = new QQ;
