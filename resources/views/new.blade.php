@@ -19,10 +19,10 @@
                 <div class="col-sm-2"></div>
                 <label for="Name" class="col-sm-2 col-form-label">客戶姓名</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" id="Name" name="Name" value="">
-                        @if ($errors->has('name'))
+                    <input type="text" class="form-control {{ $errors->has('Name') ? 'is-invalid' : '' }}" id="Name" name="Name" value="">
+                        @if ($errors->has('Name'))
                         <div class="invalid-feeback">
-                        <strong>{{ $errors->first('name') }}</strong>
+                        <strong>{{ $errors->first('Name') }}</strong>
                         </div>
                         @endif
                 </div>
