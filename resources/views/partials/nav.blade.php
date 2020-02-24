@@ -10,7 +10,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ action('QQController@new'}}" class="nav-link">
+                <a href="{{ action('QQController@new')}}" class="nav-link">
                 新增客戶
                 </a>
             </li>
