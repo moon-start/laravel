@@ -176,7 +176,7 @@ class QQController extends Controller
     ##### URL::192.168.1.1/new
     ## 新增客戶資料
     ## public function new(Request $request){
-    public function new(Request $Request){
+    public function new(Request $request){
         $validator = Validator::make(
             $request->all(),[
               'Name' => 'required|string',
