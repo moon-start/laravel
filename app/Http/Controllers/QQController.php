@@ -191,15 +191,16 @@ class QQController extends Controller
 
         if ($validator->fails())
         {
-            $SS = QQ::orderBy('Cusid','desc')->first();
-            return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
-            
+            ## 正確時
+            // $SS = QQ::orderBy('Cusid','desc')->first();
+            // return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
+            return redirect()->back()->withErrors($validator->errors());
 
         //   // 判斷方式
         //   if ($validator->fails()){
         //     return redirect()->back()->withErrors($validator);
         } else {
-        
+            ## 錯誤時
             $SS = QQ::orderBy('Cusid','desc')->first();
             return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
         }
