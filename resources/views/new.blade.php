@@ -19,8 +19,9 @@
                 <div class="col-sm-2"></div>
                 <label for="Name" class="col-sm-2 col-form-label">客戶姓名</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="Name" name="Name" value="">
-                        <!-- 第2種判斷法 -->
+                    <!-- 錯誤訊息的CSS .. is-invalid  -->
+                    <input type="text" class="form-control {{ $errors->has('Name') ? 'is-invalid' : '' }}" id="Name" name="Name" value="">
+                        <!-- 錯誤訊息的判斷法 -->
                         @if ($errors->has('Name'))
                         <div class="invalid-feeback">
                         <strong>{{ $errors->first('Name') }}</strong>

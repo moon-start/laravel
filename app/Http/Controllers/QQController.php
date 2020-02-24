@@ -198,7 +198,7 @@ class QQController extends Controller
   
     ## new 畫面
     ## 將新客戶資料寫入資料庫
-    public function storeABC(Request $request){
+    public function storeABC(KKRequest $request){
         ### 取消時..的返回頁面
         ### <input type="submit" class="btn btn-warning" value="取消" name="cancel">
         ### $request->cancel .... 取布林?
@@ -220,25 +220,28 @@ class QQController extends Controller
         // ## 導向URL:: http://192.168.1.1/QQ 頁面
         // return redirect('QQ');
 
-            ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
-            $validator = Validator::make(
-                $request->all(),[
-                  'Name' => 'required|string',
-                  'Phone' => 'required|string'
-                ],[
-                  'required' => '不可為空白',
-                  'required' => '須為字串'
-                ]
-            );
-    
+
+#############################
+
+            // ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
+            // $validator = Validator::make(
+            //     $request->all(),[
+            //       'Name' => 'required|string',
+            //       'Phone' => 'required|string'
+            //     ],[
+            //       'required' => '不可為空白',
+            //       'required' => '須為字串'
+            //     ]
+            // );
+
+        $validator = $request->validated();
     
             if ($validator->fails())
             {
-                
-                // $SS = QQ::orderBy('Cusid','desc')->first();
-                // return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
-                
-                // return redirect()->back()->withErrors($validator->errors());
+                // https://laravel.tw/docs/5.0/validation
+            
+                ## 回傳根據前一個URL的重導 return redirect()->back()
+                ## 取得錯誤訊息並回傳到視圖中 ->withErrors($validator);
                 return redirect()->back()->withErrors($validator);
 
                 ## 返回上一个页面，注意避免死循环
