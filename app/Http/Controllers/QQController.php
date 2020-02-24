@@ -200,10 +200,10 @@ class QQController extends Controller
     ## 將新客戶資料寫入資料庫
     public function storeABC(Request $request){
         if ($request->cancel){
-            $customers = Customer::all();
+            $customers = QQ::all();
             return View::make('board',['customers' => $customers]);
         }
-        $customers = new Customer;
+        $customers = new QQ;
         $customers->Cusid=$request->input('Cusid');
         $customers->Name=$request->input('Name');
         $customers->Address=$request->input('Address');
