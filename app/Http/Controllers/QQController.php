@@ -209,7 +209,8 @@ class QQController extends Controller
         $customers->Address=$request->input('Address');
         $customers->Phone=$request->input('Phone');
         $customers->save();
-        return redirect('customer');
+        ## 導向URL:: http://192.168.1.1/QQ 頁面
+        return redirect('QQ');
     }
 
 
