@@ -176,24 +176,42 @@ class QQController extends Controller
     ##### URL::192.168.1.1/new
     ## 新增客戶資料
     ## public function new(Request $request){
-    public function new(Request $KKRequest){
+    public function new(Request $Request){
+        $validator = Validator::make(
+            $request->all(),[
+              'Name' => 'required|string',
+              'Phone' => 'required|string'
+            ],[
+              'required' => '不可為空白',
+              'required' => '須為字串'
+            ]
+          );
+          // 判斷方式
+          if ($validator->fail()){
+            return redirect()->back()->withErrors($validator);
+          } else {
+        
+            $SS = QQ::orderBy('Cusid','desc')->first();
+            return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
+          }
 
-      //$customers = Customer::all();
-      //return View::make('new',['customers' => $customers]);
 
-      ### <?php echo $_GET['Cusid'];
-      ### web.php 設定是get傳送 
-      ### $全部紀錄 = QQ::all(); 
-      # 第一筆
-      # $CC = QQ::orderBy('Cusid','asc')->first();
-      # 最後一筆(是一個QQ類別)
-      $SS = QQ::orderBy('Cusid','desc')->first();
-    //   $CC = (int)$SS;
-    //   $AA = (string)$CC;
-      return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
+    //   //$customers = Customer::all();
+    //   //return View::make('new',['customers' => $customers]);
+
+    //   ### <?php echo $_GET['Cusid'];
+    //   ### web.php 設定是get傳送 
+    //   ### $全部紀錄 = QQ::all(); 
+    //   # 第一筆
+    //   # $CC = QQ::orderBy('Cusid','asc')->first();
+    //   # 最後一筆(是一個QQ類別)
+    //   $SS = QQ::orderBy('Cusid','desc')->first();
+    // //   $CC = (int)$SS;
+    // //   $AA = (string)$CC;
+    //   return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
     }
  
-
+    // antallen@gmail.com
 
 
     // /**
