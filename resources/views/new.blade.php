@@ -19,7 +19,12 @@
                 <div class="col-sm-2"></div>
                 <label for="Name" class="col-sm-2 col-form-label">客戶姓名</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="Name" name="Name" value="">
+                    <input type="text" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" id="Name" name="Name" value="">
+                        @if ($errors->has('name'))
+                        <div class="invalid-feeback">
+                        <strong>{{ $errors->first('name') }}</strong>
+                        </div>
+                        @endif
                 </div>
             </div>
             <div class="form-group row">

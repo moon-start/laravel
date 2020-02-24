@@ -51,14 +51,14 @@ class EditCustomer extends FormRequest
     //     ];
     // }
 
-    protected function failedValidation(Validator $validator)
-    {
-    }
-    // 不做任何動作，由 controller 處理: 需要將 getValidatorInstance() 改為 public，
-    // 讓 controller 可以取到 validator 實例並進一步得到錯誤訊息
-    public function getValidatorInstance()
-    {
-        return parent::getValidatorInstance();
-    }
+    // protected function failedValidation(Validator $validator)
+    // {
+    // }
+    // // 不做任何動作，由 controller 處理: 需要將 getValidatorInstance() 改為 public，
+    // // 讓 controller 可以取到 validator 實例並進一步得到錯誤訊息
+    // public function getValidatorInstance()
+    // {
+    //     return parent::getValidatorInstance();
+    // }
 }
 

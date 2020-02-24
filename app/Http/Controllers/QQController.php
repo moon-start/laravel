@@ -175,7 +175,9 @@ class QQController extends Controller
 
     ##### URL::192.168.1.1/new
     ## 新增客戶資料
-    public function new(Request $request){
+    ## public function new(Request $request){
+    public function new(Request $KKRequest){
+
       //$customers = Customer::all();
       //return View::make('new',['customers' => $customers]);
 
@@ -184,12 +186,11 @@ class QQController extends Controller
       ### $全部紀錄 = QQ::all(); 
       # 第一筆
       # $CC = QQ::orderBy('Cusid','asc')->first();
-      # 最後一筆
+      # 最後一筆(是一個QQ類別)
       $SS = QQ::orderBy('Cusid','desc')->first();
     //   $CC = (int)$SS;
-      $CC = $SS->Cusid+1;
     //   $AA = (string)$CC;
-      return View::make('new',['Cusid'=>$CC]);  ### URL沒有顯示??
+      return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
     }
  
 
