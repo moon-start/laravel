@@ -199,10 +199,12 @@ class QQController extends Controller
     // }
     ## 將新客戶資料寫入資料庫
     public function storeABC(Request $request){
-        if ($request->cancel){
-            $customers = QQ::all();
-            return View::make('board',['customers' => $customers]);
-        }
+        // if ($request->cancel){
+        //     $customers = QQ::all();
+        //     return View::make('board',['customers' => $customers]);
+        // }
+
+        ## 新增  一筆紀錄
         $customers = new QQ;
         $customers->Cusid=$request->input('Cusid');
         $customers->Name=$request->input('Name');
@@ -295,6 +297,8 @@ class QQController extends Controller
             $customers = QQ::all();
             return View::make('board',['customers' => $customers]);
         } 
+
+        ### 填入更新內容 
         $customers = QQ::where('Cusid',$request->input('oldId'))
                                     ->update(['Cusid'=> $request->input('Cusid'),
                                     'Name'=> $request->input('Name'),
@@ -319,10 +323,13 @@ class QQController extends Controller
         //
     }
 
-     ## 刪除客戶資料
-     public function delete(Request $request){
-      QQ::where('Cusid',$request->input('Cusid'))->delete();
-      $customers = QQ::all();
-      return View::make('board',['customers' => $customers]); 
-  }
+    ## 刪除客戶資料
+    public function delete(Request $request){
+        ## 刪除
+        QQ::where('Cusid',$request->input('Cusid'))->delete();
+
+        ## 重新取出列表
+        $customers = QQ::all();
+        return View::make('board',['customers' => $customers]); 
+    }
 }

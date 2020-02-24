@@ -33,6 +33,8 @@ class CreateCustomersTable extends Migration
       //協助建立追踪的時間
       $table->timestamps();
     });
+
+    
   }
   
   public function down()
