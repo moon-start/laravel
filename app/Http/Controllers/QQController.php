@@ -199,12 +199,17 @@ class QQController extends Controller
     // }
     ## 將新客戶資料寫入資料庫
     public function storeABC(Request $request){
+        ### 取消時..的返回頁面
+        ### <input type="submit" class="btn btn-warning" value="取消" name="cancel">
+        ### $request->cancel .... 取布林?
         if ($request->cancel){
             $customers = QQ::all();
             return View::make('board',['customers' => $customers]);
         }
 
         ## 新增  一筆紀錄
+        ## <input type="text"class="form-control" id="Cusid" name="Cusid" value="">
+        ## $request->input('Cusid');....取內容
         $customers = new QQ;
         $customers->Cusid=$request->input('Cusid');
         $customers->Name=$request->input('Name');
