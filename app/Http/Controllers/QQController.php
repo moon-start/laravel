@@ -176,69 +176,26 @@ class QQController extends Controller
     ##### URL::192.168.1.1/new
     ## 新增客戶資料
     ## public function new(Request $request){
-    public function new(Request $request){
-        ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
-        $validator = Validator::make(
-            $request->all(),[
-              'Name' => 'required|string',
-              'Phone' => 'required|string'
-            ],[
-              'required' => '不可為空白',
-              'required' => '須為字串'
-            ]
-        );
+    public function new(){
+      //$customers = Customer::all();
+      //return View::make('new',['customers' => $customers]);
 
-
-        if ($validator->fails())
-        {
-            ## 正確時
-            // $SS = QQ::orderBy('Cusid','desc')->first();
-            // return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
-            return redirect()->back()->withErrors($validator->errors());
-
-        //   // 判斷方式
-        //   if ($validator->fails()){
-        //     return redirect()->back()->withErrors($validator);
-        } else {
-            ## 錯誤時
-            $SS = QQ::orderBy('Cusid','desc')->first();
-            return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
-        }
-
-
-    //   //$customers = Customer::all();
-    //   //return View::make('new',['customers' => $customers]);
-
-    //   ### <?php echo $_GET['Cusid'];
-    //   ### web.php 設定是get傳送 
-    //   ### $全部紀錄 = QQ::all(); 
-    //   # 第一筆
-    //   # $CC = QQ::orderBy('Cusid','asc')->first();
-    //   # 最後一筆(是一個QQ類別)
-    //   $SS = QQ::orderBy('Cusid','desc')->first();
-    // //   $CC = (int)$SS;
-    // //   $AA = (string)$CC;
-    //   return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
+      ### <?php echo $_GET['Cusid'];
+      ### web.php 設定是get傳送 
+      ### $全部紀錄 = QQ::all(); 
+      # 第一筆
+      # $CC = QQ::orderBy('Cusid','asc')->first();
+      # 最後一筆(是一個QQ類別)
+      $SS = QQ::orderBy('Cusid','desc')->first();
+    //   $CC = (int)$SS;
+    //   $AA = (string)$CC;
+      return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
     }
  
     // antallen@gmail.com
 
 
-    // /**
-    //  * Store a newly created resource in storage.
-    //  *
-    //  * @param  \Illuminate\Http\Request  $request
-    //  * @return \Illuminate\Http\Response
-    //  */
-    // public function store(Request $request)
-    // {
-    //   $validatedData = $request->validate([
-    //     'title' => 'required|unique:posts|max:255',
-    //     'body' => 'required',
-    //   ]);
-
-    // }
-
+  
     ## new 畫面
     ## 將新客戶資料寫入資料庫
     public function storeABC(Request $request){
@@ -250,18 +207,55 @@ class QQController extends Controller
             return View::make('board',['customers' => $customers]);
         }
 
-        ## 新增  一筆紀錄
-        ## <input type="text"class="form-control" id="Cusid" name="Cusid" value="">
-        ## $request->input('Cusid');....取內容
-        $customers = new QQ;
-        ## 這是一個新的SQL      ## new QQ;
-        $customers->Cusid=$request->input('Cusid');
-        $customers->Name=$request->input('Name');
-        $customers->Address=$request->input('Address');
-        $customers->Phone=$request->input('Phone');
-        $customers->save();
-        ## 導向URL:: http://192.168.1.1/QQ 頁面
-        return redirect('QQ');
+        // ## 新增  一筆紀錄
+        // ## <input type="text"class="form-control" id="Cusid" name="Cusid" value="">
+        // ## $request->input('Cusid');....取內容
+        // $customers = new QQ;
+        // ## 這是一個新的SQL      ## new QQ;
+        // $customers->Cusid=$request->input('Cusid');
+        // $customers->Name=$request->input('Name');
+        // $customers->Address=$request->input('Address');
+        // $customers->Phone=$request->input('Phone');
+        // $customers->save();
+        // ## 導向URL:: http://192.168.1.1/QQ 頁面
+        // return redirect('QQ');
+
+            ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
+            $validator = Validator::make(
+                $request->all(),[
+                  'Name' => 'required|string',
+                  'Phone' => 'required|string'
+                ],[
+                  'required' => '不可為空白',
+                  'required' => '須為字串'
+                ]
+            );
+    
+    
+            if ($validator->fails())
+            {
+                
+                // $SS = QQ::orderBy('Cusid','desc')->first();
+                // return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
+                return redirect()->back()->withErrors($validator->errors());
+
+                ## 返回上一个页面，注意避免死循环
+                ## redirect()->back();
+    
+            //   // 判斷方式
+            //   if ($validator->fails()){
+            //     return redirect()->back()->withErrors($validator);
+            } else {
+                ## 新增  一筆紀錄
+                $customers = new QQ;
+                $customers->Cusid=$request->input('Cusid');
+                $customers->Name=$request->input('Name');
+                $customers->Address=$request->input('Address');
+                $customers->Phone=$request->input('Phone');
+                $customers->save();
+                ## 導向URL:: http://192.168.1.1/QQ 頁面
+                return redirect('QQ');
+            }
     }
 
 
