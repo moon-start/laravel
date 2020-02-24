@@ -187,7 +187,7 @@ class QQController extends Controller
             ]
           );
           // 判斷方式
-          if ($validator->fail()){
+          if ($validator->fails()){
             return redirect()->back()->withErrors($validator);
           } else {
         
