@@ -185,10 +185,10 @@ class QQController extends Controller
       # 第一筆
       # $CC = QQ::orderBy('Cusid','asc')->first();
       # 最後一筆
-      $CC = QQ::orderBy('Cusid','desc')->first();
+      $SS = QQ::orderBy('Cusid','desc')->first();
       $CC = (int)$CC+1;
-      $CC = (string)$CC;
-      return View::make('new',['Cusid'=>$CC]);  ### URL沒有顯示??
+      $AA = (string)$CC;
+      return View::make('new',['Cusid'=>$AA]);  ### URL沒有顯示??
     }
  
 
