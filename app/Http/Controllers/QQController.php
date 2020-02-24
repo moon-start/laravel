@@ -175,11 +175,20 @@ class QQController extends Controller
 
     ##### URL::192.168.1.1/new
     ## 新增客戶資料
-    public function new(){
+    public function new(Request $request){
       //$customers = Customer::all();
       //return View::make('new',['customers' => $customers]);
-      return View::make('new');
+
+      ### <?php echo $_GET['Cusid'];
+      ### web.php 設定是get傳送 
+      ### $全部紀錄 = QQ::all(); 
+      # 第一筆
+      # $CC = QQ::orderBy('Cusid','asc')->first();
+      # 最後一筆
+      $CC = QQ::orderBy('Cusid','desc')->first();
+      return View::make('new',['Cusid'=>$CC]);
     }
+ 
 
 
 
@@ -197,6 +206,8 @@ class QQController extends Controller
     //   ]);
 
     // }
+
+    ## new 畫面
     ## 將新客戶資料寫入資料庫
     public function storeABC(Request $request){
         ### 取消時..的返回頁面
@@ -211,6 +222,7 @@ class QQController extends Controller
         ## <input type="text"class="form-control" id="Cusid" name="Cusid" value="">
         ## $request->input('Cusid');....取內容
         $customers = new QQ;
+        ## 這是一個新的SQL      ## new QQ;
         $customers->Cusid=$request->input('Cusid');
         $customers->Name=$request->input('Name');
         $customers->Address=$request->input('Address');
@@ -298,12 +310,21 @@ class QQController extends Controller
     // }
      ## 更新客戶資料
      public function update(Request $request){
+        ## 
         if ($request->cancel){
             $customers = QQ::all();
             return View::make('board',['customers' => $customers]);
         } 
 
+        ### edit 送出紐的內容
+        ### <input type="hidden" id="oldId" name="oldId"  value="<?php echo $_GET['Cusid']; 
         ### 填入更新內容 
+        // QQ::find(1);   ## id ...
+        // $post = QQ::find($request->input('oldId'));
+        // // $post->Name = 'James';
+        // $post->Name = 'PeterXP';
+        // #$post->Phone = '0912345678';
+        // $post->save();
         $customers = QQ::where('Cusid',$request->input('oldId'))
                                     ->update(['Cusid'=> $request->input('Cusid'),
                                     'Name'=> $request->input('Name'),
