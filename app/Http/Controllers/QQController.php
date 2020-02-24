@@ -221,20 +221,21 @@ class QQController extends Controller
         // return redirect('QQ');
 
 
-#############################
+############################# 沒用出結果
+## $validator = $request->validated();
 
-            // ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
-            // $validator = Validator::make(
-            //     $request->all(),[
-            //       'Name' => 'required|string',
-            //       'Phone' => 'required|string'
-            //     ],[
-            //       'required' => '不可為空白',
-            //       'required' => '須為字串'
-            //     ]
-            // );
+            ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
+            $validator = Validator::make(
+                $request->all(),[
+                  'Name' => 'required|string',
+                  'Phone' => 'required|string'
+                ],[
+                  'required' => '不可為空白',
+                  'required' => '須為字串'
+                ]
+            );
 
-        $validator = $request->validated();
+      
     
             if ($validator->fails())
             {
