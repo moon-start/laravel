@@ -177,6 +177,7 @@ class QQController extends Controller
     ## 新增客戶資料
     ## public function new(Request $request){
     public function new(Request $request){
+        ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
         $validator = Validator::make(
             $request->all(),[
               'Name' => 'required|string',
@@ -185,15 +186,22 @@ class QQController extends Controller
               'required' => '不可為空白',
               'required' => '須為字串'
             ]
-          );
-          // 判斷方式
-          if ($validator->fails()){
-            return redirect()->back()->withErrors($validator);
-          } else {
+        );
+
+
+        if ($validator->fails())
+        {
+        
+            
+
+        //   // 判斷方式
+        //   if ($validator->fails()){
+        //     return redirect()->back()->withErrors($validator);
+        } else {
         
             $SS = QQ::orderBy('Cusid','desc')->first();
             return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
-          }
+        }
 
 
     //   //$customers = Customer::all();
