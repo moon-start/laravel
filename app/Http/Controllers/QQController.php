@@ -174,7 +174,7 @@ class QQController extends Controller
 
 
     ##### URL::192.168.1.1/new
-    //新增客戶資料
+    ## 新增客戶資料
     public function new(){
       //$customers = Customer::all();
       //return View::make('new',['customers' => $customers]);
@@ -183,20 +183,36 @@ class QQController extends Controller
 
 
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-      $validatedData = $request->validate([
-        'title' => 'required|unique:posts|max:255',
-        'body' => 'required',
-      ]);
+    // /**
+    //  * Store a newly created resource in storage.
+    //  *
+    //  * @param  \Illuminate\Http\Request  $request
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function store(Request $request)
+    // {
+    //   $validatedData = $request->validate([
+    //     'title' => 'required|unique:posts|max:255',
+    //     'body' => 'required',
+    //   ]);
 
+    // }
+    ## 將新客戶資料寫入資料庫
+    public function storeABC(Request $request){
+        if ($request->cancel){
+            $customers = Customer::all();
+            return View::make('board',['customers' => $customers]);
+        }
+        $customers = new Customer;
+        $customers->Cusid=$request->input('Cusid');
+        $customers->Name=$request->input('Name');
+        $customers->Address=$request->input('Address');
+        $customers->Phone=$request->input('Phone');
+        $customers->save();
+        return redirect('customer');
     }
+
+
 
     /**
      * Display the specified resource.
@@ -302,7 +318,7 @@ class QQController extends Controller
         //
     }
 
-     //刪除客戶資料
+     ## 刪除客戶資料
      public function delete(Request $request){
       QQ::where('Cusid',$request->input('Cusid'))->delete();
       $customers = QQ::all();

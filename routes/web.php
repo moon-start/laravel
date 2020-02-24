@@ -32,12 +32,14 @@ Route::get('/', function () {
 ########### 註冊 new方法...在QQController@new'
 ## 客戶列表
 Route::get('QQ','QQController@index');
+## 新增客戶資料(進入new畫面)
 Route::get('new','QQController@new')->name('new123');
-Route::post('store','QQController@store');
+Route::post('store','QQController@storeABC');
 ## 修改客戶資料表格(進入deit)
 Route::get('edit','QQController@edit');
 ## 更新客戶資料(送出)
 Route::post('update','QQController@update');
+## 刪除客戶資料
 Route::get('delete','QQController@delete');
 
 

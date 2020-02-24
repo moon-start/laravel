@@ -39,10 +39,9 @@
                 <td>
                 {{ action('QQController@new') }}
                 </td>
-                <td>
-                {{ route('new123') }}
-                </td>
+                
                 <!-- <td> 顯示測試
+                 route('new123')
                  action('QQController@update') 
                 </td> -->
             </tr>
