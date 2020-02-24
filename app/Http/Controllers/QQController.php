@@ -185,8 +185,8 @@ class QQController extends Controller
       # 第一筆
       # $CC = QQ::orderBy('Cusid','asc')->first();
       # 最後一筆
-      $CC = QQ::orderBy('Cusid','desc')->first();
-      return View::make('new',['Cusid'=>$CC]);
+    //   $CC = QQ::orderBy('Cusid','desc')->first();
+      return View::make('new',['Cusid'=>'6']);
     }
  
 
@@ -275,6 +275,7 @@ class QQController extends Controller
     //   return view('board', compact(['customers', 'cusid','RR']));
     // }
     ## 修改客戶資料表格
+    ## board.blade.php <a href="{{ action('QQController@edit',[...]) 傳進來參數
     public function edit(Request $request){
         //$customers=$request->Cusid;
         //dd($customers);
