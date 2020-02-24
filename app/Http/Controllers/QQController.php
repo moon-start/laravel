@@ -185,8 +185,8 @@ class QQController extends Controller
       # 第一筆
       # $CC = QQ::orderBy('Cusid','asc')->first();
       # 最後一筆
-    //   $CC = QQ::orderBy('Cusid','desc')->first();
-      return View::make('new',['Cusid'=>'6']);
+      $CC = QQ::orderBy('Cusid','desc')->first();
+      return View::make('new',['Cusid'=>$CC+1]);
     }
  
 
