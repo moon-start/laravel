@@ -237,7 +237,9 @@ class QQController extends Controller
                 
                 // $SS = QQ::orderBy('Cusid','desc')->first();
                 // return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
-                return redirect()->back()->withErrors($validator->errors());
+                
+                // return redirect()->back()->withErrors($validator->errors());
+                return redirect()->back()->withErrors($validator);
 
                 ## 返回上一个页面，注意避免死循环
                 ## redirect()->back();
