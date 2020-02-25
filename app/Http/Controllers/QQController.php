@@ -198,7 +198,7 @@ class QQController extends Controller
   
     ## new 畫面
     ## 將新客戶資料寫入資料庫
-    public function storeABC(KKRequest $request){
+    public function storeABC(Request $request){
         ### 取消時..的返回頁面
         ### <input type="submit" class="btn btn-warning" value="取消" name="cancel">
         ### $request->cancel .... 取布林?
