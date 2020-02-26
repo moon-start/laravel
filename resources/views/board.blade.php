@@ -22,7 +22,8 @@
             <tr>
                     <td><?php echo $customer->Cusid; ?></td>
                     <td><?php echo $customer->Name; ?></td>
-                <td><?php echo $customer->Phone; ?></td>
+                    <td><?php echo $customer->Phone; ?></td>
+                    <td><?php echo $customer->itemOf->item; ?></td>
                 <td>
                     <a href="{{ action('QBController@edit', 
                                 ['Cusid'=>$customer->Cusid,
