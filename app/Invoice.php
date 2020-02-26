@@ -42,7 +42,7 @@ class Invoice extends Model
       // return $this->hasOne('App\Invoice','id','Payment_ID');
 
       // return $this->hasOne('App\Payment');
-      return $this->hasOne('App\Payment','id','Payment_ID');
+      return $this->hasOne('App\Payment','Payment_ID','id');
     }
 
 
