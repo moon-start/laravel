@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 ### 新增(關聯用)
 use App\Item;
+use App\Payment;
 
 class Invoice extends Model
 {
