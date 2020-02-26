@@ -17,7 +17,7 @@ class CreateItempppTable extends Migration
             // $table->increments('Item_id');  //int 主見
 
             ## id
-            $table->bigIncrements('id');
+            $table->bigIncrements('item_id');
             ## (多)
             ## $table->integer('Invoice_ID')->index();
             $table->string('Invoice_ID')->index();

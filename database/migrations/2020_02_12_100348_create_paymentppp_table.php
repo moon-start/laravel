@@ -23,7 +23,7 @@ class CreatePaymentpppTable extends Migration
             ####### 暫時取消 $table->bigIncrements('id');
             ##$table->string('Invoice_ID',20)->index();
             ## 日期
-            $table->dateTime('id')->primary();
+            $table->dateTime('payment_id')->primary();
             ## 付款
             $table->string('payment',20)->index();
             ## 點數
