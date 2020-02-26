@@ -14,17 +14,18 @@ class CreateInvoiceTable extends Migration
     public function up()
     {
         Schema::create('invoice', function (Blueprint $table) {
-            // $table->bigIncrements('id');
+          
             // $table->timestamps();
 
+            $table->bigIncrements('id');
             ## 發票
-            ## $table->string('Invoice_name',11)->unique()->index();
-            $table->string('id',11)->primary();
+            // $table->string('id',11)->primary();
+            $table->string('Invoice',11)->unique()->index();
             ## 地點
             $table->string('location',20)->index(); 
             ## (外部ID) 
-            ## $table->integer('Payment_ID')->unique()->index();
-            $table->dateTime('Payment_ID')->unique()->index();
+            // $table->dateTime('Payment_ID')->unique()->index();
+            $table->integer('Payment_ID')->unique()->index();
         });
     }
 

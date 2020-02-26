@@ -20,8 +20,8 @@ class CreateItemTable extends Migration
              ## id
             $table->bigIncrements('id');
             ## (多)
-            ## $table->integer('Invoice_ID')->index();
-            $table->string('Invoice_ID')->index();
+            // $table->string('Invoice_ID')->index();
+            $table->integer('Invoice_ID')->index();
             ## 項目
             $table->string('item',20)->index();
             ## integer 加上長度 會錯誤
