@@ -39,7 +39,8 @@ class Invoice extends Model
       ### 一對一的連接欄位
       // return $this->hasOne('App\Invoice','Payment_id','Payment_ID');
       // return $this->hasOne('App\Invoice','id','Payment_ID');
-      return $this->hasOne('App\Payment','id');
+      return $this->hasOne('App\Payment');
+      // return $this->hasOne('App\Payment','id');
     }
 
 
