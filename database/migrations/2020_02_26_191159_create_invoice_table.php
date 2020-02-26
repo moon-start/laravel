@@ -18,15 +18,15 @@ class CreateInvoiceTable extends Migration
             // $table->timestamps();
 
             // $table->bigIncrements('id'); //big
-            $table->increments('id');    //int
+            // $table->increments('id');    //int
             ## 發票
-            // $table->string('id',11)->primary();
-            $table->string('Invoice',11)->unique()->index();
+            $table->string('id',11)->primary();
+            // $table->string('Invoice',11)->unique()->index();
             ## 地點
             $table->string('location',20)->index(); 
             ## (外部ID) 
-            // $table->dateTime('Payment_ID')->unique()->index();
-            $table->integer('Payment_ID')->unique()->index();
+            $table->dateTime('Payment_ID')->unique()->index();
+            // $table->integer('Payment_ID')->unique()->index();
         });
     }
 
