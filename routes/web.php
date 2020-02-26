@@ -45,6 +45,27 @@ Route::get('delete','QQController@delete');
 
 
 
+###### 修改
+###### views/welcome.blade.php        包含  <a href="./QB">頁面瀏覽</a>
+###### views/partials/nav.blade.php   包含 index 和 new
+###### views/partials/board.blade.php 包含 edit  和 delete
+###### views/partials/edit.blade.php  包含 edit  
+###### views/partials/new.blade.php   包含 @storeABC 
+Route::get('QB','QBController@index');   
+## 新增客戶資料(進入new畫面)
+Route::get('new','QBController@new')->name('new123');
+Route::post('store','QBController@storeABC');
+## 修改客戶資料表格(進入deit)
+Route::get('edit','QBController@edit');
+## 更新客戶資料(送出)
+Route::post('update','QBController@update');
+## 刪除客戶資料
+Route::get('delete','QBController@delete');
+
+
+
+
+
 // ## 驗證
 // Route::get('post/create', 'QQController@create');
 // Route::post('post', 'QQController@store');

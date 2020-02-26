@@ -24,21 +24,17 @@
                     <td><?php echo $customer->Name; ?></td>
                 <td><?php echo $customer->Phone; ?></td>
                 <td>
-                    <a href="{{ action('QQController@edit', 
+                    <a href="{{ action('QBController@edit', 
                                 ['Cusid'=>$customer->Cusid,
                                 'Name'=>$customer->Name,
                                 'Address'=>$customer->Address,
                                 'Phone'=>$customer->Phone]) }}" class="btn btn-success btn-sm">編輯</a>
                 
-                    <a href="{{ action('QQController@delete', ['Cusid'=>$customer->Cusid]) }}" class="btn btn-danger btn-sm">刪除</a>
+                    <a href="{{ action('QBController@delete', ['Cusid'=>$customer->Cusid]) }}" class="btn btn-danger btn-sm">刪除</a>
                 </td>
-                <td>
-                {{ url('/board') }}
+               
+                <!-- url('/board') -->
                 <!-- http://192.168.1.115/board -->
-                </td>
-                <td>
-                {{ action('QQController@new') }}
-                </td>
                 
                 <!-- <td> 顯示測試
                  route('new123')

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title','新增客戶')
 @section('content')
-<form action="{{ action('QQController@storeABC') }}" method="post">
+<form action="{{ action('QBController@storeABC') }}" method="post">
     @csrf
     <div class="row justify-content-center">
     <div class="col-md-8">

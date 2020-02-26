@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="./QQ">Customer</a>
+                    <a href="./QB">頁面瀏覽</a>
                     <!-- <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
@@ -93,7 +93,7 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a> -->
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/moon-start/laravel">GitHub</a>
                 </div>
             </div>
         </div>

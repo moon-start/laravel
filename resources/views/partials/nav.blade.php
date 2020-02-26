@@ -5,12 +5,12 @@
         </a>
         <ul class="navbar-nav ml-auto mt-4 mt-lg-0">
             <li class="nav-item active">  
-                <a href="{{ action('QQController@index') }}" class="nav-link">
+                <a href="{{ action('QBController@index') }}" class="nav-link">
                 客戶列表
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ action('QQController@new')}}" class="nav-link">
+                <a href="{{ action('QBController@new')}}" class="nav-link">
                 新增客戶
                 </a>
             </li>

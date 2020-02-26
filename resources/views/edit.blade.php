@@ -4,9 +4,9 @@
 <td>
 <!-- 會傳回web.php 設定的URL -->
 <!-- http://192.168.1.115/update -->
-{{action('QQController@update')}}
+<!--{{action('QQController@update')-->
 </td>
-<form action="{{ action('QQController@update') }}" method="post">
+<form action="{{ action('QBController@update') }}" method="post">
     @csrf
     <div class="row justify-content-center">
     <div class="col-md-8">
