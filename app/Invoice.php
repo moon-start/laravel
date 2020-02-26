@@ -4,6 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+
+### 新增(關聯用)
+use App\Item;
+
 class Invoice extends Model
 {
   public function itemOf()
