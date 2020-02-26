@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 ## 資料庫
 use Route;
 use View;
-// use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 use App\QQ;
 use App\Payment;
 use App\Invoice;
