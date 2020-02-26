@@ -57,4 +57,23 @@ class Invoice extends Model
     protected $primarykey = 'id';
     //如果沒有設定 created_at 與 updated_at欄位，則可以設成 false
     public $timestamps = true;
+
+
+    public function paymentOf()
+    {
+      ### 和 Payment 做一對一關聯
+      ### 一對一的連接欄位
+      // return $this->hasOne('App\Invoice','Payment_id','Payment_ID');
+      // return $this->hasOne('App\Invoice','id','Payment_ID');
+
+      // return $this->hasOne('App\Payment');
+      // return $this->hasOne('App\Payment','Payment_ID','id');
+      // return $this->hasOne(paymentppp::class,'Payment_ID');
+
+      ## 預設是 Payment_id
+      // return $this->belongsTo('App\Payment','id','Payment_ID'); 
+
+      return $this->hasOne('App\Payment','id','Payment_ID');
+    }
+
 }
