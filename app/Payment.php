@@ -27,8 +27,8 @@ class Payment extends Model
 
 
         ######  Invoice ~Payment_ID  對  Payment ~id
-        // return $this->hasOne('App\Invoice','Payment_ID');
-        return $this->hasOne(Invoice::class,'Payment_ID');
+        return $this->hasOne('App\Invoice','Payment_ID');
+        // return $this->hasOne(Invoice::class,'Payment_ID');
 
         
         ##  使用方式
