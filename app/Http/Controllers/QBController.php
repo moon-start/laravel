@@ -35,17 +35,16 @@ class QBController extends Controller
     {
         $RR = 'QQP';
 
-        # 客戶列表 # 取出紀錄
-        // $customers = QQ::all();
-
-        ## all()表示  紀錄的陣列
-        ## // $customer = Payment::find(1)->invoiceOf->Shop_name;
+   
+        
         $customers = Invoice::all();  
         
-        $AA = Payment::find(1)->invoiceOf->location;
 
-        // $pointsA = Invoice::find(1)->payment->points;
-        // $points = Invoice::find(1)->Item->item;
+        ### A
+        // $AA = Payment::find(1)->invoiceOf->location;
+        ### B
+        $BB = Invoice::find(1)->paymentOf->points;
+     
 
 
         return View::make('board',['customers' => $customers]);
