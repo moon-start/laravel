@@ -20,9 +20,9 @@
             foreach ($customers as $customer){
             ?>
             <tr>
-                    <td><?php echo $customer->Cusid; ?></td>
-                    <td><?php echo $customer->Name; ?></td>
-                    <td><?php echo $customer->Phone; ?></td>
+                    <td><?php echo $customer->id; ?></td>
+                    <td><?php echo $customer->location; ?></td>
+                    <td><?php echo $customer->Payment_ID; ?></td>
                     <td><?php echo $customer->itemOf->item; ?></td>
                 <td>
                     <a href="{{ action('QBController@edit', 
