@@ -23,7 +23,7 @@
                     <td><?php echo $customer->id; ?></td>
                     <td><?php echo $customer->location; ?></td>
                     <td><?php echo $customer->Payment_ID; ?></td>
-                    <td><?php echo $customer->PaymentOf->payment; ?></td>
+                    <td><?php echo $customer->PaymentOf; ?></td>
                 <td>
                     <a href="{{ action('QBController@edit', 
                                 ['Cusid'=>$customer->Cusid,
