@@ -17,7 +17,8 @@ class CreateInvoiceTable extends Migration
           
             // $table->timestamps();
 
-            $table->bigIncrements('id');
+            // $table->bigIncrements('id'); //big
+            $table->increments('id');    //int
             ## 發票
             // $table->string('id',11)->primary();
             $table->string('Invoice',11)->unique()->index();

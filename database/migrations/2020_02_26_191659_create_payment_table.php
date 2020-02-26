@@ -19,7 +19,8 @@ class CreatePaymentTable extends Migration
 
 
             ####### 暫時取消 
-            $table->bigIncrements('id');
+            // $table->bigIncrements('id');
+            $table->increments('id');    //int
     
 
             ## 日期
