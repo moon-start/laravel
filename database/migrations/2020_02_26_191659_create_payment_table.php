@@ -21,10 +21,10 @@ class CreatePaymentTable extends Migration
             ####### 暫時取消 
             $table->bigIncrements('id');
     
-            
+
             ## 日期
             // $table->dateTime('id')->primary();
-            $table->dateTime('date',20)->index();
+            $table->dateTime('date')->index();
             ## 付款
             $table->string('payment',20)->index();
             ## 點數
