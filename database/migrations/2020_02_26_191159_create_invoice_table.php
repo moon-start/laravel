@@ -19,7 +19,7 @@ class CreateInvoiceTable extends Migration
 
             ## 發票
             ## $table->string('Invoice_name',11)->unique()->index();
-            $table->string('invoice_id',11)->primary();
+            $table->string('id',11)->primary();
             ## 地點
             $table->string('location',20)->index(); 
             ## (外部ID) 

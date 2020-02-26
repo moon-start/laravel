@@ -15,6 +15,9 @@ class Payment extends Model
         ### 一對一的連接欄位
         // return $this->hasOne('App\Invoice','Payment_id','Payment_ID');
         // return $this->hasOne('App\Invoice','id','Payment_ID');
+
+
+        ######  Invoice ~Payment_ID  對  Payment ~id
         return $this->hasOne('App\Invoice','Payment_ID');
 
         
@@ -28,6 +31,6 @@ class Payment extends Model
 
     protected $table = 'payment'; 
     ### 注意ID是否有改 否則這行修改
-    protected $primarykey = 'payment_id';
+    protected $primarykey = 'id';
     public $timestamps = true;
 }

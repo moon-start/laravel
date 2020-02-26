@@ -18,7 +18,7 @@ class CreatePaymentTable extends Migration
             // $table->timestamps();
 
              ## 日期
-             $table->dateTime('payment_id')->primary();
+             $table->dateTime('id')->primary();
              ## 付款
              $table->string('payment',20)->index();
              ## 點數
