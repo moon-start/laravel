@@ -31,7 +31,7 @@ class QBController extends Controller
         $customers = Invoice::all();  
         
         // $points = Invoice::find(1)->PaymentOf->points;
-        $points = Invoice::find(1)->PaymentOf;
+        $points = Invoice::find(1)->PaymentOf();
 
 
         return View::make('board',['customers' => $customers]);
