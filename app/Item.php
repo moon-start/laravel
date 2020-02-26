@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Item extends Model
 {
-    protected $table = 'itemppp'; 
+    protected $table = 'item'; 
     protected $primarykey = 'id';
     public $timestamps = true;
 }

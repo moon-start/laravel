@@ -26,7 +26,7 @@ class Payment extends Model
   
     // }
 
-    protected $table = 'paymentppp'; 
+    protected $table = 'payment'; 
     ### 注意ID是否有改 否則這行修改
     protected $primarykey = 'id';
     public $timestamps = true;

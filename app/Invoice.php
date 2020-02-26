@@ -43,14 +43,16 @@ class Invoice extends Model
 
       // return $this->hasOne('App\Payment');
       // return $this->hasOne('App\Payment','Payment_ID','id');
-      return $this->hasOne(paymentppp::class,'Payment_ID');
+      // return $this->hasOne(paymentppp::class,'Payment_ID');
 
       ## 預設是 Payment_id
       // return $this->belongsTo('App\Payment','id','Payment_ID'); 
+
+      return $this->hasOne('App\Payment','payment_id','Payment_ID');
     }
 
 
-    protected $table = 'invoiceppp'; 
+    protected $table = 'invoice'; 
     ## 預設 primaryKey 為 id，如果不是的話需要另外設定
     protected $primarykey = 'id';
     //如果沒有設定 created_at 與 updated_at欄位，則可以設成 false
