@@ -9,7 +9,7 @@ use App\Invoice;
 
 class Payment extends Model
 {
-    public function invoiceOf()
+    public function invoice()
     {
         ### 和 Payment 做一對一關聯
         ### 一對一的連接欄位
@@ -18,7 +18,8 @@ class Payment extends Model
 
 
         ######  Invoice ~Payment_ID  對  Payment ~id
-        return $this->hasOne('App\Invoice','Payment_ID');
+        // return $this->hasOne('App\Invoice','Payment_ID');
+        return $this->hasOne(Invoice::class,'Payment_ID','id');
 
         
         ##  使用方式
