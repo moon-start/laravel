@@ -43,9 +43,10 @@ class Invoice extends Model
 
       // return $this->hasOne('App\Payment');
       // return $this->hasOne('App\Payment','Payment_ID','id');
+      return $this->hasOne('App\Payment','id','Payment_ID');
 
       ## 預設是 Payment_id
-      return $this->belongsTo('App\Payment','id','Payment_ID'); 
+      // return $this->belongsTo('App\Payment','id','Payment_ID'); 
     }
 
 
