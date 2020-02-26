@@ -18,11 +18,15 @@ class CreateInvoicepppTable extends Migration
         //   $table->timestamps();
           ## int(10)
         //   $table->increments('Invoice_id');  //int
-        $table->bigIncrements('id');
+        // $table->bigIncrements('id');
         
 
-        $table->string('Invoice_name',11)->unique()->index();
-        $table->string('Shop_name',20)->index();  
+        ## 發票
+        ## $table->string('Invoice_name',11)->unique()->index();
+        $table->string('id',11)->primary();
+        ## 地點
+        $table->string('location',20)->index(); 
+        ## (外部ID) 
         $table->integer('Payment_ID')->unique()->index();
           //協助建立追踪的時間
           //$table->timestamps();

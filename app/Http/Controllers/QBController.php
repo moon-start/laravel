@@ -21,7 +21,13 @@ class QBController extends Controller
         $RR = 'QQP';
 
         # 客戶列表 # 取出紀錄
-        $customers = QQ::all(); 
+        // $customers = QQ::all();
+
+        ## all()表示  紀錄的陣列
+        ## // $customer = Payment::find(1)->invoiceOf->Shop_name;
+        $customers = Invoice::all();  
+        
+
         return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
         # return view('board', compact(['customers', 'cusid' ,'RR' ]));

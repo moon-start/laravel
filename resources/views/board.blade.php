@@ -33,6 +33,8 @@
                     <a href="{{ action('QBController@delete', ['Cusid'=>$customer->Cusid]) }}" class="btn btn-danger btn-sm">刪除</a>
                 </td>
                
+
+                <!-- ################################ -->
                 <!-- url('/board') -->
                 <!-- http://192.168.1.115/board -->
                 

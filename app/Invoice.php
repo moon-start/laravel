@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Invoice extends Model
 {
-  public function item()
+  public function itemOf()
   {
     ### 和 Payment 做一對多關聯  
     ### 一(Invoice)對多(payment)
