@@ -31,6 +31,7 @@ class QBController extends Controller
         $customers = Invoice::all();  
         
         $points = Invoice::find(1)->PaymentOf->points;
+        
 
         return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
