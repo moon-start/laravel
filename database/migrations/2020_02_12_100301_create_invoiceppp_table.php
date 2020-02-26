@@ -27,7 +27,8 @@ class CreateInvoicepppTable extends Migration
         ## 地點
         $table->string('location',20)->index(); 
         ## (外部ID) 
-        $table->integer('Payment_ID')->unique()->index();
+        ## $table->integer('Payment_ID')->unique()->index();
+        $table->dateTime('Payment_ID')->unique()->index();
           //協助建立追踪的時間
           //$table->timestamps();
           ## 軟刪除的欄位
