@@ -18,7 +18,7 @@ class Payment extends Model
 
 
 
-    public function invoice()
+    public function invoiceOf()
     {
         ### 和 Payment 做一對一關聯
         ### 一對一的連接欄位
