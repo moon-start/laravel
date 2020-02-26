@@ -9,6 +9,15 @@ use App\Invoice;
 
 class Payment extends Model
 {
+
+
+    protected $table = 'payment'; 
+    ### 注意ID是否有改 否則這行修改
+    protected $primarykey = 'id';
+    public $timestamps = true;
+
+
+
     public function invoice()
     {
         ### 和 Payment 做一對一關聯
@@ -29,9 +38,4 @@ class Payment extends Model
         //   $customer = App\Payment::find(1)->invoice->隨便一個欄位;
   
     }
-
-    protected $table = 'payment'; 
-    ### 注意ID是否有改 否則這行修改
-    protected $primarykey = 'id';
-    public $timestamps = true;
 }
