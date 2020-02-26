@@ -9,6 +9,7 @@ use Route;
 use View;
 // use Illuminate\Support\Facades\DB;
 use App\QQ;
+use App\Invoice;
 
 
 
