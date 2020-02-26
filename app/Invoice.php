@@ -11,7 +11,7 @@ use App\Payment;
 
 class Invoice extends Model
 {
-  public function itemOf()
+  public function Item()
   {
     ### 和 Payment 做一對多關聯  
     ### 一(Invoice)對多(payment)
