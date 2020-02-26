@@ -42,7 +42,7 @@ class QBController extends Controller
         ## // $customer = Payment::find(1)->invoiceOf->Shop_name;
         $customers = Invoice::all();  
         
-        $pointsA = Invoice::find(1)->payment->points;
+        // $pointsA = Invoice::find(1)->payment->points;
         // $points = Invoice::find(1)->Item->item;
 
 

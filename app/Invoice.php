@@ -33,23 +33,23 @@ class Invoice extends Model
   // }
 
 
-    ### 一對一關聯   
-    public function payment()
-    {
-      ### 和 Payment 做一對一關聯
-      ### 一對一的連接欄位
-      // return $this->hasOne('App\Invoice','Payment_id','Payment_ID');
-      // return $this->hasOne('App\Invoice','id','Payment_ID');
+    // ### 一對一關聯   
+    // public function payment()
+    // {
+    //   ### 和 Payment 做一對一關聯
+    //   ### 一對一的連接欄位
+    //   // return $this->hasOne('App\Invoice','Payment_id','Payment_ID');
+    //   // return $this->hasOne('App\Invoice','id','Payment_ID');
 
-      // return $this->hasOne('App\Payment');
-      // return $this->hasOne('App\Payment','Payment_ID','id');
-      // return $this->hasOne(paymentppp::class,'Payment_ID');
+    //   // return $this->hasOne('App\Payment');
+    //   // return $this->hasOne('App\Payment','Payment_ID','id');
+    //   // return $this->hasOne(paymentppp::class,'Payment_ID');
 
-      ## 預設是 Payment_id
-      // return $this->belongsTo('App\Payment','id','Payment_ID'); 
+    //   ## 預設是 Payment_id
+    //   // return $this->belongsTo('App\Payment','id','Payment_ID'); 
 
-      return $this->hasOne('App\Payment','payment_id','Payment_ID');
-    }
+    //   return $this->hasOne('App\Payment','payment_id','Payment_ID');
+    // }
 
 
     protected $table = 'invoice'; 
