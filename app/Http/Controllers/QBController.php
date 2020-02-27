@@ -36,13 +36,13 @@ class QBController extends Controller
         $RR = 'QQP';
 
    
-        
+
         $customers = Invoice::all();  
         
 
         ### A
         // $AA = Payment::find(1)->invoiceOf->location;
-        ### B
+        ### B 
         $BB = Invoice::find(1)->paymentOf->points;
      
 
@@ -69,11 +69,17 @@ class QBController extends Controller
       ### $全部紀錄 = QQ::all(); 
       # 第一筆
       # $CC = QQ::orderBy('Cusid','asc')->first();
+
       # 最後一筆(是一個QQ類別)
-      $SS = QQ::orderBy('Cusid','desc')->first();
+    //   $SS = QQ::orderBy('Cusid','desc')->first();
+
+      ## payment 資料表
+      ## 當前 日期時間
+      ## $SS = Payment::orderBy('id','desc')->first();
+      $DD = date(' Ym-d', time());
     //   $CC = (int)$SS;
     //   $AA = (string)$CC;
-      return View::make('new',['Cusid'=>$SS->Cusid+1]);  ### URL沒有顯示??
+      return View::make('new',['DD'=>$DD]);  ### URL沒有顯示??
     }
  
     // antallen@gmail.com
@@ -87,7 +93,11 @@ class QBController extends Controller
         ### <input type="submit" class="btn btn-warning" value="取消" name="cancel">
         ### $request->cancel .... 取布林?
         if ($request->cancel){
-            $customers = QQ::all();
+
+            // $customers = QQ::all();
+            // return View::make('board',['customers' => $customers]);
+            
+            $customers = Invoice::all();    
             return View::make('board',['customers' => $customers]);
         }
 
@@ -117,14 +127,24 @@ class QBController extends Controller
 
         } else {
             ## 新增  一筆紀錄
-            $customers = new QQ;
-            $customers->Cusid=$request->input('Cusid');
-            $customers->Name=$request->input('Name');
-            $customers->Address=$request->input('Address');
-            $customers->Phone=$request->input('Phone');
+            $customers = new Payment;
+            $customers->id     =Payment::orderBy('id','desc')->first()->id+1;
+            $customers->date   =$request->input('date');
+            $customers->payment=$request->input('payment');
+            $customers->points =$request->input('points');
+            // $customers->Phone=$request->input('Phone');
+            $customers->save();
+
+            ## 新增  一筆紀錄
+            $customers = new Invoice;
+            $customers->id      =Invoice::orderBy('id','desc')->first()->id+1;
+            $customers->Invoice =$request->input('Invoice');
+            $customers->location=$request->input('location');
+            // $customers->points =$request->input('points');
+            // $customers->Phone=$request->input('Phone');
             $customers->save();
             ## 導向URL:: http://192.168.1.1/QQ 頁面
-            return redirect('QQ');
+            return redirect('QB');
         }
     }
 

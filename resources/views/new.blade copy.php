@@ -8,21 +8,19 @@
         <div class="card">
         <div class="card-header">新增消費</div>
         <div class="card-body p-1">
-            
             <div class="form-group row">
                 <div class="col-sm-2"></div>
-                <label for="date" class="col-sm-2 col-form-label">日期</label>
+                <label for="Cusid" class="col-sm-2 col-form-label">客戶編號</label>
                 <div class="col-sm-8">
-                    <input type="text"class="form-control" id="date" name="date"   value="{{$DD}}" readonly="readonly">
+                    <input type="text"class="form-control" id="Cusid" name="Cusid"   value="{{$Cusid}}" readonly="readonly">
                 </div>
             </div>
-
             <div class="form-group row">
                 <div class="col-sm-2"></div>
-                <label for="payment" class="col-sm-2 col-form-label">付款</label>
+                <label for="Name" class="col-sm-2 col-form-label">客戶姓名</label>
                 <div class="col-sm-8">
                     <!-- 錯誤訊息的CSS .. is-invalid  -->
-                    <input type="text" class="form-control {{ $errors->has('Name') ? 'is-invalid' : '' }}" id="payment" name="payment" value="">
+                    <input type="text" class="form-control {{ $errors->has('Name') ? 'is-invalid' : '' }}" id="Name" name="Name" value="">
                         <!-- 錯誤訊息的判斷法 -->
                         @if ($errors->has('Name'))
                         <div class="invalid-feeback">
@@ -31,31 +29,20 @@
                         @endif
                 </div>
             </div>
-
             <div class="form-group row">
                 <div class="col-sm-2"></div>
-                <label for="points" class="col-sm-2 col-form-label">點數</label>
+                <label for="Address" class="col-sm-2 col-form-label">通訊地址</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="points" name="points" value="">
+                    <input type="text" class="form-control" id="Address" name="Address" value="">
                 </div>
             </div>
-
             <div class="form-group row">
                 <div class="col-sm-2"></div>
-                <label for="Invoice" class="col-sm-2 col-form-label">發票</label>
+                <label for="Phone" class="col-sm-2 col-form-label">連絡電話</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="Invoice" name="Invoice" value="">
+                    <input type="text" class="form-control" id="Phone" name="Phone" value="">
                 </div>
             </div>
-
-            <div class="form-group row">
-                <div class="col-sm-2"></div>
-                <label for="location" class="col-sm-2 col-form-label">地點</label>
-                <div class="col-sm-8">
-                    <input type="text" class="form-control" id="location" name="location" value="">
-                </div>
-            </div>
-            
             <div class="form-group row">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-9">
