@@ -17,13 +17,13 @@
                 </div>
             </div>
 
+           
+
             <div class="form-group row">
                 <div class="col-sm-2"></div>
                 <label for="payment" class="col-sm-2 col-form-label">付款</label>
                 <div class="col-sm-8">
-                    <!-- 錯誤訊息的CSS .. is-invalid  -->
-                    <input type="text" class="form-control {{ $errors->has('Name') ? 'is-invalid' : '' }}" id="payment" name="payment" value="">
-                      
+                    <input type="text" class="form-control" id="payment" name="payment" value="">
                 </div>
             </div>
 
