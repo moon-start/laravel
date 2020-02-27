@@ -194,7 +194,7 @@ class QBController extends Controller
         $validator = Validator::make(
             $request->all(),[
                 'item' => 'required|string',
-                'date' => 'required|string'
+                'money' => 'required|string'
             ],[
                 'required' => '不可為空白123',
                 'required' => '須為字串123'
