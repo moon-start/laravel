@@ -81,8 +81,10 @@ class Invoice extends Model
     public function itemOf()
     {
       ### 一對多   (Invoice_ID:多)
-      return $this->hasMany('App\Item','Invoice_ID','id');
+      // return $this->hasMany('App\Item','Invoice_ID','id');
       // return $this->hasOne('App\Payment','id','Payment_ID');
+
+      return $this->belongsTo('App\Item','Invoice_ID','id');
     }
 
 }
