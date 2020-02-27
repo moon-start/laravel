@@ -258,7 +258,7 @@ class QBController extends Controller
         // $arr = Item::where('Invoice_ID',$request->input('id'))->first();
         
         ### 紀錄的數量
-        $arr = Item::where('Invoice_ID',$request->input('id'))->get()->account();
+        $arr = Item::where('Invoice_ID',$request->input('id'))->get()->count();
 
         return View::make('edit',['AR'=>$arr]);
         // return View::make('new',['DD'=>$DD]);  
