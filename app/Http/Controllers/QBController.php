@@ -132,21 +132,23 @@ class QBController extends Controller
         } else {
             ## 新增  一筆紀錄
             $customers = new Payment;
-            $customers->id     =Payment::orderBy('id','desc')->first()->id+1;
-            $customers->date   =$request->input('date');
+            $customers->id=Payment::orderBy('id','desc')->first()->id+1;
+            $customers->date=$request->input('date');
             $customers->payment=$request->input('payment');
-            $customers->points =$request->input('points');
+            $customers->points=$request->input('points');
             // $customers->Phone=$request->input('Phone');
             $customers->save();
 
             ## 新增  一筆紀錄
             $customers = new Invoice;
-            $customers->id      =Invoice::orderBy('id','desc')->first()->id+1;
-            $customers->Invoice =$request->input('Invoice');
+            $customers->id=Invoice::orderBy('id','desc')->first()->id+1;
+            $customers->Invoice=$request->input('Invoice');
             $customers->location=$request->input('location');
             // $customers->points =$request->input('points');
             // $customers->Phone=$request->input('Phone');
             $customers->save();
+
+            
             ## 導向URL:: http://192.168.1.1/QQ 頁面
             return redirect('QB');
         }
