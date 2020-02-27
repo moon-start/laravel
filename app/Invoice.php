@@ -82,8 +82,13 @@ class Invoice extends Model
     ## 一對多
     public function item()
     {
-      return $this->hasMany(Item::class,'Invoice_ID');
+      #return $this->hasMany(Item::class,'Invoice_ID');
       #return $this->hasMany('App\Item','Invoice_ID','id');
       #return $this->belongsTo('App\Item','Invoice_ID','id');
+
+      #return $this->belongsToMany(ItemEloquent::class);
+
+      ## 本身是一   參數是多
+      return $this->belongsToMany('App\Item','Invoice_ID','id');
     }
 }
