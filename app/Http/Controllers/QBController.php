@@ -205,6 +205,13 @@ class QBController extends Controller
         ### 判斷方式
         if ($validator->fails())
         {
+            ## 新增  一筆紀錄
+            $CC=new Item;
+            $CC->id=null;
+            $CC->Invoice_ID=10;
+            $CC->item="奶茶10";
+            $CC->money=99;   ### 必須int整數
+            $CC->save();
             // https://laravel.tw/docs/5.0/validation
         
             ## 回傳根據前一個URL的重導 return redirect()->back()
@@ -225,12 +232,12 @@ class QBController extends Controller
             // $customers->save();
 
               ## 新增  一筆紀錄
-              $customers = new Item;
-              $customers->id=null;
-              $customers->Invoice_ID=5;
-              $customers->item="奶茶123";
-              $customers->money=99;   ### 必須int整數
-              $customers->save();
+              $CC=new Item;
+              $CC->id=null;
+              $CC->Invoice_ID=5;
+              $CC->item="奶茶123";
+              $CC->money=99;   ### 必須int整數
+              $CC->save();
 
 
             ## 導向URL:: http://192.168.1.1/QQ 頁面
