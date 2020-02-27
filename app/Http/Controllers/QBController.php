@@ -98,7 +98,7 @@ class QBController extends Controller
     public function newB(Request $request){
 
         $customerOK = Invoice::where('id',$request->input('id'));  
-        $RR = "測試";
+        $RR = Invoice::where('id',$request->input('id'))->paymentOf->date;
         # return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
         return view('newB', compact(['customerOK','RR' ]));

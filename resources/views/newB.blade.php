@@ -13,7 +13,7 @@
                 <div class="col-sm-2"></div>
                 <label for="date" class="col-sm-2 col-form-label">日期</label>
                 <div class="col-sm-8">  
-                    <input type="text"class="form-control" id="date" name="date"   value="{{ $customerOK->paymentOf->date }}" readonly="readonly">
+                    <input type="text"class="form-control" id="date" name="date"   value="{{ $RR }}" readonly="readonly">
                 </div>
             </div>
 
