@@ -80,7 +80,7 @@ class Invoice extends Model
 
 
     ## 一對多
-    public function item()
+    public function items()
     {
       // return $this->hasMany('App\Comment');
       #return $this->hasMany(Item::class,'Invoice_ID');

@@ -46,12 +46,12 @@ class QBController extends Controller
         $customers = Invoice::all();  
         $itemOfA    = Item::all();
 
-        ### A
-        // $AA = Payment::find(1)->invoiceOf->location;
-        ### B 
-        $BB = Invoice::find(1)->paymentOf->points;  ## 一對一
+        // ### A
+        // // $AA = Payment::find(1)->invoiceOf->location;
+        // ### B 
+        // $BB = Invoice::find(1)->paymentOf->points;  ## 一對一
 
-        $BBA = Invoice::find(1)->item->id;      ## 一對多
+        $BBA = Invoice::find(1)->items->id;      ## 一對多
      
 
 
