@@ -16,7 +16,7 @@
     
     <div class="col-md-8">
         <div class="card">
-        <div class="card-header">編輯項目{{$DD->id}}資料</div>
+        <div class="card-header">編輯項目資料</div>
         <div class="card-body p-1">
 
             <div class="form-group row">
