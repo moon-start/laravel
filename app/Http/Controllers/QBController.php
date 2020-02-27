@@ -236,7 +236,14 @@ class QBController extends Controller
     public function edit(Request $request){
    
         ## Route::get('...','...@edit'); ## get參數
-        return View::make('edit',['Cusid'=>$request->Cusid,'Name'=>$request->Name,'Address'=>$request->Address,'Phone'=>$request->Phone]);
+
+        ## blade.php 傳給 控制器
+        ## $request->data
+        ## <a href="{{ action('QBController@edit',['data'=>$customer->itemOf]) }}">
+        return View::make('edit',['data'=>$request->data]);
+
+        ## return View::make('URL'
+        ## 控制器..   傳給 URL.blade.php
     }
 
     ## 更新客戶資料
