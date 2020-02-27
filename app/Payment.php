@@ -29,9 +29,9 @@ class Payment extends Model
     //     'deleted_at'
     // ];
 
-    protected $dates = [
-        'date'
-    ];
+    // protected $dates = [
+    //     'date'
+    // ];
 
     public function invoiceOf()
     {
