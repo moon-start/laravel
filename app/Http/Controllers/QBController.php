@@ -18,7 +18,7 @@ use View;
 // use Illuminate\Database\QueryException;
 // // use Illuminate\Support\Facades\Validator;
 // use Validator,Input,Redirect; 
-// use 
+use Validator;
 
 use App\QQ;
 use App\Payment;
