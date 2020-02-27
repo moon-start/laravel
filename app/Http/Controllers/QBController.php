@@ -44,7 +44,7 @@ class QBController extends Controller
    
 
         $customers = Invoice::all();  
-        $itemOf    = Item::all();
+        $itemOfA    = Item::all();
 
         ### A
         // $AA = Payment::find(1)->invoiceOf->location;
@@ -57,7 +57,7 @@ class QBController extends Controller
 
         # return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
-        return view('board', compact(['customers','itemOf' ,'RR' ]));
+        return view('board', compact(['customers','itemOfA' ,'RR' ]));
 
      
     }
