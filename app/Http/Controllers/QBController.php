@@ -108,7 +108,7 @@ class QBController extends Controller
         ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
         $validator = Validator::make(
             $request->all(),[
-                'Name' => 'required|string',
+                'payment' => 'required|string',
                 'Phone' => 'required|string'
             ],[
                 'required' => '不可為空白',
@@ -148,7 +148,7 @@ class QBController extends Controller
             // $customers->Phone=$request->input('Phone');
             $customers->save();
 
-            
+
             ## 導向URL:: http://192.168.1.1/QQ 頁面
             return redirect('QB');
         }
