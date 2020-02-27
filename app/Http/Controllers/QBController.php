@@ -18,6 +18,8 @@ use View;
 // use Illuminate\Database\QueryException;
 // // use Illuminate\Support\Facades\Validator;
 // use Validator,Input,Redirect; 
+
+### 字串檢查
 use Validator;
 
 use App\QQ;
@@ -192,12 +194,13 @@ class QBController extends Controller
 
     ## 刪除客戶資料
     public function delete(Request $request){
-        ## 刪除
-        QQ::where('Cusid',$request->input('Cusid'))->delete();
+        ## 刪除 $request->input("")..取值
+        Payment::where('id',$request->input('id'))->delete();
+        Invoice::where('id',$request->input('id'))->delete();
 
         ## 重新取出列表
-        $customers = QQ::all();
-        return View::make('board',['customers' => $customers]); 
+        $customers = Invoice::all();  
+        return View::make('board',['customers' => $customers]);
     }
 
 }

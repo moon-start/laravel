@@ -35,7 +35,7 @@
                                 'Address'=>$customer->Address,
                                 'Phone'=>$customer->Phone]) }}" class="btn btn-success btn-sm">編輯</a>
                 
-                    <a href="{{ action('QBController@delete', ['Cusid'=>$customer->Cusid]) }}" class="btn btn-danger btn-sm">刪除</a>
+                    <a href="{{ action('QBController@delete', ['id'=>$customer->id]) }}" class="btn btn-danger btn-sm">刪除</a>
                 </td>
                
 
