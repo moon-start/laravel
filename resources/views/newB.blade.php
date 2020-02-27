@@ -27,16 +27,16 @@
 
             <div class="form-group row">
                 <div class="col-sm-2"></div>
-                <label for="item" class="col-sm-2 col-form-label">項目</label>
+                <label for="itemA" class="col-sm-2 col-form-label">項目</label>
                 <div class="col-sm-8">
 
                     <!-- 錯誤訊息的CSS .. is-invalid  -->
-                    <input type="text" class="form-control {{ $errors->has('item') ? 'is-invalid' : '' }}" id="item" name="item" value="">
+                    <input type="text" class="form-control {{ $errors->has('itemA') ? 'is-invalid' : '' }}" id="itemA" name="itemA" value="">
                         
                     <!-- 錯誤訊息的判斷法 -->
-                    @if ($errors->has('item'))
+                    @if ($errors->has('itemA'))
                     <div class="invalid-feeback">
-                    <strong>{{ $errors->first('item') }}</strong>
+                    <strong>{{ $errors->first('itemA') }}</strong>
                     </div>
                     @endif
        

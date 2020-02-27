@@ -193,7 +193,7 @@ class QBController extends Controller
         ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
         $validator = Validator::make(
             $request->all(),[
-                'item' => 'required|string',
+                'itemA' => 'required|string',
                 'money' => 'required|string'
             ],[
                 'required' => '不可為空白123',
@@ -215,14 +215,23 @@ class QBController extends Controller
             ## redirect()->back();
 
         } else {
-            ## 新增  一筆紀錄
-            $customers = new Item;
-            $customers->id=null;
-            $customers->Invoice_ID=5;
-            // Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
-            $customers->item=$request->input('item');
-            $customers->money=$request->input('money');   ### 必須int整數
-            $customers->save();
+            // ## 新增  一筆紀錄
+            // $customers = new Item;
+            // $customers->id=null;
+            // $customers->Invoice_ID=5;
+            // // Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
+            // $customers->item=$request->input('item');
+            // $customers->money=$request->input('money');   ### 必須int整數
+            // $customers->save();
+
+              ## 新增  一筆紀錄
+              $customers = new Item;
+              $customers->id=null;
+              $customers->Invoice_ID=5;
+              $customers->item="奶茶123";
+              $customers->money=99;   ### 必須int整數
+              $customers->save();
+
 
             ## 導向URL:: http://192.168.1.1/QQ 頁面
             return redirect('QB');
