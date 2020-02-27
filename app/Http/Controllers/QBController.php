@@ -228,7 +228,7 @@ class QBController extends Controller
               $CC=new Item;
               $CC->id=null;
               $CC->Invoice_ID=Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
-              $CC->item      =$request->input('item');
+              $CC->item      =$request->input('itemA');
               $CC->money     =$request->input('money');   ### 必須int整數
               $CC->save();
 
