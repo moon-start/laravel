@@ -125,8 +125,13 @@ class QBController extends Controller
             // $customers = QQ::all();
             // return View::make('board',['customers' => $customers]);
             
-            $customers = Invoice::all();    
-            return View::make('board',['customers' => $customers]);
+            # $customers = Invoice::all();    
+            # return View::make('board',['customers' => $customers]);
+
+            $customers = Invoice::all();  
+            $itemOf    = Item::all();
+            return view('board', compact(['customers','itemOf']));
+
         }
 
         ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
@@ -187,8 +192,11 @@ class QBController extends Controller
         
         ### 取消時..的返回頁面
         if ($request->cancel){
-            $customers = Invoice::all();    
-            return View::make('board',['customers' => $customers]);
+            # $customers = Invoice::all();    
+            # return View::make('board',['customers' => $customers]);
+            $customers = Invoice::all();  
+            $itemOf    = Item::all();
+            return view('board', compact(['customers','itemOf']));
         }
 
         ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
