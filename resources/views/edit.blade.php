@@ -10,7 +10,7 @@
 
 
 
-@foreach($DDS as $DD)
+<!-- foreach($DDS as $DD) -->
 
 <form action="{{ action('QBController@update') }}" method="post">
     @csrf
@@ -25,15 +25,17 @@
                 <div class="col-sm-2"></div>
                 <label for="Name" class="col-sm-2 col-form-label">項目</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="Name" name="Name" value="{{$DD->item}}">
+                <!-- $DD->item -->
+                    <input type="text" class="form-control" id="Name" name="Name" value="{{$DD}}">
                 </div>
             </div>
 
             <div class="form-group row">
                 <div class="col-sm-2"></div>
                 <label for="Address" class="col-sm-2 col-form-label">價格</label>
-                <div class="col-sm-8">
-                    <input type="text" class="form-control" id="Address" name="Address" value="{{$DD->money}}">  
+                <div class="col-sm-8">  
+                <!-- $DD->money -->
+                    <input type="text" class="form-control" id="Address" name="Address" value="">  
                 </div>
             </div>
             
@@ -57,4 +59,4 @@
 </form>
 @stop
 
-@endforeach
+<!-- endforeach -->

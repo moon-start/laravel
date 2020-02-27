@@ -241,7 +241,10 @@ class QBController extends Controller
         ## $request->data
         ## <a href="{{ action('QBController@edit',['data'=>$customer->itemOf]) }}">
         
-        return View::make('edit',['DDS'=>$request->data]);
+        // $CC->Invoice_ID=Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
+        $arr =$request->data->first()->id;
+
+        return View::make('edit',['DD'=>$arr]);
         // return View::make('new',['DD'=>$DD]);  
 
         ## return View::make('URL'
