@@ -76,7 +76,11 @@ class QBController extends Controller
       ## payment 資料表
       ## 當前 日期時間
       ## $SS = Payment::orderBy('id','desc')->first();
-      $DD = date(' Ym-d', time());
+
+      ### 時間
+      ## $DD = date(' Ym-d', time());
+      $DD = date('Ymd H:i:s');
+      
     //   $CC = (int)$SS;
     //   $AA = (string)$CC;
       return View::make('new',['DD'=>$DD]);  ### URL沒有顯示??
