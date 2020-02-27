@@ -215,16 +215,8 @@ class QBController extends Controller
             ## redirect()->back();
 
         } else {
-            // ## 新增  一筆紀錄
-            // $customers = new Item;
-            // $customers->id=null;
-            // $customers->Invoice_ID=5;
-            // // Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
-            // $customers->item=$request->input('item');
-            // $customers->money=$request->input('money');   ### 必須int整數
-            // $customers->save();
-
-              ## 新增  一筆紀錄
+     
+              ## 新增 項目
               $CC=new Item;
               $CC->id=null;
               $CC->Invoice_ID=Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
@@ -272,6 +264,7 @@ class QBController extends Controller
         ## 刪除 $request->input("")..取值
         Payment::where('id',$request->input('id'))->delete();
         Invoice::where('id',$request->input('id'))->delete();
+        Item::where('Invoice_ID',$request->input('id'))->delete();
 
         ## 重新取出列表
         $customers = Invoice::all();  
