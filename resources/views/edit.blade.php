@@ -10,8 +10,11 @@
 
 
 
-@foreach($AR as $DD)
+<!-- foreach($AR as $DD) -->
 
+<?php
+    foreach ($AR as $DD){
+?>
 <form action="{{ action('QBController@update') }}" method="post">
     @csrf
     <div class="row justify-content-center">
@@ -59,4 +62,5 @@
 </form>
 @stop
 
-@endforeach
+<?php }  ?>
+<!-- endforeach -->
