@@ -259,7 +259,11 @@ class QBController extends Controller
         
         ### 查詢紀錄的(count)總數
         # $arr = Item::where('Invoice_ID',$request->input('id'))->get()->count();
-        $arr = Item::where('Invoice_ID',$request->input('id'))->get()->find('1');
+
+        // {"id":1,"Invoice_ID":1,"item":"\u8461\u8404\u5976\u9165\u70b8\u5f48","money":28}
+        #$arr = Item::where('Invoice_ID',$request->input('id'))->get()->find('1');
+
+        $arr = Item::where('Invoice_ID',$request->input('id'))->find('1');
 
         return View::make('edit',['AR'=>$arr]);
         // return View::make('new',['DD'=>$DD]);  
