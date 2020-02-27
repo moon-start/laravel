@@ -149,9 +149,10 @@ class QBController extends Controller
 
             ## 新增  一筆紀錄
             $customers = new Invoice;
-            $customers->id=Invoice::orderBy('id','desc')->first()->id+1;
+            $customers->id=null;
             $customers->Invoice=$request->input('Invoice');
             $customers->location=$request->input('location');
+            $customers->Payment_ID=Payment::orderBy('id','desc')->first()->id;
             // $customers->points =$request->input('points');
             // $customers->Phone=$request->input('Phone');
             $customers->save();
