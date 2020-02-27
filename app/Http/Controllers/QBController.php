@@ -51,8 +51,9 @@ class QBController extends Controller
         // ### B 
         // $BB = Invoice::find(1)->paymentOf->points;  ## 一對一
 
-        $BBA = Invoice::find(1)->items()->id;      ## 一對多
+        #$BBA = Invoice::find(1)->items()->id;      ## 一對多
      
+        $BBA = Invoice::find(1)->items()->first()->id;
 
 
 
