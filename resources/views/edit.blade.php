@@ -10,7 +10,7 @@
 
 
 
-@foreach($data as $DD)
+@foreach($DDS as $DD)
 
 <form action="{{ action('QBController@update') }}" method="post">
     @csrf

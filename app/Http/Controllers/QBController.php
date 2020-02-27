@@ -240,7 +240,9 @@ class QBController extends Controller
         ## blade.php 傳給 控制器
         ## $request->data
         ## <a href="{{ action('QBController@edit',['data'=>$customer->itemOf]) }}">
-        return View::make('edit',['data'=>$request->data]);
+        
+        return View::make('edit',['DDS'=>$request->data]);
+        // return View::make('new',['DD'=>$DD]);  
 
         ## return View::make('URL'
         ## 控制器..   傳給 URL.blade.php
