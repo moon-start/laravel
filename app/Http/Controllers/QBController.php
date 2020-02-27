@@ -180,6 +180,55 @@ class QBController extends Controller
     }
 
 
+    ## newB 畫面
+    ## 將項目  寫入資料庫
+    public function storeBBB(Request $request){
+        
+        ### 取消時..的返回頁面
+        if ($request->cancel){
+            $customers = Invoice::all();    
+            return View::make('board',['customers' => $customers]);
+        }
+
+        ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
+        $validator = Validator::make(
+            $request->all(),[
+                'item' => 'required|string',
+                'points' => 'required|string'
+            ],[
+                'required' => '不可為空白',
+                'required' => '須為字串'
+            ]
+        );
+
+      
+        ### 判斷方式
+        if ($validator->fails())
+        {
+            // https://laravel.tw/docs/5.0/validation
+        
+            ## 回傳根據前一個URL的重導 return redirect()->back()
+            ## 取得錯誤訊息並回傳到視圖中 ->withErrors($validator);
+            return redirect()->back()->withErrors($validator);
+
+            ## 返回上一个页面，注意避免死循环
+            ## redirect()->back();
+
+        } else {
+            ## 新增  一筆紀錄
+            $customers = new Item;
+            $customers->id=null;
+            $customers->Invoice_ID=Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
+            $customers->item=$request->input('item');
+            $customers->money=$request->input('money');   ### 必須int整數
+            $customers->save();
+
+            ## 導向URL:: http://192.168.1.1/QQ 頁面
+            return redirect('QB');
+        }
+    }
+
+
 ## 修改客戶資料表格
     ## board.blade.php <a href="{{ action('QQController@edit',[...]) 傳進來參數
     public function edit(Request $request){

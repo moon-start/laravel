@@ -11,9 +11,9 @@
             
             <div class="form-group row">
                 <div class="col-sm-2"></div>
-                <label for="date" class="col-sm-2 col-form-label">日期</label>
+                <label for="dateA" class="col-sm-2 col-form-label">日期</label>
                 <div class="col-sm-8">  
-                    <input type="text"class="form-control" id="date" name="date"   value="{{ $customerOK->paymentOf->date }}" readonly="readonly">
+                    <input type="text"class="form-control" id="dateA" name="dateA"   value="{{ $customerOK->paymentOf->date }}" readonly="readonly">
                 </div>
             </div>
 
@@ -27,29 +27,28 @@
 
             <div class="form-group row">
                 <div class="col-sm-2"></div>
-                <label for="payment" class="col-sm-2 col-form-label">項目</label>
+                <label for="item" class="col-sm-2 col-form-label">項目</label>
                 <div class="col-sm-8">
 
                     <!-- 錯誤訊息的CSS .. is-invalid  -->
-                    <input type="text" class="form-control {{ $errors->has('payment') ? 'is-invalid' : '' }}" id="payment" name="payment" value="">
+                    <input type="text" class="form-control {{ $errors->has('item') ? 'is-invalid' : '' }}" id="item" name="item" value="">
                         
                     <!-- 錯誤訊息的判斷法 -->
-                    @if ($errors->has('payment'))
+                    @if ($errors->has('item'))
                     <div class="invalid-feeback">
-                    <strong>{{ $errors->first('payment') }}</strong>
+                    <strong>{{ $errors->first('item') }}</strong>
                     </div>
                     @endif
-
-
+       
                 </div>
             </div>
 
 
             <div class="form-group row">
                 <div class="col-sm-2"></div>
-                <label for="location" class="col-sm-2 col-form-label">價格</label>
+                <label for="money" class="col-sm-2 col-form-label">價格</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="location" name="location" value="">
+                    <input type="text" class="form-control" id="money" name="money" value="">
                 </div>
             </div>
             
