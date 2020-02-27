@@ -14,8 +14,10 @@ class Payment extends Model
     protected $table = 'payment'; 
     ### 注意ID是否有改 否則這行修改
     protected $primarykey = 'id';
-    public $timestamps = true;
 
+    ### 預計created_at和updated_at列存在於您的表上
+    // public $timestamps = true;
+    public $timestamps = false;
 
 
     public function invoiceOf()

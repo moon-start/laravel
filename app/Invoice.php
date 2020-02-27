@@ -56,7 +56,9 @@ class Invoice extends Model
     ## 預設 primaryKey 為 id，如果不是的話需要另外設定
     protected $primarykey = 'id';
     //如果沒有設定 created_at 與 updated_at欄位，則可以設成 false
-    public $timestamps = true;
+  
+    ### 預計created_at和updated_at列存在於您的表上
+    public $timestamps = false; ## 取消
 
 
     public function paymentOf()
