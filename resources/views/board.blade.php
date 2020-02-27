@@ -31,11 +31,14 @@
                 <td>
                     <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="btn btn-success btn-sm">新增</a>
 
-                    <a href="{{ action('QBController@edit', 
+                    <!-- <a href=" action('QBController@edit', 
                                 ['Cusid'=>$customer->Cusid,
                                 'Name'=>$customer->Name,
                                 'Address'=>$customer->Address,
-                                'Phone'=>$customer->Phone]) }}" class="btn btn-success btn-sm">編輯</a>
+                                'Phone'=>$customer->Phone]) " class="btn btn-success btn-sm">編輯</a> -->
+
+                    <a href="{{action('QBController@edit',['data'=>$customer->itemOf]}} " class="btn btn-success btn-sm">編輯</a>
+
                 
                     <a href="{{ action('QBController@delete', ['id'=>$customer->id]) }}" class="btn btn-danger btn-sm">刪除</a>
                 </td>

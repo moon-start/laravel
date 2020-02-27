@@ -78,4 +78,11 @@ class Invoice extends Model
       return $this->hasOne('App\Payment','id','Payment_ID');
     }
 
+    public function itemOf()
+    {
+      ### 一對多   (Invoice_ID:多)
+      return $this->hasMany('App\Item','Invoice_ID');
+      // return $this->hasOne('App\Payment','id','Payment_ID');
+    }
+
 }
