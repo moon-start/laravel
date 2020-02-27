@@ -205,13 +205,6 @@ class QBController extends Controller
         ### 判斷方式
         if ($validator->fails())
         {
-            ## 新增  一筆紀錄
-            $CC=new Item;
-            $CC->id=null;
-            $CC->Invoice_ID=10;
-            $CC->item="奶茶10";
-            $CC->money=99;   ### 必須int整數
-            $CC->save();
             // https://laravel.tw/docs/5.0/validation
         
             ## 回傳根據前一個URL的重導 return redirect()->back()
@@ -234,9 +227,9 @@ class QBController extends Controller
               ## 新增  一筆紀錄
               $CC=new Item;
               $CC->id=null;
-              $CC->Invoice_ID=5;
-              $CC->item="奶茶123";
-              $CC->money=99;   ### 必須int整數
+              $CC->Invoice_ID=Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
+              $CC->item      =$request->input('item');
+              $CC->money     =$request->input('money');   ### 必須int整數
               $CC->save();
 
 
