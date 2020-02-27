@@ -9,15 +9,15 @@ use Route;
 use View;
 
 
-// use Illuminate\Support\Facades\DB;
-// use App\Http\Controllers\Controller;
-// // use Illuminate\Http\Request;
-// // 或抽像類擴展的類。
-// use Illuminate\Foundation\Http\FormRequest;
-// ## 多了這行? 這好像是語法自動新增..
-// use Illuminate\Database\QueryException;
-// // use Illuminate\Support\Facades\Validator;
-// // use Validator,Input,Redirect; 
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
+// use Illuminate\Http\Request;
+// 或抽像類擴展的類。
+use Illuminate\Foundation\Http\FormRequest;
+## 多了這行? 這好像是語法自動新增..
+use Illuminate\Database\QueryException;
+// use Illuminate\Support\Facades\Validator;
+// use Validator,Input,Redirect; 
 
 ### 字串檢查
 use Validator;
