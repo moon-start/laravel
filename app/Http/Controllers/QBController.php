@@ -218,7 +218,8 @@ class QBController extends Controller
             ## 新增  一筆紀錄
             $customers = new Item;
             $customers->id=null;
-            $customers->Invoice_ID=Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
+            $customers->Invoice_ID='18';
+            // Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
             $customers->item=$request->input('item');
             $customers->money=$request->input('money');   ### 必須int整數
             $customers->save();
