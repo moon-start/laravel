@@ -255,7 +255,10 @@ class QBController extends Controller
 
         $ii =$request->input('id');
 
-        $arr = Item::where('Invoice_ID',$request->input('id'))->first();
+        // $arr = Item::where('Invoice_ID',$request->input('id'))->first();
+        
+        ### 紀錄的數量
+        $arr = Item::where('Invoice_ID',$request->input('id'))->get()->account();
 
         return View::make('edit',['AR'=>$arr]);
         // return View::make('new',['DD'=>$DD]);  
