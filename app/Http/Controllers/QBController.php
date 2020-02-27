@@ -26,6 +26,10 @@ use App\Invoice;
 use App\Item;
 
 
+## 使用 日期函數
+use Carbon\Carbon;
+
+
 
 class QBController extends Controller
 {
@@ -134,7 +138,7 @@ class QBController extends Controller
             $customers = new Payment;
             $customers->id=Payment::orderBy('id','desc')->first()->id+1;
             // $customers->date=(string)($request->input('date'));
-            $customers->date=strtotime("2020-02-27 07:30:57");
+            $customers->date=Carbon::now(); ## ("2020-02-27 07:30:57");
             $customers->payment=$request->input('payment');
             $customers->points=$request->input('points');
             // $customers->Phone=$request->input('Phone');
