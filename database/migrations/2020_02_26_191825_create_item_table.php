@@ -19,7 +19,7 @@ class CreateItemTable extends Migration
 
              ## id
             // $table->bigIncrements('id');
-            $table->increments('id');    //int
+            $table->integer('id')->primary();  ##$table->increments('id');    //int
             ## (多)
             // $table->string('Invoice_ID')->index();
             $table->integer('Invoice_ID')->index();
