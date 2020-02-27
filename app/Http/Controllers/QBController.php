@@ -79,7 +79,7 @@ class QBController extends Controller
 
       ### 時間
       ## $DD = date(' Ym-d', time());
-      $DD = date('Ymd H:i:s');
+      $DD = date('Y-m-d H:i:s');
       
     //   $CC = (int)$SS;
     //   $AA = (string)$CC;
