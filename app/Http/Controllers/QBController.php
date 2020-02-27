@@ -145,7 +145,6 @@ class QBController extends Controller
             ## ("2020-02-27 07:30:57");
             $customers->payment=$request->input('payment');
             $customers->points=$request->input('points');   ### 必須int整數
-            // $customers->Phone=$request->input('Phone');
             $customers->save();
 
             ## 新增  一筆紀錄
@@ -154,8 +153,6 @@ class QBController extends Controller
             $customers->Invoice=$request->input('Invoice');
             $customers->location=$request->input('location');
             $customers->Payment_ID=Payment::orderBy('id','desc')->first()->id;
-            // $customers->points =$request->input('points');
-            // $customers->Phone=$request->input('Phone');
             $customers->save();
 
 
