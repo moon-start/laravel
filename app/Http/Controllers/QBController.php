@@ -83,6 +83,7 @@ class QBController extends Controller
 
       ### 時間
       ## $DD = date(' Ym-d', time());
+      date_default_timezone_set("Asia/Taipei");
       $DD = date('Y-m-d H:i:s');
       
     //   $CC = (int)$SS;
