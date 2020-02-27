@@ -7,9 +7,11 @@
 <!--action('QQController@update')-->
 </td>
 
-<?php
-    foreach ($data as $DD){
-?>
+
+
+
+@foreach($data as $DD)
+
 <form action="{{ action('QBController@update') }}" method="post">
     @csrf
     <div class="row justify-content-center">
@@ -55,5 +57,4 @@
 </form>
 @stop
 
-
-<?php }  ?>
+@endforeach
