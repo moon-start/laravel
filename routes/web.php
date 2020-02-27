@@ -55,6 +55,9 @@ Route::get('QB','QBController@index');
 ## 新增客戶資料(進入new畫面)
 Route::get('new','QBController@new')->name('new123');
 Route::post('store','QBController@storeABC');
+## 新增項目(進入newB畫面)
+Route::get('newB','QBController@newB')->name('new123');
+Route::post('storeB','QBController@storeBBB');
 ## 修改客戶資料表格(進入deit)
 Route::get('edit','QBController@edit');
 ## 更新客戶資料(送出)
