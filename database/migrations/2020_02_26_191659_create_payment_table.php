@@ -25,7 +25,7 @@ class CreatePaymentTable extends Migration
 
             ## 日期
             // $table->dateTime('id')->primary();
-            $table->string('date',19)->index();     ##$table->dateTime('date')->index();
+            $table->dateTime('date')->index();     ##$table->dateTime('date')->index();
             ## 付款
             $table->string('payment',20)->index();
             ## 點數

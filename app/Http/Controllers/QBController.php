@@ -140,10 +140,10 @@ class QBController extends Controller
             // $customers->date=(string)($request->input('date'));
 
             // $DDA=Carbon::now();
-            $customers->date='""';
+            $customers->date=Carbon::now();
             ## ("2020-02-27 07:30:57");
             $customers->payment=$request->input('payment');
-            $customers->points=$request->input('points');
+            $customers->points=$request->input('points');   ### 必須int整數
             // $customers->Phone=$request->input('Phone');
             $customers->save();
 
