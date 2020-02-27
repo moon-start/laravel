@@ -97,7 +97,9 @@ class QBController extends Controller
 
     public function newB(Request $request){
 
-        $customerOK = Invoice::where('id',$request->input('id'))->first()->paymentOf->date;  
+        ## 注意:: 
+        # $customerOK = Invoice::where('id',$request->input('id'))->get()->paymentOf->date; ## 失敗  
+        $customerOK = Invoice::where('id',$request->input('id'))->first(); ## 成功 
 
         // foreach ($customerOK as $customer){
         //     $RR = $customer->paymentOf->date;
