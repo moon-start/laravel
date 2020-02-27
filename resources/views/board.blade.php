@@ -9,10 +9,11 @@
         <table class="table table-hover m-0">
         <thead class="thead-darty">
             <tr>
-            <th>編號</th>
+            <th>日期</th>
+            <th>發票</th>
             <th>地點</th>
-            <th>付款ID</th>
             <th>付款</th>
+            <th>點數</th>
             <td>資料處理</td>
             </tr>
         </thead>
@@ -21,9 +22,10 @@
             foreach ($customers as $customer){
             ?>
             <tr>
-                    <td><?php echo $customer->id; ?></td>
+                    <td><?php echo $customer->paymentOf->date; ?></td>
+                    <td><?php echo $customer->Invoice; ?></td>
                     <td><?php echo $customer->location; ?></td>
-                    <td><?php echo $customer->Payment_ID; ?></td>
+                    <td><?php echo $customer->paymentOf->payment; ?></td>
                     <td><?php echo $customer->paymentOf->points; ?></td>
                
                 <td>
