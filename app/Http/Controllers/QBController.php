@@ -139,8 +139,8 @@ class QBController extends Controller
             $customers->id=Payment::orderBy('id','desc')->first()->id+1;
             // $customers->date=(string)($request->input('date'));
 
-            $DDA=Carbon::now();
-            $customers->date="$DDA";
+            // $DDA=Carbon::now();
+            $customers->date="2020-02-27 07:30:57";
             ## ("2020-02-27 07:30:57");
             $customers->payment=$request->input('payment');
             $customers->points=$request->input('points');
