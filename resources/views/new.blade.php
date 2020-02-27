@@ -23,12 +23,7 @@
                 <div class="col-sm-8">
                     <!-- 錯誤訊息的CSS .. is-invalid  -->
                     <input type="text" class="form-control {{ $errors->has('Name') ? 'is-invalid' : '' }}" id="payment" name="payment" value="">
-                        <!-- 錯誤訊息的判斷法 -->
-                        @if ($errors->has('Name'))
-                        <div class="invalid-feeback">
-                        <strong>{{ $errors->first('Name') }}</strong>
-                        </div>
-                        @endif
+                      
                 </div>
             </div>
 
