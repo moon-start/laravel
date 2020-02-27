@@ -133,7 +133,7 @@ class QBController extends Controller
             ## 新增  一筆紀錄
             $customers = new Payment;
             $customers->id=Payment::orderBy('id','desc')->first()->id+1;
-            $customers->date=$request->input('date');
+            $customers->date=(string)$request->input('date');
             $customers->payment=$request->input('payment');
             $customers->points=$request->input('points');
             // $customers->Phone=$request->input('Phone');
