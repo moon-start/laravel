@@ -9,15 +9,15 @@ use Route;
 use View;
 
 
-use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\Controller;
-// use Illuminate\Http\Request;
-// 或抽像類擴展的類。
-use Illuminate\Foundation\Http\FormRequest;
-## 多了這行? 這好像是語法自動新增..
-use Illuminate\Database\QueryException;
-// use Illuminate\Support\Facades\Validator;
-// use Validator,Input,Redirect; 
+// use Illuminate\Support\Facades\DB;
+// use App\Http\Controllers\Controller;
+// // use Illuminate\Http\Request;
+// // 或抽像類擴展的類。
+// use Illuminate\Foundation\Http\FormRequest;
+// ## 多了這行? 這好像是語法自動新增..
+// use Illuminate\Database\QueryException;
+// // use Illuminate\Support\Facades\Validator;
+// // use Validator,Input,Redirect; 
 
 ### 字串檢查
 use Validator;
@@ -104,9 +104,9 @@ class QBController extends Controller
         // }
         $RR = Invoice::where('id',$request->input('id'))->paymentOf->date;
 
-        # return View::make('board',['customers' => $customers]);
+        return View::make('newB',['customerOK' => $customerOK]);
         # 多個參數(boardOK.blade.php)
-        return view('newB', compact(['customerOK','RR' ]));
+        // return view('newB', compact(['customerOK','RR' ]));
     }
 
 
