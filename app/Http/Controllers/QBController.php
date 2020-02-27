@@ -9,7 +9,7 @@ use Route;
 use View;
 
 
-// use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 // use App\Http\Controllers\Controller;
 // // use Illuminate\Http\Request;
 // // 或抽像類擴展的類。
@@ -99,10 +99,10 @@ class QBController extends Controller
 
         $customerOK = Invoice::where('id',$request->input('id'));  
 
-        foreach ($customerOK as $customer){
-            $RR = $customer->paymentOf->date;
-        }
-        // $RR = Invoice::where('id',$request->input('id'))->paymentOf->date;
+        // foreach ($customerOK as $customer){
+        //     $RR = $customer->paymentOf->date;
+        // }
+        $RR = Invoice::where('id',$request->input('id'))->paymentOf->date;
 
         # return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
