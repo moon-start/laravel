@@ -255,7 +255,7 @@ class QBController extends Controller
 
         $ii =$request->input('id');
 
-        $arr = Item::where('Invoice_ID',$request->input('id'))->get();
+        $arr = Item::where('Invoice_ID',$request->input('id'))->first();
 
         return View::make('edit',['AR'=>$arr]);
         // return View::make('new',['DD'=>$DD]);  
