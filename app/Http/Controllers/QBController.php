@@ -251,7 +251,7 @@ class QBController extends Controller
         ## <a href="{{ action('QBController@edit',['data'=>$customer->itemOf]) }}">
         
         // $CC->Invoice_ID=Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
-        $dd =$request->input('date');
+        #$dd =$request->input('date');
 
         $ii =$request->input('id');
 
@@ -262,6 +262,8 @@ class QBController extends Controller
 
         // {"id":1,"Invoice_ID":1,"item":"\u8461\u8404\u5976\u9165\u70b8\u5f48","money":28}
         #$arr = Item::where('Invoice_ID',$request->input('id'))->get()->find('1');
+
+        // {"id":2,"Invoice_ID":1,"item":"\u8056\u8a95\u591c\u4e4b\u661f","money":35}
         $arr = Item::where('Invoice_ID',$request->input('id'))->find('2');
 
         return View::make('edit',['AR'=>$arr]);
