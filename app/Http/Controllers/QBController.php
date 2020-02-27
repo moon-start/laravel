@@ -53,8 +53,8 @@ class QBController extends Controller
 
         #$BBA = Invoice::find(1)->items()->id;      ## 一對多
      
-        $BBA = Invoice::find(1)->items()->first()->id;
-
+        #$BBA = Invoice::find(1)->items()->first()->id;  ##成功問號?
+        $BBA = Invoice::find(1)->items()->find(1)->id;  ##成功問號?
 
 
         # return View::make('board',['customers' => $customers]);
