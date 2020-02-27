@@ -21,7 +21,7 @@
                 <div class="col-sm-2"></div>
                 <label for="date" class="col-sm-2 col-form-label">發票</label>
                 <div class="col-sm-8">
-                    <input type="text"class="form-control" id="date" name="date"   value="{{ $customer->Invoice; }}" readonly="readonly">
+                    <input type="text"class="form-control" id="date" name="date"   value="{{ $customer->Invoice }}" readonly="readonly">
                 </div>
             </div>
 
