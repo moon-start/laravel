@@ -9,9 +9,10 @@
         <table class="table table-hover m-0">
         <thead class="thead-darty">
             <tr>
-            <th>客戶編號</th>
-            <th>客戶姓名</th>
-            <th>客戶電話</th>
+            <th>編號</th>
+            <th>地點</th>
+            <th>付款ID</th>
+            <th>付款</th>
             <td>資料處理</td>
             </tr>
         </thead>
@@ -23,6 +24,7 @@
                     <td><?php echo $customer->id; ?></td>
                     <td><?php echo $customer->location; ?></td>
                     <td><?php echo $customer->Payment_ID; ?></td>
+                    <td><?php echo $customer->paymentOf->points; ?></td>
                
                 <td>
                     <a href="{{ action('QBController@edit', 
