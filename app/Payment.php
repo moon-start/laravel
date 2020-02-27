@@ -20,6 +20,19 @@ class Payment extends Model
     public $timestamps = false;
 
 
+
+    ## 应被转换为日期的属性。
+     
+    // protected $dates = [
+    //     'created_at',
+    //     'updated_at',
+    //     'deleted_at'
+    // ];
+
+    protected $dates = [
+        'date'
+    ];
+
     public function invoiceOf()
     {
         ### 和 Payment 做一對一關聯
