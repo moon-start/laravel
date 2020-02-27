@@ -89,7 +89,7 @@ class Invoice extends Model
 
       #return $this->belongsToMany(ItemEloquent::class);
 
-      ## 本身是一   參數是多
+      ## 本身是一   參數是多     	
       return $this->belongsToMany('App\Item','Invoice_ID','id');
     }
 }

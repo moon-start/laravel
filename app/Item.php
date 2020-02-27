@@ -16,9 +16,9 @@ class Item extends Model
     public $timestamps = false;
 
 
-    ## 一對多
-    public function invoice()
-    {
-        return $this->belongsTo('App\Invoice','id', 'Invoice_ID');
-    }
+    // ## 一對多
+    // public function invoice()
+    // {
+    //     return $this->belongsTo('App\Invoice','id', 'Invoice_ID');
+    // }
 }
