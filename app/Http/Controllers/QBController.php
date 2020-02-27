@@ -101,7 +101,7 @@ class QBController extends Controller
         $RR = "測試";
         # return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
-        return view('board', compact(['customers','RR' ]));
+        return view('newB', compact(['customers','RR' ]));
     }
 
 
