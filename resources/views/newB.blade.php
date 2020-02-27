@@ -48,7 +48,13 @@
                 <div class="col-sm-2"></div>
                 <label for="money" class="col-sm-2 col-form-label">價格</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="money" name="money" value="">
+                    <input type="text" class="form-control {{ $errors->has('money') ? 'is-invalid' : '' }}" id="money" name="money" value="">
+                    <!-- 錯誤訊息的判斷法 -->
+                    @if ($errors->has('money'))
+                    <div class="invalid-feeback">
+                    <strong>{{ $errors->first('money') }}</strong>
+                    </div>
+                    @endif
                 </div>
             </div>
             

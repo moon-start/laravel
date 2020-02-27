@@ -196,7 +196,7 @@ class QBController extends Controller
                 'item' => 'required|string',
                 'date' => 'required|string'
             ],[
-                'required' => '不可為空白',
+                'required' => '不可為空白123',
                 'required' => '須為字串123'
             ]
         );
