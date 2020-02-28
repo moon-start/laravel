@@ -332,16 +332,17 @@ class QBController extends Controller
         // $post = QQ::find(1);
 
         $id=$request->input('oldId');
-        #### 一對多 關聯
-        $AR=Invoice::find($id)->items()->get();   
-        $qq=0;
-        foreach ($AR as $DD){
-            $qq = $qq+1;
-            $DD->item =$request->input("item$qq");
-            $DD->money=$request->input("money$qq");
-            $DD->save();
+        if($id!="123"){
+            #### 一對多 關聯
+            $AR=Invoice::find($id)->items()->get();   
+            $qq=0;
+            foreach ($AR as $DD){
+                $qq = $qq+1;
+                $DD->item =$request->input("item$qq");
+                $DD->money=$request->input("money$qq");
+                $DD->save();
+            }
         }
-      
 
 
 
