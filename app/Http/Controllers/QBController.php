@@ -261,7 +261,7 @@ class QBController extends Controller
         $id =$request->input('id');
         #$RR = Invoice::find(1)->items()->count();  ##成功問號?
         #$RR = Invoice::find($id)->items()->count();     ## yes
-        $RR = Invoice::find($id)->items()->find(1);
+        $RR = Invoice::find($id)->items()->find(4);
         #$RR = Invoice::find($id)->items()->first();      ## yes
         
         #$RR =$request->input('id');
