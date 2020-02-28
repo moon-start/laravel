@@ -304,7 +304,7 @@ class QBController extends Controller
         // {"id":2,"Invoice_ID":1,"item":"\u8056\u8a95\u591c\u4e4b\u661f","money":35}
 
         
-        return View::make('edit',['AR'=>$RR]);
+        return View::make('edit',['AR'=>null]);
         
 
         ## return View::make('URL'
