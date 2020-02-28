@@ -81,7 +81,21 @@
 
     <div class="col-md-8">
         <div class="card">
-        <div class="card-header">更新 項目資料</div>
+        <div class="card-header">更新 項目資料 (null資料)</div>
+        <div class="card-body p-1">
+            <!--  -->
+            <div class="form-group row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-9">
+                    <input type="submit" class="btn btn-primary" value="送出">
+                    <input type="hidden" id="oldId" name="oldId"  value="">
+                </div>
+                <div class="col-sm-1">
+                    <input type="submit" class="btn btn-warning" value="取消" name="cancel">
+                </div>
+            </div>  
+            <!--  -->
+        </div>
         </div>
     </div>
 
