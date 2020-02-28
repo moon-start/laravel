@@ -53,6 +53,8 @@ class QBController extends Controller
 
         #$BBA = Invoice::find(1)->items()->id;      ## 一對多
      
+
+        ## 多筆資料？?0
         #$BBA = Invoice::find(1)->items()->first()->id;  ##成功問號?
         $BBA = Invoice::find(1)->items()->find(1)->id;  ##成功問號?
 
@@ -267,9 +269,14 @@ class QBController extends Controller
         #$arr = Item::where('Invoice_ID',$request->input('id'))->get()->find('1');
 
         // {"id":2,"Invoice_ID":1,"item":"\u8056\u8a95\u591c\u4e4b\u661f","money":35}
-        $arr = Item::where('Invoice_ID',$request->input('id'))->find('2');
 
-        return View::make('edit',['AR'=>$arr]);
+        ## 外部
+        #$BBA = Invoice::find(1)->items()->find(1)->id;  ##成功問號?
+        # $request->input('id')->
+
+        #$arr = Item::where('Invoice_ID',$request->input('id'))->find('2');
+
+        return View::make('edit',['AR'=>$request->input('id')]);
         // return View::make('new',['DD'=>$DD]);  
 
         ## return View::make('URL'
