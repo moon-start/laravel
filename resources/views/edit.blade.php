@@ -81,7 +81,7 @@
     
     <div class="col-md-8">
         <div class="card">
-        <div class="card-header">編輯 項目 {{$qq}} 資料</div>
+        <div class="card-header">編輯 項目 null 資料</div>
         <div class="card-body p-1">
 
             <div class="form-group row">
