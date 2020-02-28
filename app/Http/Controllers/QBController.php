@@ -115,6 +115,8 @@ class QBController extends Controller
         // }
         // $RR = Invoice::where('id',$request->input('id'))->paymentOf->date;
 
+
+        #$RR=Invoice::find($id)->items()->get();             
         return View::make('newB',['customerOK' => $customerOK]);
         # 多個參數(boardOK.blade.php)
         // return view('newB', compact(['customerOK','RR' ]));
@@ -243,13 +245,16 @@ class QBController extends Controller
             ## redirect()->back();
 
         } else {
-             ######## 避免 null 紀錄
-             $co = Invoice::all()->count();  
-             #if(isset($nn))
-             if($co==0)
-                 $nna=1;
-             else
-                 $nna=Payment::orderBy('id','desc')->first()->id+1;
+            ######## 避免 null 紀錄
+            $co = Invoice::all()->count();  
+            #if(isset($nn))
+            if($co==0)
+                $nna=1;
+            else
+                ## 最後一筆
+                #$nna=Payment::orderBy('id','desc')->first()->id+1;
+                $nna=Item::orderBy('id','desc')->first()->id+1;
+                #$RR=Invoice::find($id)->items()->get();                                    
             #############################
      
               ## 新增 項目
@@ -281,14 +286,14 @@ class QBController extends Controller
         #$dd =$request->input('date');
 
         ###
-        $id =$request->input('id');
+        #$id =$request->input('id');
         #$RR = Invoice::find(1)->items()->count();  ##成功問號?
     
-        $RR = Invoice::find($id)->items()->find(4);       ##  >find(4); 表示:: item->id=4 
+        #$RR = Invoice::find($id)->items()->find(4);       ##  >find(4); 表示:: item->id=4 
         #$RR = Invoice::find($id)->items()->first();      ## yes
 
         ## count
-        $ii = Invoice::find($id)->items()->count();     ## yes
+        #$ii = Invoice::find($id)->items()->count();     ## yes
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->count();  ## 陣列
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->first(); ## 單筆 object
         
@@ -296,7 +301,7 @@ class QBController extends Controller
         ### 陣列 相同
         #$R =array( "蘋果" , "香蕉" , "芭樂" );  ## array
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get();  ## object
-        $RR=Invoice::find($id)->items()->get();                            ## object
+        #$RR=Invoice::find($id)->items()->get();                            ## object
         
         #$RR = gettype($R);
         #$RR=(array)Invoice::find($id)->items()->where('Invoice_ID',$id)->get()->take($ii); ## 
@@ -322,6 +327,7 @@ class QBController extends Controller
 
         #$RR=Invoice::find($id)->items()->get();                            ## object
         #############################
+        $RR=Invoice::find($id)->items()->get();                 
         return View::make('edit',['AR'=>$RR]);
         
 
