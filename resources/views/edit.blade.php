@@ -81,7 +81,7 @@
     
     <div class="col-md-8">
         <div class="card">
-        <div class="card-header">編輯 項目 null 資料</div>
+        <div class="card-header">編輯 項目 1 資料</div>
         <div class="card-body p-1">
 
             <div class="form-group row">
@@ -89,7 +89,7 @@
                 <label for="Name" class="col-sm-2 col-form-label">項目</label>
                 <div class="col-sm-8">
                 <!-- $DD->item -->
-                    <input type="text" class="form-control" id="A" name="A" value="null" readonly="readonly">
+                    <input type="text" class="form-control" id="A" name="A" value="" readonly="readonly">
                 </div>
             </div>
 
@@ -98,7 +98,7 @@
                 <label for="Address" class="col-sm-2 col-form-label">價格</label>
                 <div class="col-sm-8">  
                 <!-- $DD->money -->
-                    <input type="text" class="form-control" id="B" name="B" value="null" readonly="readonly">  
+                    <input type="text" class="form-control" id="B" name="B" value="" readonly="readonly">  
                 </div>
             </div>    
         </div>
