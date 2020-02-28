@@ -36,19 +36,22 @@
                 </div>
             </div>
 
-            <!-- <div class="form-group row">
-                <div class="col-sm-2"></div>
-                <label for="payment" class="col-sm-2 col-form-label">付款</label>
-                <div class="col-sm-8">
-                    <input type="text" class="form-control" id="payment" name="payment" value="">
-                </div>
-            </div> -->
+      
 
             <div class="form-group row">
                 <div class="col-sm-2"></div>
                 <label for="points" class="col-sm-2 col-form-label">點數</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="points" name="points" value="">
+
+                     <!-- 錯誤訊息的CSS .. is-invalid  -->    
+                    <input type="text" class="form-control {{ $errors->has('points') ? 'is-invalid' : '' }}" id="points" name="points" value="">
+                    <!-- 錯誤訊息的判斷法 -->
+                    @if ($errors->has('points'))
+                    <div class="invalid-feeback">
+                    <strong>{{ $errors->first('points') }}</strong>
+                    </div>
+                    @endif
+
                 </div>
             </div>
 
