@@ -54,10 +54,9 @@ class QBController extends Controller
         #$BBA = Invoice::find(1)->items()->id;      ## 一對多
      
 
-        ## 多筆資料？?0
-        #$BBA = Invoice::find(1)->items()->first()->id;  ##成功問號?
-        $RR = Invoice::find(1)->items()->find(2)->item;  ##成功問號?
-
+        ## 多筆資料？?0    ...........依照 Invoice_ID 相同的總數
+        #$RR = Invoice::find(1)->items()->find(2)->item;  ##成功問號?
+        $RR = Invoice::find(1)->items()->conut();  ##成功問號?
 
         # return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
