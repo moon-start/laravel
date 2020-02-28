@@ -29,6 +29,7 @@
                     <td><?php echo $customer->paymentOf->points; ?></td>
                
                 <td>
+                    {{$RR}}
                     <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="btn btn-success btn-sm">新增</a>
 
                     <!-- <a href=" action('QBController@edit', 
