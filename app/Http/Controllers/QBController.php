@@ -260,7 +260,8 @@ class QBController extends Controller
         ###
         $id =$request->input('id');
         #$RR = Invoice::find(1)->items()->count();  ##成功問號?
-        $RR = Invoice::find($id)->items()->count();
+        #$RR = Invoice::find($id)->items()->count();
+        $RR = Invoice::find($id)->items();
 
         // $arr = Item::where('Invoice_ID',$request->input('id'))->first();
         
@@ -278,7 +279,7 @@ class QBController extends Controller
 
         #$arr = Item::where('Invoice_ID',$request->input('id'))->find('2');
 
-        return View::make('edit',['DD'=>$RR]);
+        return View::make('edit',['AR'=>$RR]);
         // return View::make('new',['DD'=>$DD]);  
 
         ## return View::make('URL'
