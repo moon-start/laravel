@@ -251,10 +251,8 @@ class QBController extends Controller
             if($co==0)
                 $nna=1;
             else
-                ## 最後一筆
-                #$nna=Payment::orderBy('id','desc')->first()->id+1;
+                ## Item表的 最後一筆
                 $nna=Item::orderBy('id','desc')->first()->id+1;
-                #$RR=Invoice::find($id)->items()->get();                                    
             #############################
      
               ## 新增 項目
