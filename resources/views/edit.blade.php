@@ -59,4 +59,4 @@
 </form>
 @stop
 
-<!-- endforeach -->
+@endforeach
