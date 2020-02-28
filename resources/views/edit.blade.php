@@ -26,7 +26,7 @@
                 <label for="Name" class="col-sm-2 col-form-label">項目</label>
                 <div class="col-sm-8">
                 <!-- $DD->item -->
-                    <input type="text" class="form-control" id="Name" name="Name" value="">
+                    <input type="text" class="form-control" id="Name" name="Name" value="{{count($AR)}}">
                 </div>
             </div>
 
