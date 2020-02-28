@@ -54,6 +54,7 @@ class QBController extends Controller
         #$BBA = Invoice::find(1)->items()->id;      ## 一對多
      
 
+        ## find(主見的id)...取得紀錄
         ## 多筆資料？?0    ...........依照 Invoice_ID 相同的總數
         $RR = Invoice::find(1)->items()->find(2)->item;  ##成功問號?
         #$RR = Invoice::find(1)->items()->count();  ##成功問號?
@@ -263,7 +264,11 @@ class QBController extends Controller
         #$RR = Invoice::find($id)->items()->count();     ## yes
         $RR = Invoice::find($id)->items()->find(4);       ##  >find(4); 表示:: item->id=4 
         #$RR = Invoice::find($id)->items()->first();      ## yes
-        
+
+        #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get();  ## 陣列
+        $RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->first(); ## 單筆
+
+
         #$RR =$request->input('id');
 
         // $arr = Item::where('Invoice_ID',$request->input('id'))->first();
