@@ -257,7 +257,10 @@ class QBController extends Controller
         // $CC->Invoice_ID=Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
         #$dd =$request->input('date');
 
-        $ii =$request->input('id');
+        ###
+        $id =$request->input('id');
+        #$RR = Invoice::find(1)->items()->count();  ##成功問號?
+        $RR = Invoice::find($id)->items()->count();
 
         // $arr = Item::where('Invoice_ID',$request->input('id'))->first();
         
@@ -275,7 +278,7 @@ class QBController extends Controller
 
         #$arr = Item::where('Invoice_ID',$request->input('id'))->find('2');
 
-        return View::make('edit',['AR'=>$request->input('id')->get()->count()]);
+        return View::make('edit',['AR'=>$RR]);
         // return View::make('new',['DD'=>$DD]);  
 
         ## return View::make('URL'
