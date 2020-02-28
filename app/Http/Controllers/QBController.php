@@ -55,8 +55,8 @@ class QBController extends Controller
      
 
         ## 多筆資料？?0    ...........依照 Invoice_ID 相同的總數
-        #$RR = Invoice::find(1)->items()->find(2)->item;  ##成功問號?
-        $RR = Invoice::find(1)->items()->count();  ##成功問號?
+        $RR = Invoice::find(1)->items()->find(2)->item;  ##成功問號?
+        #$RR = Invoice::find(1)->items()->count();  ##成功問號?
 
         # return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
@@ -261,7 +261,7 @@ class QBController extends Controller
         $id =$request->input('id');
         #$RR = Invoice::find(1)->items()->count();  ##成功問號?
         #$RR = Invoice::find($id)->items()->count();     ## yes
-        $RR = Invoice::find($id)->items()->find(4);
+        $RR = Invoice::find($id)->items()->find(4);       ##  >find(4); 表示:: item->id=4 
         #$RR = Invoice::find($id)->items()->first();      ## yes
         
         #$RR =$request->input('id');
