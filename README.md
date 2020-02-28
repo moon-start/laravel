@@ -80,3 +80,10 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 
 <p align="center"><img src="https://imgur.com/bPuwBdG.png" width="800"></p>
+
+
+
+<table><tr><td bgcolor=orange>背景色是：orange</td></tr></table>
+
+
+<div bgcolor=orange>背景色是：orange</div>
