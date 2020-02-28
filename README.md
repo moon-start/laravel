@@ -12,16 +12,12 @@
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks.
 
 ## 目的
-1. 蒐集資料
-```html
-1. 統一編號 .
-2. 換取商品的點數 .
-```
-2. 起因:
-```html
-1. 每一次購買商品,都會把統一發票列印.
-2. 對於多少點數,可以達到商品.藉由紀錄了解,消費多少得到多少的點數. 
-```
+1. **蒐集資料**
+- 統一編號 .
+- 換取商品的點數 .
+2. **起因:**
+- 每一次購買商品,都會把統一發票列印.
+- 對於多少點數,可以達到商品.藉由紀錄了解,消費多少得到多少的點數. 
 
 ## 工具 
 ```html
