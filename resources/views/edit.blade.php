@@ -57,8 +57,7 @@
     </div>
 
     <?php }  ?>
-    @endif
-
+   
     <div class="col-md-8">
         <div class="card">
         <div class="card-header">更新 項目資料</div>
@@ -78,7 +77,15 @@
         </div>
         </div>
     </div>
+    @else
 
+    <div class="col-md-8">
+        <div class="card">
+        <div class="card-header">更新 項目資料</div>
+        </div>
+    </div>
+
+    @endif
 
 
 
