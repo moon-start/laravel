@@ -9,11 +9,21 @@
 
 ## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 目的
+- 蒐集資料
+  ```html
+    1. 統一編號 .
+    2. 換取商品的點數 .
+  ```
+- 起因:
+  ```html
+    1. 每一次購買商品,都會把統一發票列印.
+    2. 對於多少點數,可以達到商品.藉由紀錄了解,消費多少得到多少的點數. 
+  ```
 
-## Laravel Sponsors
+## 安裝 Laravel 框架 
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
@@ -25,20 +35,7 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 
-Class Projects
-# moon 
-消費習慣  
-#### 目的
-+ 蒐集資料
-  ```html
-    1. 換取商品的點數 .
-    2. 統一編號 .
-  ```
-+ 起因:
-  ```html
-    1. 每一次購買商品,都會把統一發票列印.
-    2. 對於多少點數,可以達到商品.藉由紀錄了解,消費多少得到多少的點數. 
-  ```
+
 
 
 ## 第一正規化
