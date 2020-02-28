@@ -43,7 +43,7 @@ class QBController extends Controller
 
    
         
-        $RR = Invoice::all()->count();  
+        $RR = Invoice::count();  
 
         $customers = Invoice::all();  
         $itemOfA    = Item::all();
