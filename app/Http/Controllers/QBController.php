@@ -273,9 +273,9 @@ class QBController extends Controller
         #$R =array( "蘋果" , "香蕉" , "芭樂" );  ## array
         #$RR=(array)Invoice::find($id)->items()->where('Invoice_ID',$id)->get();  ## object
         #$RR = gettype($R);
-        $RR=(array)Invoice::find($id)->items()->where('Invoice_ID',$id)->get()->take($ii); ## 
+        #$RR=(array)Invoice::find($id)->items()->where('Invoice_ID',$id)->get()->take($ii); ## 
 
-        // $Arr=array( "蘋果" , "香蕉" , "芭樂" );
+        $RR=array( "蘋果" , "香蕉" , "芭樂" );
         // foreach ($Arr as $value ){
         // 　echo 'value='.$value.'<br>';
         // }
