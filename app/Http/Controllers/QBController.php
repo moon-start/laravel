@@ -265,10 +265,19 @@ class QBController extends Controller
         $RR = Invoice::find($id)->items()->find(4);       ##  >find(4); 表示:: item->id=4 
         #$RR = Invoice::find($id)->items()->first();      ## yes
 
-        $RR = Invoice::find($id)->items()->count();     ## yes
+        ## count
+        $ii = Invoice::find($id)->items()->count();     ## yes
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->count();  ## 陣列
+        
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->first(); ## 單筆
 
+
+        $RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->take($ii); ## 
+
+        // $Arr=array( "蘋果" , "香蕉" , "芭樂" );
+        // foreach ($Arr as $value ){
+        // 　echo 'value='.$value.'<br>';
+        // }
 
         #$RR =$request->input('id');
 
@@ -288,7 +297,7 @@ class QBController extends Controller
 
         #$arr = Item::where('Invoice_ID',$request->input('id'))->find('2');
 
-        return View::make('edit',['DD'=>$RR]);
+        return View::make('edit',['AR'=>$RR]);
         
 
         ## return View::make('URL'
