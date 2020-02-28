@@ -23,6 +23,27 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
     2. 對於多少點數,可以達到商品.藉由紀錄了解,消費多少得到多少的點數. 
   ```
 
+## 工具 
+```html
+### 安裝
+$ git clone https://github.com/moon-start/SH.git
+$ cd ./SH
+$ sh ok
+```
+## 安裝 
+```html
+$ git clone https://github.com/moon-start/laravel.git
+
+### SH指令(安裝 PHP nginx mysql)
+inWWW
+
+### 安裝框架
+clonePHP laravel
+
+### 建立資料表
+inDM
+```
+
 ## 安裝 Laravel 框架 
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
