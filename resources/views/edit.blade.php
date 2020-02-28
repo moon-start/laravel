@@ -16,14 +16,15 @@
 <form action="{{ action('QBController@update') }}" method="post">
     @csrf
 
+   
+    <div class="row justify-content-center">
+    
     <?php
     foreach ($AR as $DD){
     ?>
-    <div class="row justify-content-center">
-    
     <div class="col-md-8">
         <div class="card">
-        <div class="card-header">編輯項目資料</div>
+        <div class="card-header">編輯項目{{$DD->id}}資料</div>
         <div class="card-body p-1">
 
             <div class="form-group row">
@@ -60,8 +61,9 @@
         </div>
     </div>
 
-    </div>
     <?php }  ?>
+    </div>
+    
 </form>
 @stop
 
