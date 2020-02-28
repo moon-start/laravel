@@ -83,7 +83,3 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 
 
-<table><tr><td bgcolor=orange>背景色是：orange</td></tr></table>
-
-
-<div bgcolor=orange>背景色是：orange</div>
