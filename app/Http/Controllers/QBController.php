@@ -43,7 +43,7 @@ class QBController extends Controller
 
    
         
-        $RR = Invoice::count();  
+  
 
         $customers = Invoice::all();  
         $itemOfA    = Item::all();
@@ -61,9 +61,9 @@ class QBController extends Controller
         #$RR = Invoice::find(1)->items()->find(2)->item;  ##成功問號?
         #$RR = Invoice::find(1)->items()->count();  ##成功問號?
 
-        #return View::make('board',['customers' => $customers]);
+        return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
-        return view('board', compact(['customers','RR']));
+        #return view('board', compact(['customers','RR']));
 
      
     }
@@ -168,11 +168,12 @@ class QBController extends Controller
 
         } else {
             ######## 避免 null 紀錄
-            $nn=Payment::orderBy('id','desc')->first()->id;
-            if(isset($nn))
-                $nna=$nn+1;
-            else
+            $co = Invoice::all()->count();  
+            #if(isset($nn))
+            if($co==0)
                 $nna=1;
+            else
+                $nna=Payment::orderBy('id','desc')->first()->id+1;
             #############################
 
             ## 新增  一筆紀錄

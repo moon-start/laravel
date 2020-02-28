@@ -9,7 +9,6 @@
         <table class="table table-hover m-0">
         <thead class="thead-darty">
             <tr>
-            {{$RR}}  
             <th>日期</th>
             <th>發票</th>
             <th>地點</th>
