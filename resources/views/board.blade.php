@@ -14,7 +14,7 @@
             <th>地點</th>
             <th>付款</th>
             <th>點數</th>
-            <td>資料處理(項目)</td>
+            <td>資料(項目處理)</td>
             </tr>
         </thead>
         <tbody>

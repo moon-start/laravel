@@ -70,7 +70,7 @@ class QBController extends Controller
 
 
     ##### URL::192.168.1.1/new
-    ## 新增客戶資料
+    ## 新增發票
     ##################################### public function new(Request $request){
     public function new(){
       //$customers = Customer::all();
@@ -101,6 +101,7 @@ class QBController extends Controller
  
     // antallen@gmail.com
 
+    ## 新增項目
     public function newB(Request $request){
 
         ## 注意:: 
@@ -120,7 +121,7 @@ class QBController extends Controller
 
   
     ## new 畫面
-    ## 將新客戶資料寫入資料庫
+    ## 寫入資料庫  發票
     public function storeABC(Request $request){
         ### 取消時..的返回頁面
         ### <input type="submit" class="btn btn-warning" value="取消" name="cancel">
@@ -166,7 +167,8 @@ class QBController extends Controller
         } else {
             ## 新增  一筆紀錄
             $customers = new Payment;
-            $customers->id=null;
+            #$customers->id=null;
+            $customers->id=Payment::orderBy('id','desc')->first()->id+1;
             $customers->date=$request->input('date');
 
             // $DDA=Carbon::now();
@@ -178,7 +180,8 @@ class QBController extends Controller
 
             ## 新增  一筆紀錄
             $customers = new Invoice;
-            $customers->id=null;
+            #$customers->id=null;
+            $customers->id=Payment::orderBy('id','desc')->first()->id+1;
             $customers->Invoice=$request->input('Invoice');
             $customers->location=$request->input('location');
             $customers->Payment_ID=Payment::orderBy('id','desc')->first()->id;
