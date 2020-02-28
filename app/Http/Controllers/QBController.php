@@ -270,22 +270,17 @@ class QBController extends Controller
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->count();  ## 陣列
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->first(); ## 單筆 object
         
+
+        ### 陣列 相同
         #$R =array( "蘋果" , "香蕉" , "芭樂" );  ## array
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get();  ## object
-        $RR=Invoice::find($id)->items()->get();  ## object
+        $RR=Invoice::find($id)->items()->get();                            ## object
         
         #$RR = gettype($R);
         #$RR=(array)Invoice::find($id)->items()->where('Invoice_ID',$id)->get()->take($ii); ## 
 
-        #$RR=array( "蘋果" , "香蕉" , "芭樂" );
-        // foreach ($Arr as $value ){
-        // 　echo 'value='.$value.'<br>';
-        // }
-
-        #$RR =$request->input('id');
-
-        // $arr = Item::where('Invoice_ID',$request->input('id'))->first();
         
+
         ### 查詢紀錄的(count)總數
         # $arr = Item::where('Invoice_ID',$request->input('id'))->get()->count();
 
@@ -294,12 +289,7 @@ class QBController extends Controller
 
         // {"id":2,"Invoice_ID":1,"item":"\u8056\u8a95\u591c\u4e4b\u661f","money":35}
 
-        ## 外部
-        #$BBA = Invoice::find(1)->items()->find(1)->id;  ##成功問號?
-        # $request->input('id')->
-
-        #$arr = Item::where('Invoice_ID',$request->input('id'))->find('2');
-
+        
         return View::make('edit',['AR'=>$RR]);
         
 

@@ -31,7 +31,7 @@
                 <label for="Name" class="col-sm-2 col-form-label">項目</label>
                 <div class="col-sm-8">
                 <!-- $DD->item -->
-                    <input type="text" class="form-control" id="Name" name="Name" value="{{count($AR)}}">
+                    <input type="text" class="form-control" id="Name" name="Name" value="{{ $DD->item }}">
                 </div>
             </div>
 
@@ -40,7 +40,7 @@
                 <label for="Address" class="col-sm-2 col-form-label">價格</label>
                 <div class="col-sm-8">  
                 <!-- $DD->money -->
-                    <input type="text" class="form-control" id="Address" name="Address" value="">  
+                    <input type="text" class="form-control" id="Address" name="Address" value="{{ $id->money }}">  
                 </div>
             </div>
             
