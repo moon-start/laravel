@@ -12,11 +12,13 @@
 
 <!-- foreach($AR as $DD) -->
 
-<?php
-    foreach ($AR as $DD){
-?>
+
 <form action="{{ action('QBController@update') }}" method="post">
     @csrf
+
+    <?php
+    foreach ($AR as $DD){
+    ?>
     <div class="row justify-content-center">
     
     <div class="col-md-8">
@@ -59,8 +61,9 @@
     </div>
 
     </div>
+    <?php }  ?>
 </form>
 @stop
 
-<?php }  ?>
+
 <!-- endforeach -->
