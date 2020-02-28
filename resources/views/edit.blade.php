@@ -20,11 +20,13 @@
     <div class="row justify-content-center">
     
     <?php
+    $qq = 0;
     foreach ($AR as $DD){
+    $qq = $qq+1;
     ?>
     <div class="col-md-8">
         <div class="card">
-        <div class="card-header">編輯 項目 {{$DD->id}} 資料</div>
+        <div class="card-header">編輯 項目 {{$qq}} 資料</div>
         <div class="card-body p-1">
 
             <div class="form-group row">
@@ -63,7 +65,7 @@
                 <div class="col-sm-1"></div>
                 <div class="col-sm-9">
                     <input type="submit" class="btn btn-primary" value="送出">
-                    <input type="hidden" id="oldId" name="oldId"  value="{{ $DD->id }}">
+                    <input type="hidden" id="oldId" name="oldId"  value="{{ $DD->Invoice_ID }}">
                 </div>
                 <div class="col-sm-1">
                     <input type="submit" class="btn btn-warning" value="取消" name="cancel">
