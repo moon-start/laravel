@@ -10,7 +10,7 @@
 
 
 
-@foreach($AR as $DD)
+<!-- foreach($AR as $DD) -->
 
 <form action="{{ action('QBController@update') }}" method="post">
     @csrf
@@ -59,4 +59,4 @@
 </form>
 @stop
 
-@endforeach
+<!-- endforeach -->
