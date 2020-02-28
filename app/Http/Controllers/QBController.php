@@ -268,11 +268,11 @@ class QBController extends Controller
         ## count
         $ii = Invoice::find($id)->items()->count();     ## yes
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->count();  ## 陣列
-        
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->first(); ## 單筆
-
-
-        $RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get()->take($ii); ## 
+        
+        $RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get();  ## 陣列
+        $RR = gettype($RR);
+        #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get()->take($ii); ## 
 
         // $Arr=array( "蘋果" , "香蕉" , "芭樂" );
         // foreach ($Arr as $value ){
@@ -297,7 +297,7 @@ class QBController extends Controller
 
         #$arr = Item::where('Invoice_ID',$request->input('id'))->find('2');
 
-        return View::make('edit',['AR'=>$RR]);
+        return View::make('edit',['DD'=>$RR]);
         
 
         ## return View::make('URL'
