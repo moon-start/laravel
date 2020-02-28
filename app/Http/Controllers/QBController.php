@@ -243,10 +243,18 @@ class QBController extends Controller
             ## redirect()->back();
 
         } else {
+             ######## 避免 null 紀錄
+             $co = Invoice::all()->count();  
+             #if(isset($nn))
+             if($co==0)
+                 $nna=1;
+             else
+                 $nna=Payment::orderBy('id','desc')->first()->id+1;
+            #############################
      
               ## 新增 項目
               $CC=new Item;
-              $CC->id=null;
+              $CC->id=$nna;
               $CC->Invoice_ID=Invoice::where('Invoice',$request->input('date'))->first()->id; ## 成功 
               $CC->item      =$request->input('itemA');
               $CC->money     =$request->input('money');   ### 必須int整數
