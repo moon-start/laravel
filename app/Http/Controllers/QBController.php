@@ -312,7 +312,17 @@ class QBController extends Controller
         // {"id":2,"Invoice_ID":1,"item":"\u8056\u8a95\u591c\u4e4b\u661f","money":35}
 
         
-        return View::make('edit',['AR'=>0]);
+        ######## 避免 null 紀錄
+        // $co = Invoice::all()->count();  
+        // #if(isset($nn))
+        // if($co==0)
+        //     $RR=0;
+        // else
+        //     $nna=Payment::orderBy('id','desc')->first()->id+1;
+
+        #$RR=Invoice::find($id)->items()->get();                            ## object
+        #############################
+        return View::make('edit',['AR'=>$RR]);
         
 
         ## return View::make('URL'
