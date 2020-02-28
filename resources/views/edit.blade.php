@@ -19,7 +19,7 @@
    
     <div class="row justify-content-center">
     
-    @if($AR==0)
+    @if($AR!=0)
     <?php
     $qq = 0;
     foreach ($AR as $DD){
