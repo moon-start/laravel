@@ -42,6 +42,8 @@ class QBController extends Controller
         $RR = 'QQP';
 
    
+        
+        $RR = Invoice::all()->count();  
 
         $customers = Invoice::all();  
         $itemOfA    = Item::all();
@@ -59,9 +61,9 @@ class QBController extends Controller
         #$RR = Invoice::find(1)->items()->find(2)->item;  ##成功問號?
         #$RR = Invoice::find(1)->items()->count();  ##成功問號?
 
-        return View::make('board',['customers' => $customers]);
+        #return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
-        #return view('board', compact(['customers','itemOfA' ,'RR' ]));
+        return view('board', compact(['customers','RR']));
 
      
     }
