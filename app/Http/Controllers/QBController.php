@@ -317,6 +317,9 @@ class QBController extends Controller
         // $RR=Invoice::find($id)->items()->get();                            ## object
         // $post = QQ::find(1);
 
+        $id=$request->input('oldId');
+        #### 一對多 關聯
+        $AR=Invoice::find($id)->items()->get();   
         $qq=0;
         foreach ($AR as $DD){
             $qq = $qq+1;
