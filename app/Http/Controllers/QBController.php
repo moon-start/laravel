@@ -271,7 +271,9 @@ class QBController extends Controller
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->first(); ## 單筆 object
         
         #$R =array( "蘋果" , "香蕉" , "芭樂" );  ## array
-        $RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get();  ## object
+        #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get();  ## object
+        $RR=Invoice::find($id)->items()->get();  ## object
+        
         #$RR = gettype($R);
         #$RR=(array)Invoice::find($id)->items()->where('Invoice_ID',$id)->get()->take($ii); ## 
 
