@@ -265,7 +265,7 @@ class QBController extends Controller
         $RR = Invoice::find($id)->items()->find(4);       ##  >find(4); 表示:: item->id=4 
         #$RR = Invoice::find($id)->items()->first();      ## yes
 
-        $RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get();  ## 陣列
+        $RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->count();  ## 陣列
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->first(); ## 單筆
 
 
@@ -287,9 +287,9 @@ class QBController extends Controller
 
         #$arr = Item::where('Invoice_ID',$request->input('id'))->find('2');
 
-        return View::make('edit',['AR'=>$RR]);
-        // return View::make('new',['DD'=>$DD]);  
-
+        return View::make('edit',['DD'=>$RR]);
+        
+        
         ## return View::make('URL'
         ## 控制器..   傳給 URL.blade.php
     }
