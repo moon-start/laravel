@@ -24,7 +24,7 @@
     ?>
     <div class="col-md-8">
         <div class="card">
-        <div class="card-header">編輯項目{{$DD->id}}資料</div>
+        <div class="card-header">編輯 項目 {{$DD->id}} 資料</div>
         <div class="card-body p-1">
 
             <div class="form-group row">
@@ -47,6 +47,18 @@
             
 
 
+            
+        </div>
+        </div>
+    </div>
+
+    <?php }  ?>
+
+    <div class="col-md-8">
+        <div class="card">
+        <div class="card-header">更新 項目資料</div>
+        <div class="card-body p-1">
+            <!--  -->
             <div class="form-group row">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-9">
@@ -57,11 +69,14 @@
                     <input type="submit" class="btn btn-warning" value="取消" name="cancel">
                 </div>
             </div>  
+            <!--  -->
         </div>
         </div>
     </div>
 
-    <?php }  ?>
+
+
+
     </div>
     
 </form>
