@@ -15,6 +15,7 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 1. **蒐集資料:**
    - 統一編號 .
    - 換取商品的點數 .
+
 2. **起因:**
    - 每一次購買商品,都會把統一發票列印.
    - 對於多少點數,可以達到商品.藉由紀錄了解,消費多少得到多少的點數. 
@@ -31,13 +32,13 @@ $ sh ok
 $ git clone https://github.com/moon-start/laravel.git
 
 ### SH指令(安裝 PHP nginx mysql)
-inWWW
+$ inWWW
 
 ### 安裝框架
-clonePHP laravel
+$ clonePHP laravel
 
 ### 建立資料表
-inDM
+$ inDM
 ```
 
 ## 安裝 Laravel 框架 
