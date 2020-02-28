@@ -165,10 +165,18 @@ class QBController extends Controller
             ## redirect()->back();
 
         } else {
+            ######## 避免 null 紀錄
+            $nn=Payment::orderBy('id','desc')->first()->id;
+            if(isset($nn))
+                $nna=$nn+1;
+            else
+                $nna=1;
+            #############################
+
             ## 新增  一筆紀錄
             $customers = new Payment;
             #$customers->id=null;
-            $customers->id=Payment::orderBy('id','desc')->first()->id+1;
+            $customers->id=$nna;
             $customers->date=$request->input('date');
 
             // $DDA=Carbon::now();
@@ -181,7 +189,7 @@ class QBController extends Controller
             ## 新增  一筆紀錄
             $customers = new Invoice;
             #$customers->id=null;
-            $customers->id=Payment::orderBy('id','desc')->first()->id+1;
+            $customers->id=$nna;
             $customers->Invoice=$request->input('Invoice');
             $customers->location=$request->input('location');
             $customers->Payment_ID=Payment::orderBy('id','desc')->first()->id;
