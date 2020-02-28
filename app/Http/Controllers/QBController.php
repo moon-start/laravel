@@ -56,12 +56,12 @@ class QBController extends Controller
 
         ## find(主見的id)...取得紀錄
         ## 多筆資料？?0    ...........依照 Invoice_ID 相同的總數
-        $RR = Invoice::find(1)->items()->find(2)->item;  ##成功問號?
+        #$RR = Invoice::find(1)->items()->find(2)->item;  ##成功問號?
         #$RR = Invoice::find(1)->items()->count();  ##成功問號?
 
-        # return View::make('board',['customers' => $customers]);
+        return View::make('board',['customers' => $customers]);
         # 多個參數(boardOK.blade.php)
-        return view('board', compact(['customers','itemOfA' ,'RR' ]));
+        #return view('board', compact(['customers','itemOfA' ,'RR' ]));
 
      
     }
@@ -134,8 +134,8 @@ class QBController extends Controller
             # return View::make('board',['customers' => $customers]);
 
             $customers = Invoice::all();  
-            $itemOf    = Item::all();
-            return view('board', compact(['customers','itemOf']));
+            #$itemOf    = Item::all();
+            return view('board', compact(['customers']));
 
         }
 
@@ -200,8 +200,8 @@ class QBController extends Controller
             # $customers = Invoice::all();    
             # return View::make('board',['customers' => $customers]);
             $customers = Invoice::all();  
-            $itemOf    = Item::all();
-            return view('board', compact(['customers','itemOf']));
+            #$itemOf    = Item::all();
+            return view('board', compact(['customers']));
         }
 
         ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
@@ -301,19 +301,38 @@ class QBController extends Controller
     public function update(Request $request){
         ## 
         if ($request->cancel){
-            $customers = QQ::all();
-            return View::make('board',['customers' => $customers]);
+            ##
+            $customers = Invoice::all();  
+            return view('board', compact(['customers']));
         } 
 
-        $customers = QQ::where('Cusid',$request->input('oldId'))
-                                    ->update(['Cusid'=> $request->input('Cusid'),
-                                    'Name'=> $request->input('Name'),
-                                    'Address'=> $request->input('Address'),
-                                    'Phone'=> $request->input('Phone')
-        ]);
+        ## $request->input('oldId')
+        ## ->update([
+        // $customers = QQ::where('Cusid',$request->input('oldId'))
+        //                             ->update(['Cusid'=> $request->input('Cusid'),
+        //                             'Name'=> $request->input('Name'),
+        //                             'Address'=> $request->input('Address'),
+        //                             'Phone'=> $request->input('Phone')
+        // ]);
+        // $RR=Invoice::find($id)->items()->get();                            ## object
+        // $post = QQ::find(1);
+
+        $qq=0;
+        foreach ($AR as $DD){
+            $qq = $qq+1;
+            $DD->item =$request->input("item$qq");
+            $DD->money=$request->input("money$qq");
+            $DD->save();
+        }
+      
+
+
+
         ### 傳入 Cusid
-        $customers = QQ::all();
-        return View::make('board',['customers' => $customers]); 
+        #$customers = QQ::all();
+        #return View::make('board',['customers' => $customers]); 
+        $customers = Invoice::all();  
+        return view('board', compact(['customers']));
     }
 
 
