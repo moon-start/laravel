@@ -45,7 +45,8 @@ Class Projects
   1. 要求資料庫的每個欄位都只能存放單一值
   2. 單一欄位中不可有多個有意義的值
 
-![N1](https://imgur.com/x6XHj9f)
+![N1](./moon/N1.png)
+<p align="center"><img src="https://imgur.com/x6XHj9f" width="400"></p>
 
 
 ## 第二正規化
@@ -54,6 +55,7 @@ Class Projects
   3. 如果有哪些資料只和主鍵的一部份有關的話，就得把它們獨立出來變成另一個資料表。
 
 ![N2](https://imgur.com/9Qt0Evx)
+<p align="center"><img src="https://imgur.com/9Qt0Evx" width="400"></p>
 
 
 ## 第三正規化
@@ -62,4 +64,4 @@ Class Projects
 
 
 ![N3](https://imgur.com/bPuwBdG)
-
+<p align="center"><img src="https://imgur.com/bPuwBdG" width="400"></p>
