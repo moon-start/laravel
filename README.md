@@ -45,7 +45,7 @@ Class Projects
   1. 要求資料庫的每個欄位都只能存放單一值
   2. 單一欄位中不可有多個有意義的值
 
-![N1](./moon/N1.png)
+
 <p align="center"><img src="https://imgur.com/x6XHj9f.png" width="800"></p>
 
 
@@ -54,7 +54,7 @@ Class Projects
   2. 所有非主鍵的欄位都一定和主鍵有關
   3. 如果有哪些資料只和主鍵的一部份有關的話，就得把它們獨立出來變成另一個資料表。
 
-![N2](./moon/N2.png)
+
 <p align="center"><img src="https://imgur.com/9Qt0Evx.png" width="800"></p>
 
 
@@ -63,5 +63,5 @@ Class Projects
   2. 任何一個具有部份相依性或是轉移相依性的關係都違反了第三正規化。
 
 
-![N3](./moon/N1.png)
+
 <p align="center"><img src="https://imgur.com/bPuwBdG.png" width="800"></p>
