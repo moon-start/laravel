@@ -19,11 +19,13 @@
    
     <div class="row justify-content-center">
     
+    @if($AR==0)
     <?php
     $qq = 0;
     foreach ($AR as $DD){
     $qq = $qq+1;
     ?>
+   
     <div class="col-md-8">
         <div class="card">
         <div class="card-header">編輯 項目 {{$qq}} 資料</div>
@@ -55,6 +57,7 @@
     </div>
 
     <?php }  ?>
+    @endif
 
     <div class="col-md-8">
         <div class="card">
