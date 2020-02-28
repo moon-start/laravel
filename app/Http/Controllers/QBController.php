@@ -268,9 +268,9 @@ class QBController extends Controller
         ## count
         $ii = Invoice::find($id)->items()->count();     ## yes
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->count();  ## 陣列
-        #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->first(); ## 單筆
+        $RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->first(); ## 單筆
         
-        $RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get();  ## 陣列
+        #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get();  ## object
         $RR = gettype($RR);
         #$RR=Invoice::find($id)->items()->where('Invoice_ID',$id)->get()->take($ii); ## 
 
