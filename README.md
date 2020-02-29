@@ -9,6 +9,7 @@
 </p>
 
 ## 目的
+<table><tr><td bgcolor=orange>背景色是：orange</td></tr></table>
 <table><tr><td bgcolor=orange>
 1. **蒐集資料:**
    - 統一編號 .
