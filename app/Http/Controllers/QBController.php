@@ -245,12 +245,14 @@ class QBController extends Controller
             ## redirect()->back();
 
         } else {
+            ######## 注意的class
             ######## 避免 null 紀錄
-            $co = Invoice::all()->count();  
+            $co = Item::all()->count();  
             #if(isset($nn))
             if($co==0)
                 $nna=1;
             else
+                #$BBA = Invoice::find(1)->items()->id;
                 ## Item表的 最後一筆
                 $nna=Item::orderBy('id','desc')->first()->id+1;
             #############################
