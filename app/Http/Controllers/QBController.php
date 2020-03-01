@@ -144,17 +144,25 @@ class QBController extends Controller
 
         }
 
+        ################################################### 教學
+        ## https://larry850806.github.io/2016/06/23/regex/
+        ##
         ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
         $validator = Validator::make(
-            $request->all(),[
-                'payment' => 'required|string',
+            $request->all(),[                  
+                'payment' => 'required|string|regex:/(^(\w{2}-)?(\d{8})?/u',
                 'points' => 'required|string'
             ],[
-                'required' => '不可為空白',
-                'required' => '須為字串'
+                'required' => '必填欄位',
+                'string' => '須為字串',
+                'numeric' => '須為數字',   
+                'integer' => '須為整數',
+                'regex' => '填入發票號碼'
             ]
         );
-
+        #(\d{3}-|\d{4}-)?(\d{8}|\d{7})?
+        #(\w{2}-)?(\d{8})?
+        #regex:/(^([a-zA-z]+)-(\d+)?$)/u   /^\d{4}-\d{2}-\d{2}$/',
       
         ### 判斷方式
         if ($validator->fails())
