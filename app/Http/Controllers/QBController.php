@@ -144,13 +144,15 @@ class QBController extends Controller
 
         }
 
+
+        ## $ pattern =“ /（^ 886 \-）\ d {2,3} \-\ d {7,8} $ /”;
         ################################################### 教學
         ## https://larry850806.github.io/2016/06/23/regex/
         ##
         ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
         $validator = Validator::make(
             $request->all(),[                  
-                'payment' => 'required|string|regex:(/^\d*$/)',
+                'payment' => 'required|string|regex:(/(^\w{2}\-)\d{8}$/)',
                 'points' => 'required|string'
             ],[
                 'required' => '必填欄位',
