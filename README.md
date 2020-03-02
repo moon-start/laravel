@@ -11,12 +11,12 @@
   <img src="https://poser.pugx.org/laravel/framework/license.svg" alt="執照"></a>
 </p>
 
-## stable
+## Stable
 + **no-ip(30天網址) http://moon-start.myftp.org/**
 
 ## 目的
-<table><tr><td bgcolor=orange>背景色是：orange</td></tr></table>
-<table><tr><td bgcolor=orange>
+<!-- <table><tr><td bgcolor=orange>背景色是：orange</td></tr></table> -->
+<!-- <table><tr><td bgcolor=orange> -->
 1. **蒐集資料:**
    - 統一編號 .
    - 換取商品的點數 .
@@ -24,7 +24,7 @@
 2. **起因:**
    - 每一次購買商品,都會把統一發票列印.
    - 對於多少點數,可以達到商品.藉由紀錄了解,消費多少得到多少的點數. 
-</td></tr></table>
+<!-- </td></tr></table> -->
 
 
 ## 工具 
