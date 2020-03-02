@@ -23,12 +23,11 @@
                 <div class="col-sm-8">
 
                     <!-- 錯誤訊息的CSS .. is-invalid  -->
-                    <!-- <input type="text" class="form-control {{ $errors->has('payment') ? 'is-invalid' : '' }}" id="payment" name="payment" value=""> -->
+                    <!-- <input type="text" class="form-control" id="payment" name="payment" value=""> -->
                     <select class="form-control {{ $errors->has('payment') ? 'is-invalid' : '' }}" id="payment" name="payment">
                         　<option value="現金">現金</option>
-                        　<option value="Taoyuan">桃園</option>
-                        　<option value="Hsinchu">新竹</option>
-                        　<option value="Miaoli">苗栗</option>
+                        　<option value="悠遊卡">悠遊卡</option>
+                        　<option value="Mcard(點點卡)">Mcard(點點卡)</option>
                     </select>
 
 
