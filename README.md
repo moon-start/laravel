@@ -1,12 +1,16 @@
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
-<a href="#"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="#">
+  <img src="https://travis-ci.org/laravel/framework.svg" alt="建立狀態"></a>
 <a href="https://github.com/moon-start/laravel/archive/master.zip">
-<img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="git Downloads"></a>
-<a href="#"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="#"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+  <img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="github下載"></a>
+<a href="http://moon-start.myftp.org/">
+  <img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="最新穩定版"></a>
+<a href="#">
+  <img src="https://poser.pugx.org/laravel/framework/license.svg" alt="執照"></a>
 </p>
+
 
 ## 目的
 <table><tr><td bgcolor=orange>背景色是：orange</td></tr></table>
