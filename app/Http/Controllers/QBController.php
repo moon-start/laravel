@@ -152,14 +152,14 @@ class QBController extends Controller
         ## 傳入 make 方法的第一個參數是待驗證的資料，第二個參數是資料的驗證規則。
         $validator = Validator::make(
             $request->all(),[                  
-                'payment' => 'regex:/^(\w{2}-)+(\d{8})+/',
+                'payment' => 'required|string|regex:/^(\w{2}-)+(\d{8})+/',
                 'points' => 'required|string'
             ],[
                 'required' => '必填欄位',
                 'string' => '須為字串',
                 'numeric' => '須為數字',   
                 'integer' => '須為整數',
-                'regex' => '填入發票號碼 XS-12345678'
+                'regex' => '填入(範列): XS-12345678'
             ]
         );
         ## ed|string|regex:(/^\d{8}+$/)',
