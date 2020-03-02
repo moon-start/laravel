@@ -64,6 +64,19 @@ Route::get('edit','QBController@edit');
 Route::post('update','QBController@update');
 ## 刪除客戶資料
 Route::get('delete','QBController@delete');
+####
+####
+####
+//預設驗證功能
+//Auth::routes();
+//啟用 Email 驗證功能
+//Auth::routes(['verify'=>true]);
+
+## 取消註冊功能
+#Auth::routes(['register' => false]);
+## 註冊 http://192.168.1.116/register
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
 
 
 
