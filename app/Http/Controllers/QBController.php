@@ -240,10 +240,11 @@ class QBController extends Controller
         $validator = Validator::make(
             $request->all(),[
                 'itemA' => 'required|string',
-                'money' => 'required|string'
+                'money' => 'required|numeric'
             ],[
-                'required' => '不可為空白123',
-                'required' => '須為字串123'
+                'required' => '必填欄位',
+                'string' => '須為字串',
+                'numeric' => '須為數字'
             ]
         );
 
