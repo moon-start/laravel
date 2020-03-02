@@ -59,7 +59,14 @@
                 <div class="col-sm-2"></div>
                 <label for="Invoice" class="col-sm-2 col-form-label">發票</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="Invoice" name="Invoice" value="">
+                    
+                    <input type="text" class="form-control {{ $errors->has('points') ? 'is-invalid' : '' }}" id="Invoice" name="Invoice" value="">
+                    <!-- 錯誤訊息的判斷法 -->
+                    @if ($errors->has('Invoice'))
+                    <div class="invalid-feeback">
+                    <strong>{{ $errors->first('Invoice') }}</strong>
+                    </div>
+                    @endif
                 </div>
             </div>
 
@@ -67,7 +74,14 @@
                 <div class="col-sm-2"></div>
                 <label for="location" class="col-sm-2 col-form-label">地點</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="location" name="location" value="">
+                    
+                    <input type="text" class="form-control {{ $errors->has('points') ? 'is-invalid' : '' }}" id="location" name="location" value="">
+                    <!-- 錯誤訊息的判斷法 -->
+                    @if ($errors->has('location'))
+                    <div class="invalid-feeback">
+                    <strong>{{ $errors->first('location') }}</strong>
+                    </div>
+                    @endif
                 </div>
             </div>
             
