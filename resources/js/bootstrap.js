@@ -1,13 +1,13 @@
 window._ = require('lodash');
 
 
-/* 增加這一段 */ 
-try {
-    window.Popper = require('popper.js').default;
-    window.$ = window.jQuery = require('jquery');
+// /* 增加這一段 */ 
+// try {
+//     window.Popper = require('popper.js').default;
+//     window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap');
-} catch (e) {}
+//     require('bootstrap');
+// } catch (e) {}
 
 
 
