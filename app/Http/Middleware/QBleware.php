@@ -36,13 +36,12 @@ class QBleware
         #return route('home');
 
         ## 檢查 參數
-        ## 全域..如果添加.....會爆參數錯誤
-        // if (! $request->user()->hasRole($name)) {
-        
-            
-        //     echo $name;
-        //     // Redirect...
-        // }
+        ## 全域..如果添加.....會爆參數錯誤  ....因為她也..呼叫一次 但沒傳參數
+        if (! $request->user()->hasRole($name)) {
+       
+            echo $name;
+            // Redirect...
+        }
 
         #### QBxxx.php 先 -->  web.php 後 
         ################## 123123in Route
