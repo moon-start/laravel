@@ -22,13 +22,25 @@
 ##    return view('welcome');
 ## }]);
 
-Route::get('/', function () {
-    return view('welcome');
-})->middleware('web');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->middleware('web');
 
 
+## 中介層--> 路由器 -->過程
+// Route::middleware('auth')->get('admin/profile', function () {
+//     //
+// });
+## 多個中介層
+// Route::middleware('first', 'second')->get('/', function () {
+//     //
+// });
+##
+Route::middleware('QB:Hello,Kao')->get('/', function (){
+    #return view('welcome');
 
-
+    echo 'in Route';
+});
 
 ## 執行 QQ控制器  的index() 
 ## @index  錯誤??
