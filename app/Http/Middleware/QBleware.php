@@ -37,7 +37,7 @@ class QBleware
 
         ## 檢查 參數
         ## 全域..如果添加.....會爆參數錯誤  ....因為她也..呼叫一次 但沒傳參數
-        if (! $request->user()->hasRoles($name)) {
+        if ( $request->user()->hasRole($name)) {
        
             echo $name;
             // Redirect...
