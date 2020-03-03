@@ -7,7 +7,7 @@
     <!-- 列表 -->
     <div class="col-12 m-0 p-0 card">
     <div class="col-12 card-header">消費列表</div>
-    <div class="col-12 card-body p-1">
+    <div class="col-12 card-body">
         <table class="col-12 text-center table table-hover">
         <!-- table-hover 移動效果 -->
         <!-- margin =0 -->
@@ -82,7 +82,7 @@
         <div class="box border border-primary">呈現主題顏色</div>
         <div class="box border border-danger">呈現主題顏色</div> -->
 
-        <thead class="">
+        <thead class="thead-darty bg-info">
             <!-- 背景顏色..bg-info  bg-danger-->
             <tr class="row m-0 p-0">
             <!-- col-xs-4 自動 -->
