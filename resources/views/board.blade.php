@@ -6,7 +6,7 @@
     <div class="card">
     <div class="card-header">消費列表</div>
     <div class="card-body p-1">
-        <table class="text-aline table table-hover m-0">
+        <table class="text-center table table-hover m-0">
         <!-- table-hover 移動效果 -->
         <!-- margin =0 -->
         <!-- bg-danger 背景顏色 -->
