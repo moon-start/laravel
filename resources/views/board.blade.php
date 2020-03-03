@@ -6,7 +6,7 @@
     <div class="card">
     <div class="card-header">消費列表</div>
     <div class="card-body p-1">
-        <table class="row text-center table table-hover m-0  bg-info">
+        <table class="col-12 text-center table table-hover m-0  bg-info">
         <!-- table-hover 移動效果 -->
         <!-- margin =0 -->
         <!-- bg-danger 背景顏色 -->
@@ -80,9 +80,9 @@
         <div class="box border border-primary">呈現主題顏色</div>
         <div class="box border border-danger">呈現主題顏色</div> -->
 
-        <thead class="row thead-darty bg-success">
+        <thead class="col-12 thead-darty bg-success">
             <!-- 背景顏色..bg-info  bg-danger-->
-            <tr class="row ">
+            <tr class="row">
             <!-- col-xs-4 自動 -->
             <th class="col-lg-3 col-md-4 col-sm-4 d-md-inline">日期</th>
             <th class="col-lg-2 col-md-2 col-sm-4 d-md-inline">發票</th>
@@ -92,7 +92,7 @@
             <td class="col-lg-3 col-md-4 col-sm-4 d-md-inline">資料(項目處理)</td>
             </tr>
         </thead>
-        <tbody class="row">
+        <tbody class="col-12">
             <?php
             foreach ($customers as $customer){
             ?>
