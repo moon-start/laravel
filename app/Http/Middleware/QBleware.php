@@ -30,8 +30,8 @@ class QBleware
 
         // return $next($request);
 
-        return redirect('QB');
-        #return route('home');
+        #return redirect('QB'); 重島次數過多
+        return route('QB');
 
         #echo $A.', ';
         #echo $name.'</br>';
