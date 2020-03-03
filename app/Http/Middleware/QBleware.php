@@ -35,10 +35,19 @@ class QBleware
         #return redirect('QB'); 重島次數過多
         #return route('home');
 
-        echo "123";
-        #echo $A.', ';
-        #echo $name.'</br>';
-        return $next($request);  ## 在呼叫自己一次??
+
+        ################## 123123in Route
+        // echo "123";
+        // #echo $A.', ';
+        // #echo $name.'</br>';
+        // return $next($request);  ## 在呼叫自己一次??
+
+
+
+        $response = $next($request); //先處理 request （next 本身是閉包，會先處理 request)
+        // Perform action			 //這裡才執行任務
+        echo '</br>'.'123';
+        return $response;
     }
 
 
