@@ -36,8 +36,8 @@
 //     //
 // });
 
-## 
-Route::middleware('QB:Hello,Kao')->get('/', function (){
+## middleware('QB:Hello,Kao')->
+Route::get('/', function (){
     #return view('welcome');
 
     echo 'in Route';
