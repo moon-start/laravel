@@ -80,7 +80,7 @@
         <div class="box border border-primary">呈現主題顏色</div>
         <div class="box border border-danger">呈現主題顏色</div> -->
 
-        <thead class="thead-darty">
+        <thead class="thead-darty bg-success">
             <!-- tr 背景顏色..改變的只有文字 -->
             <tr class="row bg-info">
             <!-- col-xs-4 自動 -->
