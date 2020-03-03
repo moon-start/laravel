@@ -38,7 +38,7 @@ class QBleware
         echo "123";
         #echo $A.', ';
         #echo $name.'</br>';
-        #return $next($request);
+        return $next($request);
     }
 
 
