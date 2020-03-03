@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+
+## A
+## Route::get('/', function () {
+##     return view('welcome');
+## });
+
+## B  ['middleware' => 'auth', function () {....}]
+Route::get('/',['middleware' => 'auth',function () {
     return view('welcome');
-});
+}]);
 
 
 
