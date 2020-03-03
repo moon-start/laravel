@@ -84,7 +84,7 @@
 
         <thead class="m-0 p-0 thead-darty bg-success">
             <!-- 背景顏色..bg-info  bg-danger-->
-            <tr class="row">
+            <tr class="row m-0 p-0">
             <!-- col-xs-4 自動 -->
             <th class="col-lg-3 col-md-4 col-sm-4 d-md-inline">日期</th>
             <th class="col-lg-2 col-md-2 col-sm-4 d-md-inline">發票</th>
@@ -98,7 +98,7 @@
             <?php
             foreach ($customers as $customer){
             ?>
-            <tr class="row">
+            <tr class="row m-0 p-0">
                     <!-- clearfix -->
                     <!-- class="d-sm-none"  電腦的消失了 -->
                     <!-- 電腦版 改成區塊 d-none d-md-block -->
