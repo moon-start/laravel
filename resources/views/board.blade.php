@@ -82,12 +82,13 @@
 
         <thead class="thead-darty">
             <tr class="row">
-            <th class="col-md-2 col-xs-4">日期</th>
-            <th class="col-md-2 col-xs-4">發票</th>
-            <th class="col-md-2 col-xs-0">地點</th>
-            <th class="col-md-2 col-xs-0">付款</th>
-            <th class="col-md-1 col-xs-0">點數</th>
-            <td class="col-md-3 col-xs-4">資料(項目處理)</td>
+            <!-- col-xs-4 自動 -->
+            <th class="col-md-2 col-sm-4 d-md-inline">日期</th>
+            <th class="col-md-2 col-sm-4 d-md-inline">發票</th>
+            <th class="col-md-2 col-sm-0 d-none d-md-inline">地點</th>
+            <th class="col-md-2 col-sm-0 d-none d-md-inline">付款</th>
+            <th class="col-md-1 col-sm-0 d-none d-md-inline">點數</th>
+            <td class="col-md-3 col-sm-4 d-md-inline">資料(項目處理)</td>
             </tr>
         </thead>
         <tbody>
