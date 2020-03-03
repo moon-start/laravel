@@ -9,12 +9,12 @@
         <table class="table table-hover m-0">
         <thead class="thead-darty">
             <tr>
-            <th>日期</th>
-            <th>發票</th>
-            <th>地點</th>
-            <th>付款</th>
-            <th>點數</th>
-            <td>資料(項目處理)</td>
+            <th class="d-md-inline">日期</th>
+            <th class="d-md-inline">發票</th>
+            <th class="d-none d-md-inline">地點</th>
+            <th class="d-none d-md-inline">付款</th>
+            <th class="d-none d-md-inline">點數</th>
+            <td class="d-md-inline">資料(項目處理)</td>
             </tr>
         </thead>
         <tbody>
@@ -26,6 +26,8 @@
                     <!-- class="d-sm-none"  電腦的消失了 -->
                     <!-- 電腦版 改成區塊 d-none d-md-block -->
                     <!-- 問號 d-md-inline -->
+                    <!-- d-md-inline-block -->
+                    <!-- d-md-inline -->
                     <td class="d-md-inline"><?php echo $customer->paymentOf->date; ?></td>
                     <td class="d-md-inline"><?php echo $customer->Invoice; ?></td>
                     <td class="d-none d-md-inline"><?php echo $customer->location; ?></td>
@@ -34,7 +36,7 @@
                
                 <td>
                   
-                    <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="btn btn-success btn-sm">新增</a>
+                    <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="d-md-inline btn btn-success btn-sm">新增</a>
 
                     <!-- <a href=" action('QBController@edit', 
                                 ['Cusid'=>$customer->Cusid,
