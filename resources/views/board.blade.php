@@ -7,7 +7,7 @@
     <div class="card-header">消費列表</div>
     <div class="card-body p-1">
         <table class="table table-hover m-0">
-        <thead class="thead-darty">
+        <!-- <thead class="thead-darty">
             <tr>
             <th class="d-md-inline">日期</th>
             <th class="d-md-inline">發票</th>
@@ -16,8 +16,16 @@
             <th class="d-none d-md-inline">點數</th>
             <td class="d-md-inline">資料(項目處理)</td>
             </tr>
-        </thead>
+        </thead> -->
         <tbody>
+            <tr>
+                <th class="d-md-inline">日期</th>
+                <th class="d-md-inline">發票</th>
+                <th class="d-none d-md-inline">地點</th>
+                <th class="d-none d-md-inline">付款</th>
+                <th class="d-none d-md-inline">點數</th>
+                <td class="d-md-inline">資料(項目處理)</td>
+            </tr>
             <?php
             foreach ($customers as $customer){
             ?>
