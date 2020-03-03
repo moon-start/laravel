@@ -36,11 +36,11 @@
 //     //
 // });
 
-## middleware('QB:Hello,Kao')->
-Route::get('/', function (){
-    return view('welcome');
+## 
+Route::middleware('QB:Hello,Kao')->get('/', function (){
+    #return view('welcome');
 
-    #echo 'in Route';
+    echo 'in Route';
     #return '123456';
 });
 

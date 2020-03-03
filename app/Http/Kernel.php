@@ -15,6 +15,7 @@ class Kernel extends HttpKernel
      */
     ## 全域
     protected $middleware = [
+        \App\Http\Middleware\QBleware::class,
         \App\Http\Middleware\TrustProxies::class,
         \App\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
@@ -56,6 +57,7 @@ class Kernel extends HttpKernel
     
     ## 為路由指派中介層
     protected $routeMiddleware = [
+        'QB' => \App\Http\Middleware\QBleware::class,
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
