@@ -85,7 +85,7 @@
             <!-- col-xs-4 自動 -->
             <th class="col-lg-3 col-md-4 col-sm-4 d-md-inline">日期</th>
             <th class="col-lg-2 col-md-3 col-sm-4 d-md-inline">發票</th>
-            <th class="col-lg-2                   d-none d-md-inline">地點</th>
+            <th class="col-lg-2                   d-none d-lg-inline">地點</th>
             <th class="col-lg-1 col-md-1          d-none d-md-inline">付款</th>
             <th class="col-lg-1 col-md-1          d-none d-md-inline">點數</th>
             <td class="col-lg-3 col-md-3 col-sm-4 d-md-inline">資料(項目處理)</td>
