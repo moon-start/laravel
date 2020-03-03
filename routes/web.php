@@ -40,7 +40,8 @@
 Route::get('/', function (){
     #return view('welcome');
 
-    echo 'in Route';
+    #echo 'in Route';
+    return '123456';
 });
 
 ## 執行 QQ控制器  的index() 
