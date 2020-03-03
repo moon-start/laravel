@@ -4,7 +4,7 @@
 <div class="row justify-content-center">
 <div class="col-md-10">
     <div class="col-12 card">
-    <div class="col-12 card-header">消費列表</div>
+    <div class="col-12 m-0 p-0 card-header">消費列表</div>
     <div class="col-12 card-body p-1">
         <table class="col-12 text-center table table-hover m-5 bg-info">
         <!-- table-hover 移動效果 -->
