@@ -37,29 +37,26 @@ class QBleware
 
         ## 檢查 參數
         ## 全域..如果添加.....會爆參數錯誤  ....因為她也..呼叫一次 但沒傳參數
-        if ( $request->user()->hasRole($name)) {
-       
-            echo $name;
-            // Redirect...
-        }
-        // echo $name;
+        // if (! $request->user()->hasRole($name)) {
+        //     $request->user() 資料庫物件??
+        //     echo $name;
+        // }
+        ## 參數
+        echo $name;
 
         #### QBxxx.php 先 -->  web.php 後 
         ################## 123123in Route
-        // echo "123";
-        // #echo $A.', ';
-        // #echo $name.'</br>';
-        // return $next($request);  ## 在呼叫自己一次??
+        echo "123";
+        #echo $A.', ';
+        #echo $name.'</br>';
+        return $next($request);  ## 在呼叫自己一次??
 
 
-        #### web.php 先 --> QBxxx.php 後
-        // in Route
-        // 123
-        // 123
-        $response = $next($request); //先處理 request （next 本身是閉包，會先處理 request)
-        // Perform action			 //這裡才執行任務
-        echo '</br>'.'123';
-        return $response;
+        #### 參數  -->  web.php 先 --> QBxxx.php 後
+        // $response = $next($request); //先處理 request （next 本身是閉包，會先處理 request)
+        // // Perform action			 //這裡才執行任務
+        // echo '</br>'.'123';
+        // return $response;
     }
 
 
