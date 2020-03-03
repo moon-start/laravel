@@ -68,7 +68,9 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
   2. 單一欄位中不可有多個有意義的值
 
 
-<p align="center"><img src="https://imgur.com/x6XHj9f.png" width="800"></p>
+<!-- <p align="center"><img src="https://imgur.com/x6XHj9f.png" width="800"></p> -->
+![N3](
+https://raw.githubusercontent.com/moon-start/laravel/master/moon/N1.PNG)
 
 
 ## 第二正規化
@@ -77,7 +79,9 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
   3. 如果有哪些資料只和主鍵的一部份有關的話，就得把它們獨立出來變成另一個資料表。
 
 
-<p align="center"><img src="https://imgur.com/9Qt0Evx.png" width="800"></p>
+<!-- <p align="center"><img src="https://imgur.com/9Qt0Evx.png" width="800"></p> -->
+![N3](
+https://raw.githubusercontent.com/moon-start/laravel/master/moon/N2.PNG)
 
 
 ## 第三正規化
@@ -88,9 +92,9 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 <!-- <p align="center"><img src="https://imgur.com/bPuwBdG.png" width="800"></p> -->
 
-<p align="center"><img src="https://raw.githubusercontent.com/moon-start/laravel/master/moon/N3.PNG" width="800"></p>
+<!-- <p align="center"><img src="https://raw.githubusercontent.com/moon-start/laravel/master/moon/N3.PNG" width="800"></p> -->
 
 
-![RWD](
+![N3](
 https://raw.githubusercontent.com/moon-start/laravel/master/moon/N3.PNG)
 
