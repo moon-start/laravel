@@ -109,11 +109,11 @@
                     <!-- 問號 d-md-inline -->
                     <!-- d-md-inline-block -->
                     <!-- d-md-inline -->
-                    <td class="col-sm-4 col-md-4 col-lg-3 d-md-inline"><?php echo $customer->paymentOf->date; ?></td>
-                    <td class="col-sm-3 col-md-2 col-lg-2 d-md-inline"><?php echo $customer->Invoice; ?></td>
+                    <td class="col-sm-4 col-md-4 col-lg-3 d-inline"><?php echo $customer->paymentOf->date; ?></td>
+                    <td class="col-sm-3 col-md-2 col-lg-2 d-inline"><?php echo $customer->Invoice; ?></td>
                     <td class="         col-md-0 col-lg-2 d-none d-lg-inline"><?php echo $customer->location; ?></td>
-                    <td class="         col-md-1 col-lg-1 d-none d-md-inline"><?php echo $customer->paymentOf->payment; ?></td>
-                    <td class="         col-md-1 col-lg-1 d-none d-md-inline"><?php echo $customer->paymentOf->points; ?></td>
+                    <td class="         col-md-1 col-lg-1 d-none d-lg-inline"><?php echo $customer->paymentOf->payment; ?></td>
+                    <td class="         col-md-1 col-lg-1 d-none d-lg-inline"><?php echo $customer->paymentOf->points; ?></td>
                
                 <td class="col-sm-5 ol-md-4 col-lg-3 d-md-inline">
                   
