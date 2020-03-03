@@ -37,12 +37,12 @@ class QBleware
 
         ## 檢查 參數
         ## 全域..如果添加.....會爆參數錯誤  ....因為她也..呼叫一次 但沒傳參數
-        // if (! $request->user()->hasRole($name)) {
+        if (! $request->user()->hasRoles($name)) {
        
-        //     echo $name;
-        //     // Redirect...
-        // }
-        echo $name;
+            echo $name;
+            // Redirect...
+        }
+        // echo $name;
 
         #### QBxxx.php 先 -->  web.php 後 
         ################## 123123in Route
