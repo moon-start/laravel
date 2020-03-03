@@ -28,9 +28,9 @@
                     <!-- 問號 d-md-inline -->
                     <td><?php echo $customer->paymentOf->date; ?></td>
                     <td><?php echo $customer->Invoice; ?></td>
-                    <td class="d-xs-none"><?php echo $customer->location; ?></td>
-                    <td class="d-xs-none"><?php echo $customer->paymentOf->payment; ?></td>
-                    <td class="d-xs-none"><?php echo $customer->paymentOf->points; ?></td>
+                    <td class="d-lg-none"><?php echo $customer->location; ?></td>
+                    <td class="d-lg-none"><?php echo $customer->paymentOf->payment; ?></td>
+                    <td class="d-lg-none"><?php echo $customer->paymentOf->points; ?></td>
                
                 <td>
                   
