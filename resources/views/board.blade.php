@@ -82,7 +82,7 @@
         <div class="box border border-primary">呈現主題顏色</div>
         <div class="box border border-danger">呈現主題顏色</div> -->
 
-        <thead class="m-0 p-0 thead-darty bg-success">
+        <thead class="thead-darty bg-success">
             <!-- 背景顏色..bg-info  bg-danger-->
             <tr class="row m-0 p-0">
             <!-- col-xs-4 自動 -->
@@ -94,10 +94,12 @@
             <td class="col-lg-3 col-md-4 col-sm-4 d-md-inline">資料(項目處理)</td>
             </tr>
         </thead>
-        <tbody class="m-0 p-0">
+        <tbody class="">
             <?php
             foreach ($customers as $customer){
             ?>
+
+            <!-- 必須要歸0 tr -->
             <tr class="row m-0 p-0">
                     <!-- clearfix -->
                     <!-- class="d-sm-none"  電腦的消失了 -->
