@@ -84,9 +84,9 @@
             <tr class="row">
             <th class="col-md-2 col-xs-4  d-md-inline">日期</th>
             <th class="col-md-2 col-xs-4 d-md-inline">發票</th>
-            <th class="col-md-2 d-none d-md-inline">地點</th>
-            <th class="col-md-2 d-none d-md-inline">付款</th>
-            <th class="col-md-1 d-none d-md-inline">點數</th>
+            <th class="col-md-2 col-xs-0 d-none d-md-inline">地點</th>
+            <th class="col-md-2 col-xs-0 d-none d-md-inline">付款</th>
+            <th class="col-md-1 col-xs-0 d-none d-md-inline">點數</th>
             <td class="col-md-3 col-xs-4 d-md-inline">資料(項目處理)</td>
             </tr>
         </thead>
@@ -103,9 +103,9 @@
                     <!-- d-md-inline -->
                     <td class="col-md-2 col-xs-4 d-md-inline"><?php echo $customer->paymentOf->date; ?></td>
                     <td class="col-md-2 col-xs-4 d-md-inline"><?php echo $customer->Invoice; ?></td>
-                    <td class="col-md-2 d-none d-md-inline"><?php echo $customer->location; ?></td>
-                    <td class="col-md-2 d-none d-md-inline"><?php echo $customer->paymentOf->payment; ?></td>
-                    <td class="col-md-1 d-none d-md-inline"><?php echo $customer->paymentOf->points; ?></td>
+                    <td class="col-md-2 col-xs-0 d-none d-md-inline"><?php echo $customer->location; ?></td>
+                    <td class="col-md-2 col-xs-0 d-none d-md-inline"><?php echo $customer->paymentOf->payment; ?></td>
+                    <td class="col-md-1 col-xs-0 d-none d-md-inline"><?php echo $customer->paymentOf->points; ?></td>
                
                 <td class="col-md-3 col-xs-4 d-md-inline">
                   
