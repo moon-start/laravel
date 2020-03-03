@@ -115,7 +115,7 @@
 .text-info
 淡藍
 
-
+bg-danger
 bg-danger 
 
 ![背景顏色](https://code.z01.com/v4/utilities/colors.html)
