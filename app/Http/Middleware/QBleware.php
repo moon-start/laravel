@@ -19,7 +19,8 @@ class QBleware
     #}
 
 
-    public function handle($request, Closure $next,$A,$name)
+    ##,$A,$name
+    public function handle($request, Closure $next)
     {
         # 只允許請求內的 age 變數大於 200 的才能存取路由，
         # 否則，我們會將用戶重新導向「home」這個 URI。
@@ -32,8 +33,8 @@ class QBleware
         #return redirect('home');
         #return route('home');
 
-        echo $A.', ';
-        echo $name.'</br>';
+        #echo $A.', ';
+        #echo $name.'</br>';
         return $next($request);
     }
 
