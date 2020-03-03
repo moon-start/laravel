@@ -24,9 +24,9 @@
             <tr>
                     <td><?php echo $customer->paymentOf->date; ?></td>
                     <td><?php echo $customer->Invoice; ?></td>
-                    <td><?php echo $customer->location; ?></td>
-                    <td><?php echo $customer->paymentOf->payment; ?></td>
-                    <td><?php echo $customer->paymentOf->points; ?></td>
+                    <td class="d-sm-none"><?php echo $customer->location; ?></td>
+                    <td class="d-sm-none"><?php echo $customer->paymentOf->payment; ?></td>
+                    <td class="d-sm-none"><?php echo $customer->paymentOf->points; ?></td>
                
                 <td>
                   
