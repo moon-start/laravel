@@ -38,10 +38,10 @@
 
 ## middleware('QB:Hello,Kao')->
 Route::get('/', function (){
-    #return view('welcome');
+    return view('welcome');
 
     #echo 'in Route';
-    return '123456';
+    #return '123456';
 });
 
 ## 執行 QQ控制器  的index() 
