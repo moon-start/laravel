@@ -30,4 +30,7 @@ class QBleware
         return $next($request);
     }
 
+
+    ## 全域
+    ## 加入到 app/Http/Kernel.php 的 $middleware 屬性清單列表中。
 }
