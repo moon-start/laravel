@@ -8,7 +8,7 @@
     <div class="col-12 m-0 p-0 card">
     <div class="col-12 card-header">消費列表</div>
     <div class="col-12 card-body p-1">
-        <table class="col-12 text-center table table-hover  bg-info">
+        <table class="col-12 text-center table table-hover">
         <!-- table-hover 移動效果 -->
         <!-- margin =0 -->
         <!-- bg-danger 背景顏色 -->
@@ -82,16 +82,16 @@
         <div class="box border border-primary">呈現主題顏色</div>
         <div class="box border border-danger">呈現主題顏色</div> -->
 
-        <thead class="thead-darty bg-success">
+        <thead class="thead-darty bg-info">
             <!-- 背景顏色..bg-info  bg-danger-->
             <tr class="row m-0 p-0">
             <!-- col-xs-4 自動 -->
             <th class="col-lg-3 col-md-4 col-sm-4 d-md-inline">日期</th>
-            <th class="col-lg-2 col-md-2 col-sm-4 d-md-inline">發票</th>
+            <th class="col-lg-2 col-md-2 col-sm-3 d-md-inline">發票</th>
             <th class="col-lg-2 col-md-0          d-none d-lg-inline">地點</th>
             <th class="col-lg-1 col-md-1          d-none d-md-inline">付款</th>
             <th class="col-lg-1 col-md-1          d-none d-md-inline">點數</th>
-            <td class="col-lg-3 col-md-4 col-sm-4 d-md-inline">資料(項目處理)</td>
+            <td class="col-lg-3 col-md-4 col-sm-5 d-md-inline">資料(項目處理)</td>
             </tr>
         </thead>
         <tbody class="">
@@ -108,12 +108,12 @@
                     <!-- d-md-inline-block -->
                     <!-- d-md-inline -->
                     <td class="col-sm-4 col-md-4 col-lg-3 d-md-inline"><?php echo $customer->paymentOf->date; ?></td>
-                    <td class="col-sm-4 col-md-2 col-lg-2 d-md-inline"><?php echo $customer->Invoice; ?></td>
+                    <td class="col-sm-3 col-md-2 col-lg-2 d-md-inline"><?php echo $customer->Invoice; ?></td>
                     <td class="         col-md-0 col-lg-2 d-none d-lg-inline"><?php echo $customer->location; ?></td>
                     <td class="         col-md-1 col-lg-1 d-none d-md-inline"><?php echo $customer->paymentOf->payment; ?></td>
                     <td class="         col-md-1 col-lg-1 d-none d-md-inline"><?php echo $customer->paymentOf->points; ?></td>
                
-                <td class="col-sm-4 ol-md-4 col-lg-3 d-md-inline">
+                <td class="col-sm-5 ol-md-4 col-lg-3 d-md-inline">
                   
                     <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="btn btn-success btn-sm">新增</a>
 
