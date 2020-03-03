@@ -29,7 +29,8 @@ class QBleware
 
         // return $next($request);
 
-        return redirect('home');
+        #return redirect('home');
+        return route('home');
     }
 
 
