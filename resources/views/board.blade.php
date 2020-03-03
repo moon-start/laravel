@@ -92,8 +92,9 @@
             <th class="col-lg-2 col-md-0          d-none d-lg-inline">地點</th>
             <th class="col-lg-1 col-md-0          d-none d-lg-inline">付款</th>
             <th class="col-lg-1 col-md-0          d-none d-lg-inline">點數</th>
-            <!-- td 改成 th -->
-            <th class="col-lg-3 col-md-5 col-sm-5 d-none d-md-inline">資料(項目處理)</th>
+            <!-- td 改成 th --> 
+            <!-- xs sm -->
+            <th class="col-lg-3 col-md-5 col-sm-5 d-none d-sm-inline">資料(項目處理)</th>
             </tr>
         </thead>
         <tbody class="">
