@@ -101,13 +101,13 @@
                     <!-- 問號 d-md-inline -->
                     <!-- d-md-inline-block -->
                     <!-- d-md-inline -->
-                    <td class="col-md-2 col-xs-4 d-md-inline"><?php echo $customer->paymentOf->date; ?></td>
-                    <td class="col-md-2 col-xs-4 d-md-inline"><?php echo $customer->Invoice; ?></td>
-                    <td class="col-md-2 col-xs-0 d-none d-md-inline"><?php echo $customer->location; ?></td>
-                    <td class="col-md-2 col-xs-0 d-none d-md-inline"><?php echo $customer->paymentOf->payment; ?></td>
-                    <td class="col-md-1 col-xs-0 d-none d-md-inline"><?php echo $customer->paymentOf->points; ?></td>
+                    <td class="col-xs-4 col-md-2 d-md-inline"><?php echo $customer->paymentOf->date; ?></td>
+                    <td class="col-xs-4 col-md-2 d-md-inline"><?php echo $customer->Invoice; ?></td>
+                    <td class="col-xs-0 col-md-2 d-none d-md-inline"><?php echo $customer->location; ?></td>
+                    <td class="col-xs-0 col-md-2 d-none d-md-inline"><?php echo $customer->paymentOf->payment; ?></td>
+                    <td class="col-xs-0 col-md-1 d-none d-md-inline"><?php echo $customer->paymentOf->points; ?></td>
                
-                <td class="col-md-3 col-xs-4 d-md-inline">
+                <td class="col-xs-4 col-md-3 d-md-inline">
                   
                     <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="btn btn-success btn-sm">新增</a>
 
