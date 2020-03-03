@@ -9,7 +9,7 @@
     <div class="col-12 card-header">消費列表</div>
     <!-- <div class="col-12 card-body  p-1"> -->
     <div class="col-12 card-body  m-0 p-0">
-        <table class="col-12text-center table table-hover">
+        <table class="col-12 text-center table table-hover">
         <!-- table-hover 移動效果 -->
         <!-- margin =0 -->
         <!-- bg-danger 背景顏色 -->
