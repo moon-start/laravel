@@ -23,11 +23,13 @@ class QBleware
     {
         # 只允許請求內的 age 變數大於 200 的才能存取路由，
         # 否則，我們會將用戶重新導向「home」這個 URI。
-        if ($request->input('age') <= 200) {
-            return redirect('home');
-        }
+        // if ($request->input('age') <= 200) {
+            
+        // }
 
-        return $next($request);
+        // return $next($request);
+
+        return redirect('home');
     }
 
 
