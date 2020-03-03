@@ -2,7 +2,7 @@
 @section('title','消費列表')
 @section('content')
 <div class="row justify-content-center">
-<div class="col-md-10">
+<div class="col-md-10 m-0 p-0">
 
     <!-- 列表 -->
     <div class="col-12 m-0 p-0 card">
