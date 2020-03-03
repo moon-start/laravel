@@ -44,17 +44,19 @@ class QBleware
         ## 參數
         echo $name;
 
-        #### QBxxx.php 先 -->  web.php 後 
-        ################## 123123in Route
+
+
+        #### 參數 --> QBxxx.php 先 -->  web.php 後 
+        ################## QAQ123in Route
         echo "123";
         #echo $A.', ';
         #echo $name.'</br>';
-        return $next($request);  ## 在呼叫自己一次??
+        return $next($request);  ## 處理 web.php 函數
 
 
         #### 參數  -->  web.php 先 --> QBxxx.php 後
+        ################### QAQin Route 123
         // $response = $next($request); //先處理 request （next 本身是閉包，會先處理 request)
-        // // Perform action			 //這裡才執行任務
         // echo '</br>'.'123';
         // return $response;
     }

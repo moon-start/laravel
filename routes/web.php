@@ -38,7 +38,7 @@
 
 ## middleware('QB:Hello,Kao')->
 Route::middleware('QB:QAQ')->get('/', function (){
-    #return view('welcome');
+    return view('welcome');
 
     echo 'in Route';
     #return '123456';
