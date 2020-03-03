@@ -56,7 +56,6 @@ class Kernel extends HttpKernel
     
     ## 為路由指派中介層
     protected $routeMiddleware = [
-        \App\Http\Middleware\QBleware::class,
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
