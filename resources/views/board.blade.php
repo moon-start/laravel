@@ -80,7 +80,7 @@
         <div class="box border border-primary">呈現主題顏色</div>
         <div class="box border border-danger">呈現主題顏色</div> -->
 
-        <thead class="thead-darty">
+        <thead class="container thead-darty">
             <tr class="row">
             <!-- col-xs-4 自動 -->
             <th class="col-md-3 col-sm-4 d-md-inline">日期</th>
@@ -91,7 +91,7 @@
             <td class="col-md-3 col-sm-4 d-md-inline">資料(項目處理)</td>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="container">
             <?php
             foreach ($customers as $customer){
             ?>
