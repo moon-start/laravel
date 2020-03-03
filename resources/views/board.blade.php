@@ -86,8 +86,8 @@
             <th class="col-md-2 d-md-inline">發票</th>
             <th class="col-md-2 d-none d-md-inline">地點</th>
             <th class="col-md-2 d-none d-md-inline">付款</th>
-            <th class="col-md-2 d-none d-md-inline">點數</th>
-            <td class="col-md-2 d-md-inline">資料(項目處理)</td>
+            <th class="col-md-1 d-none d-md-inline">點數</th>
+            <td class="col-md-3 d-md-inline">資料(項目處理)</td>
             </tr>
         </thead>
         <tbody>
@@ -105,9 +105,9 @@
                     <td class="col-md-2 d-md-inline"><?php echo $customer->Invoice; ?></td>
                     <td class="col-md-2 d-none d-md-inline"><?php echo $customer->location; ?></td>
                     <td class="col-md-2 d-none d-md-inline"><?php echo $customer->paymentOf->payment; ?></td>
-                    <td class="col-md-2 d-none d-md-inline"><?php echo $customer->paymentOf->points; ?></td>
+                    <td class="col-md-1 d-none d-md-inline"><?php echo $customer->paymentOf->points; ?></td>
                
-                <td class="col-md-2 d-md-inline">
+                <td class="col-md-3 d-md-inline">
                   
                     <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="btn btn-success btn-sm">新增</a>
 
