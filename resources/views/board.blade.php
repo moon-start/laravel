@@ -83,12 +83,12 @@
         <thead class="thead-darty">
             <tr class="row">
             <!-- col-xs-4 自動 -->
-            <th class="col-md-3 col-sm-4 d-md-inline">日期</th>
-            <th class="col-md-2 col-sm-4 d-md-inline">發票</th>
-            <th class="col-md-2          d-none d-md-inline">地點</th>
-            <th class="col-md-1          d-none d-md-inline">付款</th>
-            <th class="col-md-1          d-none d-md-inline">點數</th>
-            <td class="col-md-3 col-sm-4 d-md-inline">資料(項目處理)</td>
+            <th class="col-lg-3 col-md-4 col-sm-4 d-md-inline">日期</th>
+            <th class="col-lg-2 col-md-3 col-sm-4 d-md-inline">發票</th>
+            <th class="col-lg-2                   d-none d-md-inline">地點</th>
+            <th class="col-lg-1 col-md-1          d-none d-md-inline">付款</th>
+            <th class="col-lg-1 col-md-1          d-none d-md-inline">點數</th>
+            <td class="col-lg-3 col-md-3 col-sm-4 d-md-inline">資料(項目處理)</td>
             </tr>
         </thead>
         <tbody>
@@ -102,13 +102,13 @@
                     <!-- 問號 d-md-inline -->
                     <!-- d-md-inline-block -->
                     <!-- d-md-inline -->
-                    <td class="col-sm-4 col-md-3 d-md-inline"><?php echo $customer->paymentOf->date; ?></td>
-                    <td class="col-sm-4 col-md-2 d-md-inline"><?php echo $customer->Invoice; ?></td>
-                    <td class="         col-md-2 d-none d-md-inline"><?php echo $customer->location; ?></td>
-                    <td class="         col-md-1 d-none d-md-inline"><?php echo $customer->paymentOf->payment; ?></td>
-                    <td class="         col-md-1 d-none d-md-inline"><?php echo $customer->paymentOf->points; ?></td>
+                    <td class="col-sm-4 col-md-4 col-lg-3 d-md-inline"><?php echo $customer->paymentOf->date; ?></td>
+                    <td class="col-sm-4 col-md-3 col-lg-2 d-md-inline"><?php echo $customer->Invoice; ?></td>
+                    <td class="                  col-lg-2 d-none d-md-inline"><?php echo $customer->location; ?></td>
+                    <td class="         col-md-1 col-lg-1 d-none d-md-inline"><?php echo $customer->paymentOf->payment; ?></td>
+                    <td class="         col-md-1 col-lg-1 d-none d-md-inline"><?php echo $customer->paymentOf->points; ?></td>
                
-                <td class="col-sm-4 col-md-3 d-md-inline">
+                <td class="col-sm-4 ol-md-3 col-lg-3 d-md-inline">
                   
                     <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="btn btn-success btn-sm">新增</a>
 
