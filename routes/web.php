@@ -75,7 +75,7 @@ Route::get('delete','QQController@delete');
 ###### views/partials/board.blade.php 包含 edit  和 delete
 ###### views/partials/edit.blade.php  包含 edit  
 ###### views/partials/new.blade.php   包含 @storeABC 
-Route::get('QB','QBController@index')->name('QB');   
+Route::get('QB','QBController@index');   
 ## 新增客戶資料(進入new畫面)
 Route::get('new','QBController@new')->name('new123');
 Route::post('store','QBController@storeABC');
