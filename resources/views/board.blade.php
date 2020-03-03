@@ -88,12 +88,12 @@
             <tr class="row m-0 p-0 bg-info">
             <!-- col-xs-4 自動 -->
             <th class="col-lg-3 col-md-4 col-sm-4 d-inline">日期</th>
-            <th class="col-lg-2 col-md-2 col-sm-3 d-inline">發票</th>
+            <th class="col-lg-2 col-md-3 col-sm-3 d-inline">發票</th>
             <th class="col-lg-2 col-md-0          d-none d-lg-inline">地點</th>
-            <th class="col-lg-1 col-md-1          d-none d-lg-inline">付款</th>
-            <th class="col-lg-1 col-md-1          d-none d-lg-inline">點數</th>
+            <th class="col-lg-1 col-md-0          d-none d-lg-inline">付款</th>
+            <th class="col-lg-1 col-md-0          d-none d-lg-inline">點數</th>
             <!-- td 改成 th -->
-            <th class="col-lg-3 col-md-4 col-sm-5 d-none d-md-inline">資料(項目處理)</th>
+            <th class="col-lg-3 col-md-5 col-sm-5 d-none d-md-inline">資料(項目處理)</th>
             </tr>
         </thead>
         <tbody class="">
@@ -110,12 +110,12 @@
                     <!-- d-md-inline-block -->
                     <!-- d-md-inline -->
                     <td class="col-sm-4 col-md-4 col-lg-3 d-inline"><?php echo $customer->paymentOf->date; ?></td>
-                    <td class="col-sm-3 col-md-2 col-lg-2 d-inline"><?php echo $customer->Invoice; ?></td>
+                    <td class="col-sm-3 col-md-3 col-lg-2 d-inline"><?php echo $customer->Invoice; ?></td>
                     <td class="         col-md-0 col-lg-2 d-none d-lg-inline"><?php echo $customer->location; ?></td>
-                    <td class="         col-md-1 col-lg-1 d-none d-lg-inline"><?php echo $customer->paymentOf->payment; ?></td>
-                    <td class="         col-md-1 col-lg-1 d-none d-lg-inline"><?php echo $customer->paymentOf->points; ?></td>
+                    <td class="         col-md-0 col-lg-1 d-none d-lg-inline"><?php echo $customer->paymentOf->payment; ?></td>
+                    <td class="         col-md-0 col-lg-1 d-none d-lg-inline"><?php echo $customer->paymentOf->points; ?></td>
                
-                <td class="col-sm-5 ol-md-4 col-lg-3 d-md-inline">
+                <td class="col-sm-5 ol-md-5 col-lg-3 d-md-inline">
                   
                     <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="btn btn-success btn-sm">新增</a>
 
