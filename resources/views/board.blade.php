@@ -22,12 +22,13 @@
             foreach ($customers as $customer){
             ?>
             <tr>
+                    <!-- clearfix -->
                     <!-- class="d-sm-none"  電腦的消失了 -->
                     <td><?php echo $customer->paymentOf->date; ?></td>
                     <td><?php echo $customer->Invoice; ?></td>
-                    <td class="clearfix d-sm-none"><?php echo $customer->location; ?></td>
-                    <td class="clearfix d-sm-none"><?php echo $customer->paymentOf->payment; ?></td>
-                    <td class="clearfix d-sm-none"><?php echo $customer->paymentOf->points; ?></td>
+                    <td class="d-none d-md-block"><?php echo $customer->location; ?></td>
+                    <td class="d-none d-md-block"><?php echo $customer->paymentOf->payment; ?></td>
+                    <td class="d-none d-md-block"><?php echo $customer->paymentOf->points; ?></td>
                
                 <td>
                   
