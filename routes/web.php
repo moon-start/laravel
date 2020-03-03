@@ -18,7 +18,7 @@
 ## });
 
 ## B  ['middleware' => 'auth', function () {....}]
-Route::get('/',['middleware' => 'QB',function () {
+Route::get('/',['middleware' => 'auth',function () {
     return view('welcome');
 }]);
 
