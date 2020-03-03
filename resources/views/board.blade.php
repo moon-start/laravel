@@ -26,8 +26,8 @@
                     <!-- class="d-sm-none"  電腦的消失了 -->
                     <!-- 電腦版 改成區塊 d-none d-md-block -->
                     <!-- 問號 d-md-inline -->
-                    <td><?php echo $customer->paymentOf->date; ?></td>
-                    <td><?php echo $customer->Invoice; ?></td>
+                    <td class="d-md-inline-block"><?php echo $customer->paymentOf->date; ?></td>
+                    <td class="d-md-inline-block"><?php echo $customer->Invoice; ?></td>
                     <td class="d-none d-md-inline-block"><?php echo $customer->location; ?></td>
                     <td class="d-none d-md-inline-block"><?php echo $customer->paymentOf->payment; ?></td>
                     <td class="d-none d-md-inline-block"><?php echo $customer->paymentOf->points; ?></td>
