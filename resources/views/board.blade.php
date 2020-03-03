@@ -81,11 +81,11 @@
         <div class="box border border-danger">呈現主題顏色</div> -->
 
         <thead class="thead-darty">
-            <tr class="row">
+            <tr class="row text-info">
             <!-- col-xs-4 自動 -->
             <th class="bg-danger col-lg-3 col-md-4 col-sm-4 d-md-inline">日期</th>
             <th class="col-lg-2 col-md-2 col-sm-4 d-md-inline">發票</th>
-            <th class="col-lg-2 col-md-0          ">地點</th>
+            <th class="col-lg-2 col-md-0          d-none d-lg-inline">地點</th>
             <th class="col-lg-1 col-md-1          d-none d-md-inline">付款</th>
             <th class="col-lg-1 col-md-1          d-none d-md-inline">點數</th>
             <td class="col-lg-3 col-md-4 col-sm-4 d-md-inline">資料(項目處理)</td>
