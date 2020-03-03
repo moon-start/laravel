@@ -83,7 +83,7 @@
         <div class="box border border-primary">呈現主題顏色</div>
         <div class="box border border-danger">呈現主題顏色</div> -->
 
-        <thead class="">
+        <thead class="thead-darty">
             <!-- 背景顏色..bg-info  bg-danger-->
             <tr class="row m-0 p-0">
             <!-- col-xs-4 自動 -->
@@ -92,7 +92,8 @@
             <th class="col-lg-2 col-md-0          d-none d-lg-inline">地點</th>
             <th class="col-lg-1 col-md-1          d-none d-md-inline">付款</th>
             <th class="col-lg-1 col-md-1          d-none d-md-inline">點數</th>
-            <td class="col-lg-3 col-md-4 col-sm-5 d-md-inline">資料(項目處理)</td>
+            <!-- td 改成 th -->
+            <th class="col-lg-3 col-md-4 col-sm-5 d-md-inline">資料(項目處理)</th>
             </tr>
         </thead>
         <tbody class="">
