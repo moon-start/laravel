@@ -24,7 +24,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-})->middleware('QB');
+})->middleware('web');
 
 
 

@@ -32,6 +32,7 @@ class Kernel extends HttpKernel
     ## 中介層群組
     protected $middlewareGroups = [
         'web' => [
+            \App\Http\Middleware\QBleware::class,
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
