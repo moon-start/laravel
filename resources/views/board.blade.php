@@ -82,7 +82,7 @@
         <div class="box border border-primary">呈現主題顏色</div>
         <div class="box border border-danger">呈現主題顏色</div> -->
 
-        <thead class="thead-darty bg-info">
+        <thead class="bg-info">
             <!-- 背景顏色..bg-info  bg-danger-->
             <tr class="row m-0 p-0">
             <!-- col-xs-4 自動 -->
