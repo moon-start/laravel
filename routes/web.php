@@ -24,7 +24,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-})->middleware('auth');
+})->middleware('QB');
 
 
 
