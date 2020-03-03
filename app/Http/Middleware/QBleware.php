@@ -30,7 +30,7 @@ class QBleware
 
         // return $next($request);
 
-        return redirect('home');
+        return redirect('login');
         #return route('home');
 
         #echo $A.', ';
