@@ -83,11 +83,11 @@ Route::post('store','QBController@storeABC');
 Route::middleware('QB:QAQ')->get('newB','QBController@newB')->name('new123');
 Route::post('storeB','QBController@storeBBB');
 ## 修改客戶資料表格(進入deit)
-Route::get('edit','QBController@edit');
+Route::middleware('QB:QAQ')->get('edit','QBController@edit');
 ## 更新客戶資料(送出)
 Route::post('update','QBController@update');
 ## 刪除客戶資料
-Route::get('delete','QBController@delete');
+Route::middleware('QB:QAQ')->get('delete','QBController@delete');
 ####
 ####
 ####
