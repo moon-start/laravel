@@ -21,6 +21,9 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
+
+    ###########################
+    ## 這是登入 導向的頁面
     public const HOME = '/QB';
 
     /**
