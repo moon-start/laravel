@@ -48,14 +48,14 @@ $ clonePHP laravel
 $ inDM
 ```
 
-## 安裝 Laravel 框架 
+## RWD 理念
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+包含了 4種呈現版面
 
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
+- 電腦版
+- ipad
+- iphone (垂直)
+- iphone (水平)
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
