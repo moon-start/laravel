@@ -13,18 +13,15 @@
 
 
 ## A 原始
-## Route::get('/', function () {
-##     return view('welcome');
-## });
+Route::get('/', function () {
+     return view('welcome');
+});
 
 ## B  ['middleware' => 'auth', function () {....}]
 // Route::get('/',['middleware' => 'QB',function () {
 //     return view('welcome');
 // }]);
 
-// Route::get('/', function () {
-//     return view('welcome');
-// })->middleware('web');
 
 
 ## 中介層--> 路由器 -->過程
@@ -37,12 +34,12 @@
 // });
 
 ## middleware('QB:Hello,Kao')->
-Route::middleware('QB:QAQ')->get('/', function (){
-    return view('welcome');
+// Route::middleware('QB:QAQ')->get('/', function (){
+//     return view('welcome');
 
-    echo 'in Route';
-    #return '123456';
-});
+//     echo 'in Route';
+//     #return '123456';
+// });
 ## 第二種
 ##Route::middleware('QB:QAQ')->get('QB','QBController@index');  
 
@@ -80,10 +77,10 @@ Route::get('delete','QQController@delete');
 ###### views/partials/new.blade.php   包含 @storeABC 
 Route::get('QB','QBController@index');   
 ## 新增客戶資料(進入new畫面)
-Route::get('new','QBController@new')->name('new123');
+Route::middleware('QB:QAQ')->get('new','QBController@new')->name('new123');
 Route::post('store','QBController@storeABC');
 ## 新增項目(進入newB畫面)
-Route::get('newB','QBController@newB')->name('new123');
+Route::middleware('QB:QAQ')->get('newB','QBController@newB')->name('new123');
 Route::post('storeB','QBController@storeBBB');
 ## 修改客戶資料表格(進入deit)
 Route::get('edit','QBController@edit');
@@ -105,7 +102,7 @@ Route::get('delete','QBController@delete');
 Auth::routes();
 ## 這是登入後.... 會倒入的頁面
 ## 'App\Providers\RouteServiceProvider.php'     public const HOME = '/QB';
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');  ## 修改 \RouteServiceProvider.php'設定
 
 
 

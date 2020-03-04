@@ -47,19 +47,27 @@ class QBleware
             # 取得目前的已認證使用者 ID...
             $id = Auth::id();
 
+            
             ## 輸出 變數或成員
             ## 字符串（2）“ QQ”
-            var_dump($user->name);
+            ## var_dump($user->name);
 
             # 使用特定使用者的 ID 登入
             # $user_id = '1';
             # Auth::loginUsingId($user_id);
             # 登出
             #Auth::logout();
+            
+            ## 導向 web.phph 預設的URL
+            return $next($request);
+
         } else {
-            echo "沒有使用者";
+            #echo "沒有使用者";
+            ## 導向
+            return redirect('login'); 
+
         }
-        
+        ##### 因為以上已經傳回 不會執行下面了
 
 
 

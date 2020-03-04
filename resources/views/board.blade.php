@@ -95,7 +95,7 @@
             <!-- td 改成 th --> 
             <!-- xs sm md lg 小到大-->
             
-            56+<!-- 手機 -->
+            <!-- 手機 -->
             <!-- xs Y方向 sm X方向 -->
             <th class="col-lg-3 col-md-5 col-sm-5 d-none d-sm-inline">資料(項目處理)</th>
             </tr>
