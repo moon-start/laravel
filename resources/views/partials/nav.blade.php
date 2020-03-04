@@ -55,7 +55,7 @@
                         @else
 
                             <!-- 登入後的 漢堡選單?? -->
-                            <!-- <div class="dropdown">
+                            <div class="dropdown">
                                 <a class="dropdown-toggle" id="OK" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Dropdown button
                                 </button>
@@ -64,19 +64,8 @@
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <a class="dropdown-item" href="#">Something else here</a>
                                 </div>
-                            </div> -->
-                            <li class="nav-item dropdown">
-                                <a id="OK" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                       
-                                <div class="dropdown-menu" aria-labelledby="OK">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
+                            </div>
+                         
                         @endguest
                     </ul>
                 </div>
