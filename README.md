@@ -57,12 +57,22 @@ $ inDM
 - iphone (垂直)
 - iphone (水平)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 
-
-
-
+## 使用者認證 (auth)
+- **發票 (新增):** 
+  ``` 
+  須註冊和登入使用者.
+  ```
+- **項目 (新增,編輯,刪除):**
+  ```
+  須註冊和登入使用者.
+  ```
+- **刪除按鈕 (說明):**
+  ```
+  包含刪除發票+項目等等 ,所有紀錄.
+  ```
+  
 ## 第一正規化
   1. 要求資料庫的每個欄位都只能存放單一值
   2. 單一欄位中不可有多個有意義的值
