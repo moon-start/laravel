@@ -70,9 +70,12 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+        
+        <!-- <main class="py-4">-->
+            <!-- 這是載入 blade.php主體 -->
+            <!-- 因為後面會用到 不需要再載入 -->
+            <!-- @yield('content') -->
+        <!-- </main>  -->
     </div>
 
 
