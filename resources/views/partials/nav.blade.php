@@ -71,9 +71,8 @@
                                 <!-- <a class="dropdown-toggle" id="自訂" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
                                 <!-- aria-labelledby="dropdown-toggle的ID" -->
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="OK">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="">
-                                        {{ Auth::logout() }}
+                                    <a class="dropdown-item" href="{{ route('logout') }}" >
+                                        登出
                                     </a>
                                     
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
