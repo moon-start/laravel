@@ -78,7 +78,7 @@ Route::get('delete','QQController@delete');
 ###### views/partials/board.blade.php 包含 edit  和 delete
 ###### views/partials/edit.blade.php  包含 edit  
 ###### views/partials/new.blade.php   包含 @storeABC 
-Route::get('QB','QBController@index')->name('home');   
+Route::get('QB','QBController@index');   
 ## 新增客戶資料(進入new畫面)
 Route::get('new','QBController@new')->name('new123');
 Route::post('store','QBController@storeABC');
@@ -104,7 +104,7 @@ Route::get('delete','QBController@delete');
 ## 註冊 http://192.168.1.116/register
 Auth::routes();
 ## 這是登入後.... 會倒入的頁面
-## Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
 
 
