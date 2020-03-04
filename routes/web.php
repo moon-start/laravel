@@ -104,7 +104,9 @@ Route::get('delete','QBController@delete');
 ## 註冊 http://192.168.1.116/register
 Auth::routes();
 ## 這是登入後.... 會倒入的頁面
+## 'App\Providers\RouteServiceProvider.php'     public const HOME = '/QB';
 Route::get('/home', 'HomeController@index')->name('home');
+
 
 
 
