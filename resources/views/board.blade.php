@@ -119,7 +119,7 @@
                     <td class="         col-md-0 col-lg-1 d-none d-lg-inline"><?php echo $customer->paymentOf->payment; ?></td>
                     <td class="         col-md-0 col-lg-1 d-none d-lg-inline"><?php echo $customer->paymentOf->points; ?></td>
                
-                <td class="col-sm-5 ol-md-5 col-lg-3 d-md-inline">
+                <td class="row col-sm-5 ol-md-5 col-lg-3 d-md-inline">
                     <p class="col-2"></p>
                     <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="col-2 btn btn-success btn-sm">新增</a>
 
