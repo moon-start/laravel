@@ -62,25 +62,19 @@
                                 </div>
                             </div> -->
                             <li class="nav-item dropdown">
-
-   
-                                <a id="OK" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <!-- <a class="dropdown-toggle" id="自訂" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-                                <!-- aria-labelledby="dropdown-toggle的ID" -->
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="OK">
-                                    <!-- <a class="dropdown-item" href=" route('logout') " >
-                                        登出
-                                    </a> -->
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    
-                                    <!-- <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        csrf
-                                    </form> -->
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
                                 </div>
                             </li>
                         @endguest
