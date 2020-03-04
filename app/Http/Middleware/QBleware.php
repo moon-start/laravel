@@ -19,6 +19,9 @@ class QBleware
     #}
 
 
+    ## 使用者 認證
+    use Illuminate\Support\Facades\Auth;
+
     ##,$A,$name
     public function handle($request, Closure $next,$name)
     {
@@ -27,13 +30,33 @@ class QBleware
         // if ($request->input('age') <= 200) {
         //     return redirect('QB'); 
         // }
-
-
-
         // return $next($request);
-
         #return redirect('QB'); 重島次數過多
         #return route('home');
+        
+
+        ### 判斷是否  已登入
+        if (Auth::check()) {
+
+            # 取得目前的已認證使用者...
+            $user = Auth::user();
+            # 取得目前的已認證使用者 ID...
+            $id = Auth::id();
+
+            ## 輸出 變數或成員
+            var_dump($user->name);
+
+            # 使用特定使用者的 ID 登入
+            # $user_id = '1';
+            # Auth::loginUsingId($user_id);
+            # 登出
+            #Auth::logout();
+        } else {
+            echo "沒有使用者";
+        }
+        
+
+
 
         ## 檢查 參數
         ## 全域..如果添加.....會爆參數錯誤  ....因為她也..呼叫一次 但沒傳參數
