@@ -4,6 +4,10 @@ namespace App\Http\Middleware;
 
 use Closure;
 
+
+### 使用者 auth
+use Illuminate\Support\Facades\Auth;
+
 class QBleware
 {
     /**
@@ -20,7 +24,7 @@ class QBleware
 
 
     ## 使用者 認證
-    use Illuminate\Support\Facades\Auth;
+   
 
     ##,$A,$name
     public function handle($request, Closure $next,$name)
