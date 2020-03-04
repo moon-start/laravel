@@ -33,6 +33,8 @@
 
 
 
+                    <!-- nav 藥丸主題 -->
+                    <!-- <ul class="nav nav-pills"> -->
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -47,12 +49,28 @@
                                 </li>
                             @endif
                         @else
+
+                            <!-- 登入後的 漢堡選單?? -->
+                            <!-- <div class="dropdown">
+                                <a class="dropdown-toggle" id="OK" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="OK">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div> -->
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+
+   
+                                <a id="OK" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <!-- <a class="dropdown-toggle" id="自訂" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                                <!-- aria-labelledby="dropdown-toggle的ID" -->
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="OK">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
