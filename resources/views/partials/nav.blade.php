@@ -107,6 +107,13 @@
     </div>
 
 
+<script>
+$(function() {
+    $('.dropdown-toggle').dropdown();
+});
+</script>
+  
+
 <!-- 原始的 nav.blade.php 內容-->
 <!-- <nav class="navbar navbar-expand-lg navbar-light navbar-default">
     <div class="container">
