@@ -121,7 +121,7 @@
                
                 <td class="col-sm-5 ol-md-5 col-lg-3 d-md-inline">
                   
-                    <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="btn btn-success btn-sm">新增</a>
+                    <a href="{{ action('QBController@newB', ['id'=>$customer->id]) }}" class="col-4 btn btn-success btn-sm">新增</a>
 
                     <!-- <a href=" action('QBController@edit', 
                                 ['Cusid'=>$customer->Cusid,
@@ -129,10 +129,10 @@
                                 'Address'=>$customer->Address,
                                 'Phone'=>$customer->Phone]) " class="btn btn-success btn-sm">編輯</a> -->
 
-                    <a href="{{ action('QBController@edit',['id'=>$customer->id]) }} " class="btn btn-success btn-sm">編輯</a>
+                    <a href="{{ action('QBController@edit',['id'=>$customer->id]) }} " class="col-4 btn btn-success btn-sm">編輯</a>
 
                 
-                    <a href="{{ action('QBController@delete', ['id'=>$customer->id]) }}" class="btn btn-danger btn-sm">刪除</a>
+                    <a href="{{ action('QBController@delete', ['id'=>$customer->id]) }}" class="col-4 btn btn-danger btn-sm">刪除</a>
                 </td>
                
 
