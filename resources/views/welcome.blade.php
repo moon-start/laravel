@@ -68,8 +68,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
+                        <!-- 列出 1個選單 -->
+                        <!-- 這是 登入狀態 -->
                         <a href="{{ url('/home') }}">Home</a>
                     @else
+                        <!-- 列出 2個選單 -->
+                        <!-- 這是 登出狀態 -->
                         <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))

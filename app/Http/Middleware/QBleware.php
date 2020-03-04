@@ -48,6 +48,7 @@ class QBleware
             $id = Auth::id();
 
             ## 輸出 變數或成員
+            ## 字符串（2）“ QQ”
             var_dump($user->name);
 
             # 使用特定使用者的 ID 登入
