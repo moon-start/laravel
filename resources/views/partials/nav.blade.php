@@ -28,6 +28,10 @@
                                 新增消費
                                 </a>
                             </li>
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                            </a>
                             
                     </ul>
 
@@ -50,23 +54,15 @@
                             @endif
                         @else
 
-                           
-                           
-                           
-                         
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                </a>
-                               
-                            </li>
+                            
 
                         @endguest
                     </ul>
                 </div>
             </div>
         </nav>
+
+       
 
         <main class="py-4">
             @yield('content')
