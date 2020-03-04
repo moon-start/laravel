@@ -22,8 +22,9 @@ class LoginController extends Controller
      * @var string
      */
 
-    ################################################### 登出的位置 ->name('QB')
-    protected $redirectTo = RouteServiceProvider::QB;
+    ################################################### 登出的位置 app
+    ## 'App \ Providers \ RouteServiceProvider :: HOME'
+    protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
