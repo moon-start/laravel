@@ -75,9 +75,9 @@
                                         登出
                                     </a>
                                     
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
+                                    <!-- <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        csrf
+                                    </form> -->
                                 </div>
                             </li>
                         @endguest
