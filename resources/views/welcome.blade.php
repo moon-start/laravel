@@ -63,7 +63,7 @@
             }
         </style>
     </head>
-    <body>
+    <body style="cursor: url(https://i.imgur.com/7PzAN2U.png), auto;">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
