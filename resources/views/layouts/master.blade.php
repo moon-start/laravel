@@ -6,7 +6,8 @@
     @include('partials.head')
   @show
 </head>
-<body style="cursor: url("https://i.imgur.com/7PzAN2U.png"), auto;">
+
+<body style="cursor: url(https://i.imgur.com/7PzAN2U.png), auto;">
   @include('partials.nav')
   
   <!-- <main class="py-4"> -->
