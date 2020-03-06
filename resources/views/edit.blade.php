@@ -118,14 +118,15 @@
     </div>
     <div class="row justify-content-center">
 
-        <div class="col-md-8">
+        <!-- <div class="col-md-8">
             <div class="card">
             <div class="card-header">更新 項目資料 (null資料)</div>
-            <div class="card-body p-1">
+            <div class="card-body p-1"> -->
+                
                 <!--  -->
                 <div class="form-group row">
-                    <div class="col-2 col-xs-1"></div>
-
+                    <!-- <div class="col-2 col-xs-1"></div> -->
+                    <div class="card-header col-2 col-xs-1">更新 項目資料 (null資料)</div>
 
                     <div class="col-6 col-xs-6">
                         <input type="submit" class="btn btn-primary" value="送出">
@@ -137,8 +138,9 @@
                     
                 </div>  
                 <!--  -->
-            </div>
-            </div>
+
+            <!-- </div>
+            </div> -->
         </div>
 
 
