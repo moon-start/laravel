@@ -112,14 +112,14 @@
         <div class="card-body p-1">
             <!--  -->
             <div class="form-group row">
-                <div class="col-2"></div>
+                <div class="col-2 col-xs-1"></div>
 
 
-                <div class="col-6">
+                <div class="col-6 col-xs-6">
                     <input type="submit" class="btn btn-primary" value="送出">
                     <input type="hidden" id="oldId" name="oldId"  value="123">
                 </div>
-                <div class="col-1">
+                <div class="col-1 col-xs-1">
                     <input type="submit" class="btn btn-warning" value="取消" name="cancel">
                 </div>
                 
