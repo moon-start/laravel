@@ -105,6 +105,42 @@
             foreach ($customers as $customer){
             ?>
 
+
+<!-- 
+第2個點開始  會使用空白
+button.btn.btn-primary
+<button class="btn btn-primary"></button> 
+
+td.col-sm-4.col-md-4
+<td class="col-sm-4 col-md-4"></td> 
+
+點前面不加 預設是div
+.moon
+<div class="moon"></div>
+
+-->
+<!-- 
+//style +tab
+<style>
+  .QQ {
+    
+    //h +tab
+    height:100vh;
+    //bgi +tab
+    background-image: url(https://bzj7jdmrn8bbwmcy2kazaa-on.drv.tw/www/web/images/%E5%A3%81%E7%B4%99C-okk.png);
+  }
+</style> 
+
+/*bgs +tab*/
+ background-size: cover;
+ 
+ /*bgp +tab*/
+ background-position: center center;
+-->
+
+
+
+
             <!-- 必須要歸0 tr -->
             <tr class="row m-0 p-0">
                     <!-- clearfix -->
