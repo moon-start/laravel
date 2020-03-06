@@ -85,8 +85,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <p>歡迎光臨 !</p>
-                    <p>PHP項目 !</p>
+                    <p>歡迎光臨 !<br class="d-md-none d-lg-none">PHP項目 !</p>
                 </div>
 
                 <div class="links">
