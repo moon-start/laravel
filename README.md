@@ -94,7 +94,7 @@ http://192.168.1.119/
 
 
 ## 使用者認證 (auth)
-- **[新增消費 :](https://raw.githubusercontent.com/moon-start/laravel/master/moon/N1.PNG)** 
+- **[新增消費 :](https://raw.githubusercontent.com/moon-start/laravel/master/moon/新增消費.PNG)** 
   ``` 
   1. 須 註冊和登入 使用者.
   

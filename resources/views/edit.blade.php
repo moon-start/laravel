@@ -112,7 +112,7 @@
         <div class="card-body p-1">
             <!--  -->
             <div class="form-group row">
-                <div class="col-sm-1"></div>
+                <!-- <div class="col-sm-1"></div> -->
                 <div class="col-sm-9">
                     <input type="submit" class="btn btn-primary" value="送出">
                     <input type="hidden" id="oldId" name="oldId"  value="123">
