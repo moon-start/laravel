@@ -59,11 +59,11 @@
             </div>
             
             <div class="form-group row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-9">
+                <div class="col-2"></div>
+                <div class="col-7">
                     <input type="submit" class="btn btn-primary" value="送出">
                 </div>
-                <div class="col-lg-1">
+                <div class="col-1">
                     <input type="submit" class="btn btn-warning" value="取消" name="cancel">
                 </div>
             </div>  
