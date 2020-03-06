@@ -91,7 +91,21 @@ http://192.168.1.119/QB
 - iphone (垂直)
 - iphone (水平)
 
-## 註冊
+## 註冊(點選紅色地方)
+![註冊](
+https://raw.githubusercontent.com/moon-start/laravel/master/moon/註冊.jpg)
+
+## 填資料(密碼需要8位數)
+![填資料](
+https://raw.githubusercontent.com/moon-start/laravel/master/moon/填資料.jpg)
+
+## 登入後(會出現在消費列表)
+![登入後](
+https://raw.githubusercontent.com/moon-start/laravel/master/moon/登入後.jpg)
+
+## 登出(點選紅色地方)
+![登入後](
+https://raw.githubusercontent.com/moon-start/laravel/master/moon/登出.jpg)
 
 
 ## 使用者認證 (auth)
