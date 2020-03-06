@@ -84,7 +84,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md row">
                     <span class="clo-12-md clo-6-lg">歡迎光臨 !</span>
                     <span class="clo-12-md clo-6-lg">PHP項目 !</span>
                 </div>
