@@ -35,89 +35,27 @@ Nginx + PHP + MySQ + Composer +PHP laravel
 [ MySQL ]
   - 帳號 : 密碼 
   - root : hello123
-```
 
-## 工具 
-```html
-### 安裝
-$ git clone https://github.com/moon-start/SH.git
-
-### 進入專案
-$ cd ./SH
-### 執行專案底下的ok檔案
-### 在/usr/bin新增一些自訂的指令
-$ sh ok
-
-### 執行 inWWW 指令檔
-### 這會安裝 Nginx + PHP + MySQL 全部安裝
-$ inWWW
+[ Nginx ]
+  - 目錄位置 : /usr/share/nginx/html/
 
 ```
-## 修改 Nginx 目錄
-```
-## 改變 nginx
-cd  /etc/nginx/conf.d
-rm -rf  default.conf
 
-wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/default.C.conf
-
-## 修改檔案
-mv      default.C.conf   default.conf
-
-## 下載 nginx.conf
-cd ..
-wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/nginx.conf
-
-
-nginx -t
-nginx -s reload
-```
 
 
 
 ## 安裝 
 ```html
-#安裝需要的套件
-$ yum -y install php-xml rsyslog
-$ systemctl start rsyslog
-$ systemctl restart php-fpm
+## 下載 moon紀錄
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSQL/moonSQL
 
+## 執行 (會要求輸入資料庫密碼)
+sh moonSQL
 
-$ cd cd /usr/share/nginx/html/
-$ rm -rf ./laravel
-$ git clone https://github.com/moon-start/laravel.git
-$ cd ./laravel
-$ composer install 
-```
-```
-## 修改 .env
-## cd ./專案
+## 下載 專案指令 (git clone)
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
+sh cloneLaravel
 
-$ rm -rf  .env
-$ wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/.env
-```
-```
-## 修改目錄的 權限
-## cd ./專案
-
-$ chown -R nginx ../
-$ semanage fcontext -a -t httpd_sys_rw_content_t "/usr/share/nginx/html/laravel/storage(/.*)?"
-$ semanage fcontext -a -t httpd_sys_rw_content_t "/usr/share/nginx/html/laravel/resources(/.*)?"
-$ restorecon -Rvv ../
-
-## 更新KEY
-$ php artisan key:generate
-
-
-
-### SH指令(安裝 PHP nginx mysql)
-$ inWWW
-
-### 安裝框架
-$ clonePHP laravel
-
-### 建立資料表
-$ inDM
 ```
 
 ## RWD 理念
