@@ -85,7 +85,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    歡迎光臨 ! PHP項目 !
+                    <span class="clo-6-sm clo-12-md">歡迎光臨 !</span>
+                    <span class="clo-6-sm clo-12-md">PHP項目 !</span>
                 </div>
 
                 <div class="links">
