@@ -85,7 +85,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    elcome ! PHPproject !
+                    歡迎光臨 ! PHP項目 !
                 </div>
 
                 <div class="links">

@@ -36,9 +36,21 @@ Nginx + PHP + MySQ + Composer +PHP laravel
   - 帳號 : 密碼 
   - root : hello123
 
-[ Nginx ]
+[ Nginx root ]
   - 目錄位置 : /usr/share/nginx/html/
 
+[ Nginx 配置 ]
+  - /etc/nginx/www.conf
+  - /etc/nginx/conf.d/default.C.conf
+  
+
+```
+```
+# www.conf 文件
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/www.conf
+
+# default.C.conf 文件
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/default.C.conf
 ```
 
 
@@ -49,11 +61,13 @@ Nginx + PHP + MySQ + Composer +PHP laravel
 ## 下載 moon紀錄
 wget https://raw.githubusercontent.com/moon-start/SH/master/binSQL/moonSQL
 
-## 執行 (會要求輸入資料庫密碼)
+## 執行 (會要求輸入 MySQL密碼)
 sh moonSQL
 
-## 下載 專案指令 (git clone)
+## 下載 專案啟動 指令 (git clone)
 wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
+
+## 執行 (會安裝laravel相關套件)
 sh cloneLaravel
 
 ```
@@ -73,6 +87,7 @@ sh cloneLaravel
 - **發票 (新增):** 
   ``` 
   須註冊和登入使用者.
+  註冊完成..會
   ```
 - **項目 (新增,編輯,刪除):**
   ```
