@@ -1,7 +1,15 @@
 BS4 排版
 ## col--指定了3個版面
 ## col-xs 是自動大小 所以會從尾端..慢慢被遮住
-
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-6">
+        <input type="submit" class="btn btn-primary" value="送出">
+    </div>
+    <div class="col-1">
+        <input type="submit" class="btn btn-warning" value="取消" name="cancel">
+    </div>
+</div>
    <!-- table-hover 移動效果 -->
     <!-- margin =0 -->
     <!-- bg-danger 背景顏色 -->
