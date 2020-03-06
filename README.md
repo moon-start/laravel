@@ -1,6 +1,6 @@
 <!-- <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p> -->
 
-<p align="center">
+<!-- <p align="center">
 <a href="#">
   <img src="https://travis-ci.org/laravel/framework.svg" alt="建立狀態"></a>
 <a href="https://github.com/moon-start/laravel/archive/master.zip">
@@ -9,6 +9,13 @@
   <img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="最新穩定版"></a>
 <a href="#">
   <img src="https://poser.pugx.org/laravel/framework/license.svg" alt="執照"></a>
+</p> -->
+
+<p align="center">
+<a href="https://github.com/moon-start/laravel/archive/master.zip">
+  <img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="github下載"></a>
+<a href="http://moon-start.myftp.org/">
+  <img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="最新穩定版"></a>
 </p>
 
 ## Stable
