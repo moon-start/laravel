@@ -72,15 +72,26 @@ sh cloneLaravel
 
 ```
 
-## RWD 理念
+## 瀏覽
+```
+## 查看內部IP (列如:  inet 192.168.1.119/24 )
+wget https://raw.githubusercontent.com/moon-start/SH/master/bin/IPr
+sh IPr
 
-包含了 4種呈現版面
+## 輸入 chrome 瀏覽器
+http://192.168.1.119/
+```
+
+## RWD 理念
+http://192.168.1.119/QB
+包含了 4種 (寬度)呈現版面
 
 - 電腦版
 - ipad
 - iphone (垂直)
 - iphone (水平)
 
+## 註冊
 
 
 ## 使用者認證 (auth)
