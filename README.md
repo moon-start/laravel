@@ -84,7 +84,11 @@ sh cloneLaravel
 ```
 ## 查看內部IP (列如:  inet 192.168.1.119/24 )
 wget https://raw.githubusercontent.com/moon-start/SH/master/bin/IPr
+
+
+## 如:  inet 192.168.1.120/24 brd ....
 sh IPr
+
 
 ## 輸入 chrome 瀏覽器
 ## http://查到的IPr/
