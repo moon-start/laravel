@@ -194,3 +194,7 @@ https://raw.githubusercontent.com/moon-start/laravel/master/moon/N2.PNG)
 ![N3](
 https://raw.githubusercontent.com/moon-start/laravel/master/moon/N3.PNG)
 
+## 資料庫的設計圖
+
+![關聯圖](
+https://raw.githubusercontent.com/moon-start/laravel/master/moon/關聯圖.PNG)
