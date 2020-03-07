@@ -74,7 +74,7 @@ sh moonSQL
 ## 下載 專案啟動 指令 (git clone)
 wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
 
-## 執行 (會安裝laravel相關套件)
+## 執行 (會安裝laravel相關套件+建置資料表)
 sh cloneLaravel
 
 
@@ -94,7 +94,7 @@ http://192.168.1.119/
 
 
 ## 使用者認證 (auth)
-- **[新增消費 :](https://raw.githubusercontent.com/moon-start/laravel/master/moon/新增消費.PNG)** 
+- **[新增消費 :](https://raw.githubusercontent.com/moon-start/laravel/master/moon/新增消費.jpeg)** 
   ``` 
   1. 須 註冊和登入 使用者.
   
