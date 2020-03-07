@@ -47,3 +47,23 @@
     /*bga +tab 背景固定*//*簡單來說: 不會隨著捲動 而移動*/
     background-attachment: fixed;
 }
+
+.QQ {
+    /*h +tab*/
+    /*mh +tab*/
+    min-height:100vh;  /*vh  vw*/
+       
+    /*bgi +tab*/
+    background-image: url(https://bzj7jdmrn8bbwmcy2kazaa-on.drv.tw/www/web/images/%E5%A3%81%E7%B4%99C-okk.png);
+    
+       
+       
+    /*bgs +tab*/
+    background-size: cover;
+    
+    /*bgp +tab*/
+    background-position: center center;
+       
+    /*bga +tab 背景固定*//*簡單來說: 不會隨著捲動 而移動*/
+    background-attachment: fixed;
+}

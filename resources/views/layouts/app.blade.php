@@ -9,7 +9,11 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+
+    <!-- asset() >>>  專案/public -->
+
     <!-- Scripts -->
+    <!-- 專案/public/js/app.js -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -17,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <!-- 專案/public/css/app.css -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
