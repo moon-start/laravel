@@ -11,30 +11,20 @@
 // 自訂
 // @import url('https://bzj7jdmrn8bbwmcy2kazaa-on.drv.tw/www/web/css/style_home.css');
 
+// OK OK OK
+// @import 'appB';
+// .QQX {
 
-// element.style {
-//     cursor: url(https://i.imgur.com/7PzAN2U.png), auto;
+// @extend .QQ;
+
 // }
 
-
-// body{
-// 	cursor: url(https://i.imgur.com/7PzAN2U.png), auto;
-	
-// }
-
-
-// 更改顏色
-// table.table-hover tbody tr td:hover {
-//     background-color: #fb9692; 
-// }
-
-
-
-@import 'appB';
-
-
-.QQX {
-
-@extend .QQ;
-
+//使用
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.QQXX {
+@extend .fa;
+@extend .fa-heart;
+@extend .fa-2x;
+// @extend .mr-3;
+// @extend .py-2;
 }
