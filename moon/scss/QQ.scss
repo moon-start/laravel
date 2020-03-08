@@ -20,22 +20,39 @@
 @import 'QQ/font-awesome.min';
 // BS4 CSS
 @import 'QQ/bootstrap.min';
-.divI {
 
+//圖示函數
+
+//更改 樣式名稱
+@mixin fa-SZ ($sum){
     @extend .fa; 
     @extend .fa-heart; 
-    @extend .fa-2x; 
+    @extend .fa-#{$sum}x; 
+}
+.faI {
+    @include fa-SZ(5);
     @extend .mr-3; 
     @extend .py-2;
-
 }
 
-.ABC {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-.AA{
-    @extend .ABC;
-}
+// .divR {
+//     @extend .fa; 
+//     .divI {
+//         @extend .fa; 
+//         @extend .fa-heart; 
+//         @extend .fa-2x; 
+//         // @extend .mr-3; 
+//         // @extend .py-2;
+//     }
+// }
+
+// .ABC {
+//     position: relative;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
+
+// .AA{
+//     @extend .ABC;
+// }

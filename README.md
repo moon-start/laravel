@@ -60,6 +60,27 @@ wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/www.conf
 wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/default.C.conf
 ```
 
+## Composer 安裝
+```
+yum install wget
+
+## 下載安裝檔    
+wget https://getcomposer.org/installer -O composer-installer.php
+
+
+## 2 選 1
+## 一般使用者
+## php composer-installer.php --filename=composer --install-dir=/usr/local/bin
+
+## root 使用者
+## php composer-installer.php --filename=composer --install-dir=/usr/bin
+
+## 刪除安裝檔
+rm -rf composer-installer.php
+
+## 查看 版本
+composer --version
+```
 
 
 

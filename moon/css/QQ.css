@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-.fa, .divI {
+.fa, .faI {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -25,7 +25,7 @@
   vertical-align: -15%;
 }
 
-.fa-2x, .divI {
+.fa-2x {
   font-size: 2em;
 }
 
@@ -37,7 +37,7 @@
   font-size: 4em;
 }
 
-.fa-5x {
+.fa-5x, .faI {
   font-size: 5em;
 }
 
@@ -82,11 +82,11 @@
   float: right;
 }
 
-.fa.fa-pull-left, .fa-pull-left.divI {
+.fa.fa-pull-left, .fa-pull-left.faI {
   margin-right: .3em;
 }
 
-.fa.fa-pull-right, .fa-pull-right.divI {
+.fa.fa-pull-right, .fa-pull-right.faI {
   margin-left: .3em;
 }
 
@@ -98,11 +98,11 @@
   float: left;
 }
 
-.fa.pull-left, .pull-left.divI {
+.fa.pull-left, .pull-left.faI {
   margin-right: .3em;
 }
 
-.fa.pull-right, .pull-right.divI {
+.fa.pull-right, .pull-right.faI {
   margin-left: .3em;
 }
 
@@ -217,7 +217,7 @@
   content: "\f003";
 }
 
-.fa-heart:before, .divI:before {
+.fa-heart:before, .faI:before {
   content: "\f004";
 }
 
@@ -11133,7 +11133,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
   margin-top: 1rem !important;
 }
 
-.mr-3, .divI, .mx-3 {
+.mr-3, .faI, .mx-3 {
   margin-right: 1rem !important;
 }
 
@@ -11229,7 +11229,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
   padding: 0.5rem !important;
 }
 
-.pt-2, .py-2, .divI {
+.pt-2, .py-2, .faI {
   padding-top: 0.5rem !important;
 }
 
@@ -11237,7 +11237,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
   padding-right: 0.5rem !important;
 }
 
-.pb-2, .py-2, .divI {
+.pb-2, .py-2, .faI {
   padding-bottom: 0.5rem !important;
 }
 
@@ -12814,11 +12814,5 @@ a.text-dark:focus, a.text-dark:hover {
     color: inherit;
     border-color: #dee2e6;
   }
-}
-.ABC, .AA {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 /*# sourceMappingURL=QQ.css.map */
