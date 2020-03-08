@@ -71,7 +71,14 @@ wget https://raw.githubusercontent.com/moon-start/SH/master/binSQL/moonSQL
 ## 執行 (會要求輸入 MySQL密碼)
 sh moonSQL
 
-## 下載 專案啟動 指令 (git clone)
+## 下載(composer指令)
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/inComposer
+
+## 安裝
+sh inComposer
+
+
+## 下載 (git clone)
 wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
 
 ## 執行 (會安裝laravel相關套件+建置資料表)
