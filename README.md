@@ -104,6 +104,26 @@ composer --version
 ```
 
 
+
+## 安裝 (Laravel框架)
+```html
+## 下載 cloneLaravel
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
+## 下載 moonADD
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSQL/moonADD
+
+
+## 建立一個 moon 資料庫
+## 執行 (會要求輸入 MySQL密碼)
+sh moonADD moon
+
+
+## 安裝 (composer install)
+## 更新 (.env) + 建置 (資料結構)
+## 說明 [sh cloneLaravel]
+sh cloneLaravel /usr/share/nginx/html/ 3306 moon  root  hello123 
+```
+
 ## 建置 (資料紀錄)
 ```
 ## 下載 moon紀錄
@@ -111,19 +131,6 @@ wget https://raw.githubusercontent.com/moon-start/SH/master/binSQL/moonSQL
 
 ## 執行 (會要求輸入 MySQL密碼)
 sh moonSQL
-```
-
-
-## 安裝 (Laravel框架)
-```html
-## 下載 
-wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
-
-
-## 說明 [指令] [nginx root] [port] [mysql使用者] [mysql密碼]
-## 安裝 (composer install) + 更新 (.env)
-sh cloneLaravel /usr/share/nginx/html/ 3306 moon  root  hello123 
-
 ```
 
 ## 瀏覽
