@@ -80,7 +80,6 @@ wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
 ## 更新 (www.conf + 建置資料表)
 ## 安裝 Composer套件(執行 composer install)
 ##
-## 請在 cd ./laravel 專案目錄 當前底下
 ## 說明 [指令] [port] [mysql使用者] [mysql密碼]
 sh cloneLaravel 3306 moon  root  hello123
 
