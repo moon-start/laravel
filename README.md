@@ -76,8 +76,9 @@ sh moonSQL
 ## 下載 (git clone)
 wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
 
-## 執行 (會安裝laravel相關套件+建置資料表)
-## 自動安裝 Composer套件
+## 更新 (nginx.conf + default.conf)
+## 更新 (www.conf + 建置資料表)
+## 安裝 Composer套件(執行 composer install)
 ##
 ## 說明 [指令] [port] [mysql使用者] [mysql密碼]
 sh cloneLaravel 3306 moon  root  hello123
