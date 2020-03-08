@@ -36,30 +36,51 @@
 
 ## 環境(需要)
 
-Nginx + PHP + MySQ + Composer +PHP laravel
+Nginx + PHP + MySQ + Composer +PHP laravel + Composer 安裝
 
 ```
 [ MySQL ]
-  - 帳號 : 密碼 
-  - root : hello123
-
-[ Nginx root ]
-  - 目錄位置 : /usr/share/nginx/html/
+    - 帳號 : 密碼 
+    - root : hello123
 
 [ Nginx 配置 ]
-  - /etc/nginx/www.conf
-  - /etc/nginx/conf.d/default.C.conf
-  
+    - /etc/nginx/nginx.conf
+    - /etc/nginx/conf.d/default.conf
+    [ root位置 ]
+      - /usr/share/nginx/html/
 
+[ PHP 配置 ]
+    - /etc/php-fpm.d/www.conf 
+  
 ```
 ```
 # www.conf 文件
 wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/www.conf
 
-# default.C.conf 文件
-wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/default.C.conf
-```
+# nginx.conf 文件
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/nginx.conf
 
+# default.B.conf 文件
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSHHconf/default.B.conf
+```
+## nginx root 配置
+```
+### 下載
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneNginx
+
+## 取代文件
+## 更新 (nginx.conf + default.conf)
+cloneNginx  /usr/share/nginx/html/
+```
+## PHP配置(如果出現問題)
+```
+## 下載
+wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneNginx
+
+## 取代文件
+## /etc/php-fpm.d/www.conf/www.conf 文件
+clonePHP
+```
 ## Composer 安裝
 ```
 yum install wget
@@ -83,29 +104,25 @@ composer --version
 ```
 
 
-
-## 安裝 
-```html
+## 建置 (資料紀錄)
+```
 ## 下載 moon紀錄
 wget https://raw.githubusercontent.com/moon-start/SH/master/binSQL/moonSQL
 
 ## 執行 (會要求輸入 MySQL密碼)
 sh moonSQL
+```
 
 
-
-## 下載 (git clone)
+## 安裝 (Laravel框架)
+```html
+## 下載 
 wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
 
-## 更新 (nginx.conf + default.conf)
-## 更新 (www.conf + 建置資料表)
-## 安裝 Composer套件(執行 composer install)
-##
-## 切換至 (自己設定的 nginx 網頁目錄)
-cd /usr/share/nginx/html/
 
-## 說明 [指令] [port] [mysql使用者] [mysql密碼]
-sh cloneLaravel 3306 moon  root  hello123
+## 說明 [指令] [nginx root] [port] [mysql使用者] [mysql密碼]
+## 安裝 (composer install) + 更新 (.env)
+sh cloneLaravel /usr/share/nginx/html/ 3306 moon  root  hello123 
 
 ```
 
