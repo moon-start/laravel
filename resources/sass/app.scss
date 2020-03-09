@@ -8,6 +8,18 @@
 @import '~bootstrap/scss/bootstrap';
 
 
+// @import '_font-awesome.min
+// Font Awesome 
+@import "node_modules/font-awesome/scss/font-awesome";
+.QQABVC {
+@extend .fa;
+@extend .fa-heart;
+@extend .fa-2x;
+// @extend .mr-3;
+// @extend .py-2;
+}
+//.............................
+
 // 自訂
 // @import url('https://bzj7jdmrn8bbwmcy2kazaa-on.drv.tw/www/web/css/style_home.css');
 
@@ -29,7 +41,7 @@
 // }
 
 //使用這個檔案的 faI 類別
-@import 'moon/FF';
+// @import 'moon/FF';
 // .QQXR {
 
 //     //繼承過來
@@ -42,13 +54,7 @@
 // @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 // @import 'moon/QQ';
 //@import url('./moon/QQ.css');
-// .QQXX {
-// @extend .fa;
-// @extend .fa-heart;
-// @extend .fa-2x;
-// // @extend .mr-3;
-// // @extend .py-2;
-// }
+
 
 // .QQCC {
 //     /*h +tab*/
