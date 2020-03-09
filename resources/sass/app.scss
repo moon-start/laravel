@@ -20,6 +20,11 @@
 }
 
 @import 'moon/appB';
+.QQX {
+
+    @extend .QQ;
+    
+}
 
 //使用這個檔案的 faI 類別
 // @import 'moon/faI';
