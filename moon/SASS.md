@@ -12,17 +12,20 @@ phpSASS
 ##################################
 ## laravel  / SASS / app.scss   ##
 ##################################   
-      // app.scss文件
-      @import "~font-awesome/scss/font-awesome";
-      
-      //動態產生 想要的SCSS
-      .FFI {
-          @extend .fa;
-          @extend .fa-heart;
-          @extend .fa-2x;
-          @extend .mr-3;
-          @extend .py-2;
-      }
+
+        // app.scss文件
+        // 附加 在檔案尾部
+        @import "~font-awesome/scss/font-awesome";
+
+        //動態產生 想要的SCSS
+        .FFI {
+            @extend .fa;
+            @extend .fa-heart;
+            @extend .fa-2x;
+            @extend .mr-3;
+            @extend .py-2;
+        }
+        
 ############################################
 ## 產生 laravel / public / css / app.css  ##
 ############################################
