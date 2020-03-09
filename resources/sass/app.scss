@@ -11,26 +11,26 @@
 // 自訂
 // @import url('https://bzj7jdmrn8bbwmcy2kazaa-on.drv.tw/www/web/css/style_home.css');
 
-// OK OK OK
-// @import 'appB';
-// .QQX {
+//OK OK OK
+@import 'appB';
+.QQX {
 
-// @extend .QQ;
+@extend .QQ;
 
-// }
+}
 
 // //使用
 // @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 // @import 'moon/QQ';
 //@import url('./moon/QQ.css');
 // @import 'moon/faI';
-.QQXX {
-@extend .fa;
-@extend .fa-heart;
-@extend .fa-2x;
-// @extend .mr-3;
-// @extend .py-2;
-}
+// .QQXX {
+// @extend .fa;
+// @extend .fa-heart;
+// @extend .fa-2x;
+// // @extend .mr-3;
+// // @extend .py-2;
+// }
 
 // .QQCC {
 //     /*h +tab*/
