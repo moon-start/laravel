@@ -106,10 +106,8 @@ composer --version
 
 ## 安裝 (Laravel框架)
 ```html
-## 下載 cloneLaravel
+## 下載指令
 wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
-
-
 
 
 ### ################################
