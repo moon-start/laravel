@@ -194,7 +194,9 @@ http://192.168.1.119/
   
   說明: 依照 invoice表的id 關聯刪除 (Invoice,Item,Payment)資料表的紀錄
     
-## [SASS 的使用](https://raw.githubusercontent.com/moon-start/laravel/master/moon/SASS.md)
+<!-- ## [SASS 的使用](https://raw.githubusercontent.com/moon-start/laravel/master/moon/SASS.md) -->
+## [SASS 的使用](https://github.com/moon-start/laravel/blob/master/moon/SASS.md)
+
 
 ## RWD 理念
 
