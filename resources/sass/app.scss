@@ -19,14 +19,16 @@
 
 }
 
-//使用這個檔案的 faI 類別
-@import 'moon/faI';
-.QQXR {
+@import 'moon/appB';
 
-    //繼承過來
-    @extend .faI;
+//使用這個檔案的 faI 類別
+// @import 'moon/faI';
+// .QQXR {
+
+//     //繼承過來
+//     @extend .faI;
     
-}
+// }
 
 
 // //使用
