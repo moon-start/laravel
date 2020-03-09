@@ -19,16 +19,17 @@
 
 }
 
-@import 'moon/appB';
-.QQX {
+//OK
+// @import 'moon/appB';
+// .QQX {
 
-    @extend .QQ;
-    @extend .flex-fill;
+//     @extend .QQ;
+//     @extend .flex-fill;
     
-}
+// }
 
 //使用這個檔案的 faI 類別
-// @import 'moon/FQ';
+@import 'moon/FF';
 // .QQXR {
 
 //     //繼承過來
