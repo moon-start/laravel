@@ -8,6 +8,7 @@ wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/phpSASS
 cd ./laravel
 phpSASS
 ```
+CSS 模組化
 ```
 ##################################
 ## laravel  / SASS / app.scss   ##
