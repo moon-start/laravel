@@ -112,11 +112,17 @@ wget https://raw.githubusercontent.com/moon-start/SH/master/binSHH/cloneLaravel
 
 
 
-## 安裝 (composer install)
-#1# 更新 (.env) + 建置 (資料結構)
-#2# 建立一個 moon 資料庫
-#2# 執行 (會要求輸入 MySQL密碼)
-#3# 說明 [sh cloneLaravel]
+### ################################
+### 更新 (.env) + 建置 (資料結構)  ##
+### 建立一個 moon 資料庫           ##
+### 執行 (會要求輸入 MySQL密碼)    ##
+####################################
+
+#1# 預設 (composer install)
+
+sh cloneLaravel  moon  
+
+#2# 自訂(composer install)
 sh cloneLaravel /usr/share/nginx/html/ 3306 moon  root  hello123 
 ```
 
