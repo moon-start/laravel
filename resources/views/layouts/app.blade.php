@@ -23,6 +23,13 @@
     <!-- Styles -->
     <!-- 專案/public/css/app.css -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
+
+    <!-- 滑鼠點選特效（愛心） -->
+    <script type="text/javascript" src="https://bzj7jdmrn8bbwmcy2kazaa-on.drv.tw/www/SCSS/app.js">// 滑鼠點選特效（愛心）</script>
+
+
 </head>
 <body>
     <div id="app">
