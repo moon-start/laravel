@@ -10,6 +10,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
 
+    <!-- 滑鼠點選特效（愛心） -->
+    <script type="text/javascript" src="https://bzj7jdmrn8bbwmcy2kazaa-on.drv.tw/www/SCSS/app.js">// 滑鼠點選特效（愛心）</script>
+
+
     <!-- asset() >>>  專案/public -->
 
     <!-- Scripts -->
@@ -26,9 +30,7 @@
 
 
 
-    <!-- 滑鼠點選特效（愛心） -->
-    <script type="text/javascript" src="https://bzj7jdmrn8bbwmcy2kazaa-on.drv.tw/www/SCSS/app.js">// 滑鼠點選特效（愛心）</script>
-
+  
 
 </head>
 <body>
