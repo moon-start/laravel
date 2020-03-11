@@ -11,13 +11,13 @@
 
     <!-- 列表 -->
     <!-- card--圓角框 -->
-    <div class="col-12 m-0 p-0 row card">   
+    <div class="col-12 m-0 p-0 row card  bg-success">   
     <!-- <div class="col-12 card-header">消費列表 -->
     <!-- 這是標題內容 start -->
 
 
     <!-- justify-content-center -->
-    <form action="{{ action('QBController@storeABC') }}" method="post" class="col-6 row justify-content-center   bg-success">
+    <form action="{{ action('QBController@storeABC') }}" method="post" class="col-6 row justify-content-center">
     @csrf
     <!-- <div class="row justify-content-center bg-warning"> -->
     <!-- <div class="col-md-8"> -->
