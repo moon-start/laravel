@@ -14,8 +14,8 @@
     
 
                     <div class="col-2 card-header">消費列表</div>
-                    <label for="payment" class="col-2 col-form-label">月份</label>
-                    <div class="col-8">
+                    <label for="payment" class="col-2 card-header col-form-label">月份</label>
+                    <div class="col-8 card-header>
 
                         <select class="form-control" id="payment" name="payment">
                             　<option value="現金">現金</option>
@@ -26,7 +26,7 @@
 
                     
                     </div>
-                    <input type="submit" class="col-4 btn btn-primary" value="查詢">
+                    <input type="submit" class="col-4 card-header btn btn-primary" value="查詢">
         </form>
    
 
