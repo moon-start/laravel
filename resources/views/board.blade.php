@@ -32,11 +32,14 @@
         <form action="">
             <div class="form-group">
                 <label for="exampleFormControlInput1">Email address</label>
-                <label for="exampleFormControlInput1">QQQQQQQQQ ddress</label>
+                <label for="AA">QQQQQQQQQ ddress</label>
+                <input type="email" class="form-control" id="AA" aria-describedby="emailHelp" placeholder="Enter email">
             <div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Email123 address</label>
-                <label for="exampleFormControlInput1">QQQQ123 ddress</label>
+                <label for="BB">Email123 address</label>
+                <input type="email" class="form-control" id="BB" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="CC">QQQQ123 ddress</label>
+                <input type="email" class="form-control" id="CC" aria-describedby="emailHelp" placeholder="Enter email">
             <div>
         </form>
 
