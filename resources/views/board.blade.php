@@ -1,22 +1,36 @@
 @extends('layouts.master')
 @section('title','消費列表')
 @section('content')
-<!-- 
-## 相同效果
-## d-flex justify-content-center
-## row justify-content-cente -->
-
 <div class="row justify-content-center">
 <div class="col-md-10 m-0 p-0">
 
     <!-- 列表 -->
-    <!-- card--圓角框 -->
-    <div class="col-12 m-0 p-0 card">   
-    <div class="col-12 card-header">消費列表
-    <!-- 這是標題內容 start -->
+    <div class="col-12 m-0 p-0 card">  <!--對上最後面了-->
+        <!-- <div class="col-12 card-header">消費列表</div> -->
+    
+        <!-- justify-content-center -->
+        <form action="{{ action('QBController@storeABC') }}" method="post" class="col-12 row justify-content-center">
+        @csrf
+    
+
+                    <div class="col-sm-2 card-header">消費列表</div>
+                    <label for="payment" class="col-sm-2 col-form-label">月份</label>
+                    <div class="col-sm-8">
+
+                        <select class="form-control" id="payment" name="payment">
+                            　<option value="現金">現金</option>
+                            　<option value="悠遊卡">悠遊卡</option>
+                            　<option value="Mcard(點點卡)">Mcard(點點卡)</option>
+                        </select>
 
 
-    </div>
+                    
+                    </div>
+                    <input type="submit" class="col-sm-4 btn btn-primary" value="查詢">
+        </form>
+   
+
+
     <!-- <div class="col-12 card-body  p-1"> -->
     <div class="col-12 card-body  m-0 p-0">
         <table class="col-12 text-center table table-hover">
