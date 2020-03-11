@@ -14,9 +14,9 @@
     <div class="col-12 card-header">消費列表
     <!-- 這是標題內容 start -->
 
-    <form action="{{ action('QBController@storeABC') }}" method="post">
+    <form action="{{ action('QBController@storeABC') }}" method="post" class="bg-success">
     @csrf
-    <div class="row justify-content-center">
+    <div class="row justify-content-center bg-warning">
     <div class="col-md-8">
         <!-- <div class="card"> -->
         <!-- <div class="card-header">新增消費</div> -->
