@@ -5,16 +5,16 @@
 <div class="col-md-10 m-0 p-0">
 
     <!-- 列表 -->
-    <div class="col-12 m-0 p-0 card">
-    <div class="col-12 card-header">消費列表
+    <!-- <div class="col-12 m-0 p-0 card">
+    <div class="col-12 card-header">消費列表 -->
 
     <form action="{{ action('QBController@storeABC') }}" method="post">
     @csrf
     <div class="row justify-content-center">
     <div class="col-md-8">
-        <div class="card">
-        <div class="card-header">新增消費</div>
-        <div class="card-body p-1">
+        <!-- <div class="card"> -->
+        <!-- <div class="card-header">新增消費</div> -->
+        <!-- <div class="card-body p-1"> -->
             
 
             <div class="form-group row">
@@ -44,14 +44,12 @@
                 <div class="col-6">
                     <input type="submit" class="btn btn-primary" value="送出">
                 </div>
-                <div class="col-1">
-                    <input type="submit" class="btn btn-warning" value="取消" name="cancel">
-                </div>
+                
             </div>  
-        </div>
-        </div>
-    </div>
-    </div>
+        <!-- </div>
+        </div> -->
+    <!-- </div>
+    </div> -->
 </form>
 
     </div>
