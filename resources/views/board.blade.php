@@ -23,8 +23,8 @@
         <!-- <div class="card-body p-1"> -->
             
 
-            <div class="form-group row">
-                <div class="col-sm-2"></div>
+            <!-- <div class="form-group row"> -->
+                <!-- <div class="col-sm-2"></div> -->
                 <label for="payment" class="col-sm-2 col-form-label">付款</label>
                 <div class="col-sm-8">
 
@@ -41,7 +41,7 @@
 
                     <input type="submit" class="btn btn-primary" value="查詢">
                 </div>
-            </div>
+            <!-- </div> -->
 
       
 
