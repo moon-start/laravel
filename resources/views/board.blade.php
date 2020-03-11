@@ -10,7 +10,7 @@
 <div class="col-md-10 m-0 p-0">
 
     <!-- 列表 -->
-    <div class="col-12 m-0 p-0 card">
+    <div class="col-12 m-0 p-0 card row">
     <div class="col-2 card-header">消費列表
     <!-- 這是標題內容 start -->
 
