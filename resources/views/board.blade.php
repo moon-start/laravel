@@ -39,8 +39,9 @@
                     </select>
 
 
-                    <input type="submit" class="btn btn-primary" value="查詢">
+                   
                 </div>
+                <input type="submit" class="col-sm-2 btn btn-primary" value="查詢">
             <!-- </div> -->
 
       
