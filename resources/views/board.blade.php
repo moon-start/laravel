@@ -1,12 +1,18 @@
 @extends('layouts.master')
 @section('title','消費列表')
 @section('content')
+<!-- 
+## 相同效果
+## d-flex justify-content-center
+## row justify-content-cente -->
+
 <div class="row justify-content-center">
 <div class="col-md-10 m-0 p-0">
 
     <!-- 列表 -->
-    <!-- <div class="col-12 m-0 p-0 card">
-    <div class="col-12 card-header">消費列表 -->
+    <div class="col-12 m-0 p-0 card">
+    <div class="col-12 card-header">消費列表
+    <!-- 這是標題內容 start -->
 
     <form action="{{ action('QBController@storeABC') }}" method="post">
     @csrf
@@ -32,6 +38,8 @@
                         　<option value="Mcard(點點卡)">Mcard(點點卡)</option>
                     </select>
 
+
+                    <input type="submit" class="btn btn-primary" value="查詢">
                 </div>
             </div>
 
@@ -39,17 +47,20 @@
 
 
             
-            <div class="form-group row">
+            <!-- <div class="form-group row">
                 <div class="col-2"></div>
                 <div class="col-6">
                     <input type="submit" class="btn btn-primary" value="送出">
                 </div>
                 
-            </div>  
+            </div>   -->
+
         <!-- </div>
         </div> -->
-    <!-- </div>
-    </div> -->
+
+    <!-- 這是標題內容 end -->
+    </div>
+    </div>
 </form>
 
     </div>
