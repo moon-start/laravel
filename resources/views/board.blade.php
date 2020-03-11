@@ -12,60 +12,9 @@
     <!-- 列表 -->
     <!-- card--圓角框 -->
     <div class="col-12 m-0 p-0 row card  bg-success">   
-    <!-- <div class="col-12 card-header">消費列表 -->
+    <div class="col-12 card-header">消費列表
     <!-- 這是標題內容 start -->
 
-
-    <!-- justify-content-center -->
-    <form action="{{ action('QBController@storeABC') }}" method="post" class="col-6 row justify-content-center">
-    @csrf
-    <!-- <div class="row justify-content-center bg-warning"> -->
-    <!-- <div class="col-md-8"> -->
-        <!-- <div class="card"> -->
-        <!-- <div class="card-header">新增消費</div> -->
-        <!-- <div class="card-body p-1"> -->
-            
-
-            <!-- <div class="form-group row"> -->
-                <!-- <div class="col-sm-2"></div> -->
-                <label for="payment" class="col-sm-2 col-form-label">付款</label>
-                <div class="col-sm-8">
-
-                    <!-- 錯誤訊息的CSS .. is-invalid  -->
-                    <!-- <input type="text" class="form-control" id="payment" name="payment" value=""> -->
-                    
-                    <!-- <select class="form-control {{ $errors->has('payment') ? 'is-invalid' : '' }}" id="payment" name="payment"> -->
-                    <select class="form-control" id="payment" name="payment">
-                        　<option value="現金">現金</option>
-                        　<option value="悠遊卡">悠遊卡</option>
-                        　<option value="Mcard(點點卡)">Mcard(點點卡)</option>
-                    </select>
-
-
-                   
-                </div>
-                <input type="submit" class="col-sm-2 btn btn-primary" value="查詢">
-            <!-- </div> -->
-
-      
-
-
-            
-            <!-- <div class="form-group row">
-                <div class="col-2"></div>
-                <div class="col-6">
-                    <input type="submit" class="btn btn-primary" value="送出">
-                </div>
-                
-            </div>   -->
-
-        <!-- </div>
-        </div> -->
-
-    <!-- 這是標題內容 end -->
-    <!-- </div> -->
-    <!-- </div> -->
-    </form>
 
     </div>
     <!-- <div class="col-12 card-body  p-1"> -->
