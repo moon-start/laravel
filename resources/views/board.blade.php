@@ -29,6 +29,7 @@
                     <input type="submit" class="col-4 card-header btn btn-primary" value="查詢">
         </form> -->
 
+        <!-- bg-secondary .bg-success .bg-danger .bg-warning. -->
         <form action="">
             <div class="form-group">
                 <label for="exampleFormControlInput1" clas="col-2">Email address</label>
@@ -36,10 +37,10 @@
                 <input type="email" class="col-8 form-control" id="AA" aria-describedby="emailHelp" placeholder="Enter email">
             <div>
             <div class="form-group">
-                <label for="BB" clas="col-2 m-0 p-0">Email123 address</label>
-                <input type="email" class="col-4 form-control m-0 p-0" id="BB" aria-describedby="emailHelp" placeholder="Enter email">
-                <label for="CC" clas="col-2 m-0 p-0">QQQQ123 ddress</label>
-                <input type="email" class="col-4 form-control m-0 p-0" id="CC" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="BB" clas="col-2 m-0 p-0 bg-secondary">Email123 address</label>
+                <input type="email" class="col-4 form-control m-0 p-0 bg-success" id="BB" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="CC" clas="col-2 m-0 p-0 bg-danger">QQQQ123 ddress</label>
+                <input type="email" class="col-4 form-control m-0 p-0 bg-warning" id="CC" aria-describedby="emailHelp" placeholder="Enter email">
             <div>
         </form>
 
