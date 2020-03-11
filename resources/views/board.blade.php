@@ -36,7 +36,7 @@
                 <label for="AA" clas="col-2">QQQQQQQQQ ddress</label>
                 <input type="email" class="col-8 form-control" id="AA" aria-describedby="emailHelp" placeholder="Enter email">
             <div>
-            <div class="form-group col-12 bg-warning">
+            <div class="form-group  bg-warning">
                 <label for="BB" clas="col-2 m-0 p-0 bg-secondary">Email123 address</label>
                 <input type="email" class="col-4 form-control m-0 p-0 bg-success" id="BB" aria-describedby="emailHelp" placeholder="Enter email">
                 <label for="CC" clas="col-2 m-0 p-0 bg-danger">QQQQ123 ddress</label>
