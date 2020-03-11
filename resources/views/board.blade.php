@@ -31,15 +31,15 @@
 
         <form action="">
             <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <label for="AA">QQQQQQQQQ ddress</label>
-                <input type="email" class="form-control" id="AA" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="exampleFormControlInput1" clas="col-2">Email address</label>
+                <label for="AA" clas="col-2">QQQQQQQQQ ddress</label>
+                <input type="email" class="col-8 form-control" id="AA" aria-describedby="emailHelp" placeholder="Enter email">
             <div>
             <div class="form-group">
-                <label for="BB">Email123 address</label>
-                <input type="email" class="form-control" id="BB" aria-describedby="emailHelp" placeholder="Enter email">
-                <label for="CC">QQQQ123 ddress</label>
-                <input type="email" class="form-control" id="CC" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="BB" clas="col-2">Email123 address</label>
+                <input type="email" class="col-4 form-control" id="BB" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="CC" clas="col-2">QQQQ123 ddress</label>
+                <input type="email" class="col-4 form-control" id="CC" aria-describedby="emailHelp" placeholder="Enter email">
             <div>
         </form>
 
