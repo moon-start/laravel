@@ -29,6 +29,8 @@
                     <input type="submit" class="col-4 card-header btn btn-primary" value="查詢">
         </form> -->
 
+
+        <!-- form-group row + form標籤 =才正長 -->
         <!-- bg-secondary .bg-success .bg-danger .bg-warning. -->
         <form action="" class="form-group row  bg-success m-0 p-0">
             <!-- <div class="form-group row  bg-success m-0 p-0"> -->

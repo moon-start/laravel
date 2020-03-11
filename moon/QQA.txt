@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta data -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="CACHE-CONTROL" CONTENT="NO-CACHE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>快感交換♂⇔♀～女體初體驗～(第1話)｜亂搭！租書網</title>
+    <meta name="description" content="使用亂搭！租書網閱讀 - 快感交換♂⇔♀～女體初體驗～(第1話)" />
+    <meta name="rating" content="general" />
+    <meta name="Author" content="亂搭！租書網" />
+    <meta name="copyright" content="©2018 Papyless Taiwan Co., Ltd. All rights reserved" />
+    <meta property="fb:app_id" content="686853838038328">
+    <meta property="og:title" content="漫畫閱讀器｜亂搭！租書網" />
+    <meta property="og:type" content="book" />
+    <meta property="og:rich_attachment" content="true" />
+    <meta property="og:site_name" content="亂搭！租書網" />
+    <meta property="og:image" content="//cimg.papy.com.tw/cover/9/154/9-154841-c400.jpg" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="960" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:description" content="使用亂搭！租書網閱讀 - 快感交換♂⇔♀～女體初體驗～(第1話)" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="//cimg.papy.com.tw/cover/9/154/9-154841-c400.jpg" />
+    <meta name="twitter:title" content="快感交換♂⇔♀～女體初體驗～(第1話)｜亂搭！租書網" />
+    <meta name="twitter:description" content="使用亂搭！租書網閱讀 - 快感交換♂⇔♀～女體初體驗～(第1話)" />
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <link rel="shortcut icon" href="//static.papy.com.tw/renta/img/logo/favicon.ico" type="image/vnd.microsoft.icon">
+    <!--
+    <link rel="icon" type="image/png" href="//dev.myrenta.com/insowe/RentaViewer2017Branch/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="//dev.myrenta.com/insowe/RentaViewer2017Branch/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="//dev.myrenta.com/insowe/RentaViewer2017Branch/img/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" type="image/png" href="//dev.myrenta.com/insowe/RentaViewer2017Branch/img/favicon-180x180.png" sizes="180x180">
+    -->
+    <!-- /meta data -->
+
+    <!-- Style -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" href="/viewer/data/comicViewer/css/style.css?181228">
+    <!-- /Style -->
+
+    <!-- IE hack -->
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- /IE hack -->
+</head>
+
+<body onload="window.resizeTo(window.screen.width,window.screen.height);" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" oncontextmenu="return false">
+<!-- Google Tag Manager For Myrenta -->
+<script>
+  myrentaDataLayer = [];
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M2M58Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','myrentaDataLayer','GTM-M2M58Q');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- 日本YTM -->
+<noscript>
+    <iframe src="//b.yjtag.jp/iframe?c=MElKQO7,i8yBz27" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript><!-- end -->
+    <div id="ScrollWidth"></div>
+    <div id="Viewer">
+        <div class="readerHeader readerHeaderBG active"></div>
+        <div class="readerHeader active">
+            <a href="javascript:;" onclick="page.showCloseReader();" class="closeReader"><i class="far fa-times-circle"></i></a>
+            <p class="title"><span>快感交換♂⇔♀～女體初體驗～(第1話)</span></p>
+            <a class="tutorialBtn" href="javascript:;" onclick="page.showTutorial();"><img src="/viewer/data/comicViewer/img/tutorial.png" alt=""></a>
+        </div>
+        <div class="readerBody">
+            <div class="readerCanvas" v-bind:style="{ cursor: 'url(/viewer/data/comicViewer/img/'+reader.cursor+'.png), url(/viewer/data/comicViewer/img/'+reader.cursor+'.cur), auto' }">
+                <canvas id="readerCanvas" oncontextmenu="return false">Your browser does not support the HTML5 canvas tag.</canvas>
+                <canvas id="readerCanvas2" oncontextmenu="return false">Your browser does not support the HTML5 canvas tag.</canvas>
+                <div class="sliderMask" style="display: none;">
+                    <div class="sliderImgBox">
+                        <img class="sliderImg sliderImg1" src="" alt="" style="display:inline-block;">
+                        <img class="sliderImg sliderImg2" src="" alt="" v-bind:style="setting['num']==2 && reader['horizontal']['page']!=0 && reader['horizontal']['page']!=maxpage?'display:inline-block;':'display:none;'">
+                    </div>
+                </div>
+            </div>
+            <div class="lastPage" v-bind:class="setting.mode">
+                <iframe src="" frameborder="0" id="lastPage"></iframe>
+            </div>
+
+        </div>
+        <div class="readerZoom" v-show="zoom">
+            <div class="readerZoomInner">
+                <div class="zoomClose" onclick="page.zoomClose();"></div>
+                <div class="zoomCanvasBox">
+                    <canvas id="zoomCanvas" class="zoomCanvas" oncontextmenu="return false"></canvas>
+                    <div id="zoomNext"></div>
+                    <div id="zoomInit"></div>
+                    <div id="zoomPrev"></div>
+                </div>
+            </div>
+        </div>
+        <div class="readerFooter readerFooterBG active"></div>
+        <div class="readerFooter active">
+            <div class="settingBox">
+                <div class="settingRow mode">
+                    <a href="javascript:;" class="btn" v-bind:class="{'active':setting['mode']=='vertical'}" onclick="page.setting('mode','vertical');page.menuClearTime();page.menuSetTime();">
+                        <img src="/viewer/data/comicViewer/img/1_1.png" v-bind:class="setting['mode']=='horizontal'?'active':''">
+                        <img src="/viewer/data/comicViewer/img/1_1Y.png" v-bind:class="setting['mode']=='vertical'?'active':''">
+                        <span>直式翻頁</span>
+                    </a>
+                    <a href="javascript:;" class="btn" v-bind:class="{'active':setting['mode']=='horizontal'}" onclick="page.setting('mode','horizontal');page.menuClearTime();page.menuSetTime();">
+                        <img src="/viewer/data/comicViewer/img/1_2.png" v-bind:class="setting['mode']=='vertical'?'active':''">
+                        <img src="/viewer/data/comicViewer/img/1_2Y.png" v-bind:class="setting['mode']=='horizontal'?'active':''">
+                        <span>左右翻頁</span>
+                    </a>
+                </div>
+                <div class="settingRow num">
+                    <a href="javascript:;" class="btn" v-bind:class="{'active':setting['num']=='1'}" onclick="page.setting('num','1');page.menuClearTime();page.menuSetTime();">
+                        <img src="/viewer/data/comicViewer/img/2_1.png" v-bind:class="setting['num']==2?'active':''">
+                        <img src="/viewer/data/comicViewer/img/2_1Y.png" v-bind:class="setting['num']==1?'active':''">
+                        <span>單頁</span>
+                    </a>
+                    <a href="javascript:;" class="btn" v-bind:class="{'active':setting['num']=='2'}" onclick="page.setting('num','2');page.menuClearTime();page.menuSetTime();">
+                        <img src="/viewer/data/comicViewer/img/2_2.png" v-bind:class="setting['num']==1?'active':''">
+                        <img src="/viewer/data/comicViewer/img/2_2Y.png" v-bind:class="setting['num']==2?'active':''">
+                        <span>雙頁</span>
+                    </a>
+                </div>
+                <div class="settingRow type">
+                    <a href="javascript:;" class="btn" v-bind:class="{'active':setting['type']=='6'}" onclick="page.setting('type','6');page.menuClearTime();page.menuSetTime();">
+                        <img src="/viewer/data/comicViewer/img/3_1.png" v-bind:class="setting['type']==8?'active':''">
+                        <img src="/viewer/data/comicViewer/img/3_1Y.png" v-bind:class="setting['type']==6?'active':''">
+                        <span>高清</span>
+                    </a>
+                    <a href="javascript:;" class="btn" v-bind:class="{'active':setting['type']=='8'}" onclick="page.setting('type','8');page.menuClearTime();page.menuSetTime();">
+                        <img src="/viewer/data/comicViewer/img/3_2.png" v-bind:class="setting['type']==6?'active':''">
+                        <img src="/viewer/data/comicViewer/img/3_2Y.png" v-bind:class="setting['type']==8?'active':''">
+                        <span>飆速</span>
+                    </a>
+                </div>
+                <div class="settingRow Zoom">
+                    <a href="javascript:;" title="縮放" class="btn" onclick="page.setMagnification(-0.3);">
+                        <img class="active" src="/viewer/data/comicViewer/img/4_1.png">
+                        <span>縮小</span>
+                    </a>
+                    <a href="javascript:;" title="縮放" class="btn" onclick="page.setMagnification(0.3);">
+                        <img class="active" src="/viewer/data/comicViewer/img/4_2.png">
+                        <span>放大</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pg">
+                <input id="rangeInput" type="range" class="pgInput" min="0" v-bind:max="maxpage" v-model="reader.horizontal.page" v-if="setting.mode=='horizontal'">
+                <input type="range" class="pgInput" min="0" v-bind:max="reader.vertical.scrollMaxRangeInput" v-model="reader.vertical.scrollRange" v-if="setting.mode=='vertical'">
+                <div class="pgText"><span class="pageNow" v-text="reader.pageText"></span><span class="pageTotal" v-text="reader.pageTotal"></span></div>
+            </div>
+        </div>
+        <!--
+        <div id="info" style="position: fixed;left: 50px;top: 50px;font-size: 50px;color: #000">0</div>
+        -->
+    </div>
+    <div class="tutorialMask">
+        <div class="tutorialBox">
+            <div class="tutorialInner">
+                <div class="title">
+                    <img src="/viewer/data/comicViewer/img/logo.png" alt=""><span>閱讀器說明</span>
+                </div>
+                <div class="hr"></div>
+                <div class="pcMode">
+                    <div class="row rowOdd">
+                        <img src="/viewer/data/comicViewer/img/tutorial_pc1.png" alt="">
+                        <span>放大當前頁面。</span>
+                    </div>
+                    <div class="row rowEven">
+                        <img src="/viewer/data/comicViewer/img/tutorial_pc2.png" alt="">
+                        <span>使用放大時，可使用縮小鍵縮放畫面。</span>
+                    </div>
+                    <div class="row rowOdd">
+                        <img src="/viewer/data/comicViewer/img/tutorial_pc3.png" alt="">
+                        <span>畫面為單頁閱讀。</span>
+                    </div>
+                    <div class="row rowEven">
+                        <img src="/viewer/data/comicViewer/img/tutorial_pc4.png" alt="">
+                        <span>畫面為雙頁閱讀。</span>
+                    </div>
+                    <div class="note">
+                        <p>※使用放大縮小模式時，可用滑鼠拖曳畫面。<br/>若點選畫面外區域或是esc鍵，可回到正常尺寸。<br/>
+                        </p>
+                        <p class="noteInner">※呼叫選單：點選畫面中間範圍。</p>
+                    </div>
+                </div>
+                <div class="mobileMode">
+                    <div class="row rowOdd">
+                        <img src="/viewer/data/comicViewer/img/tutorial_mo1.png" alt="">
+                        <span>飆速-頁面畫質以正常畫質呈現。</span>
+                    </div>
+                    <div class="row rowEven">
+                        <img src="/viewer/data/comicViewer/img/tutorial_mo2.png" alt="">
+                        <span>高清-頁面畫質以高畫質呈現。</span>
+                    </div>
+                    <div class="row rowOdd">
+                        <img src="/viewer/data/comicViewer/img/tutorial_mo3.png" alt="">
+                        <span>直式翻頁-頁面為直式排列閱讀。</span>
+                    </div>
+                    <div class="row rowEven">
+                        <img src="/viewer/data/comicViewer/img/tutorial_mo4.png" alt="">
+                        <span>左右翻頁-頁面為左右排列閱讀。</span>
+                    </div>
+                    <div class="note">
+                        <p>※呼叫選單：點選畫面中間範圍。</p>
+                    </div>
+                </div>
+                <div class="btnBox">
+                    <a href="javascript:;" onclick="page.hideTutorial();">已讀</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="backToOldBox">
+        <div class="backInner">
+            <span>我體驗過了 讓我回原先的閱讀器</span>
+            <i class="fa fa-angle-right"></i>
+            <a class="backBtn" href="javascript:;" onclick="page.showSurvey();">前往</a>
+            <a class="closeBtn" href="javascript:;" onclick="page.hideBackBtn();"><i class="fa fa-times"></i></a>
+        </div>
+    </div>-->
+    <div class="loadingMask">
+        <div class="loadMsg">
+            <div class="content">
+                <div class="loading-circle-box">
+                  <div class="loading-circle1 loading-circle"></div>
+                  <div class="loading-circle2 loading-circle"></div>
+                  <div class="loading-circle3 loading-circle"></div>
+                  <div class="loading-circle4 loading-circle"></div>
+                  <div class="loading-circle5 loading-circle"></div>
+                  <div class="loading-circle6 loading-circle"></div>
+                  <div class="loading-circle7 loading-circle"></div>
+                  <div class="loading-circle8 loading-circle"></div>
+                  <div class="loading-circle9 loading-circle"></div>
+                  <div class="loading-circle10 loading-circle"></div>
+                  <div class="loading-circle11 loading-circle"></div>
+                  <div class="loading-circle12 loading-circle"></div>
+                </div>
+                <div class="text">
+                    <p>亂搭為您懸命讀取中</p>
+                    <p>請稍等</p>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="ie8Mask">
+        <div class="alertMsg">
+            <div class="content">
+                <div class="inner">
+                    <p>很抱歉，您的瀏覽器版本過舊，請更新瀏覽器</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newerDeposit">
+        <div class="alertMsg">
+            <div class="light"><img src="/viewer/data/comicViewer/img/light.png" alt=""></div>
+            <div class="contentBox">
+                <div class="content">
+                    <div class="inner">
+                        <div class="textInner">
+                            <p>(°△°)沒點券租書了嗎？</p>
+                            <p>唯一機會！新手儲值優惠送給你</p>
+                            <p class="red">30點券免費升級→40點券</p>
+                            <p class="red">只要300元！！</p>
+                        </div>
+                        <a class="deposit-btn" href="https://secure.myrenta.com/renta/sc/ssl/buy_newerorder.php" onclick="page.depositClose();" target="_blank">前往儲值</a>
+                        <a class="cancel-btn" href="javascript:;" onclick="page.depositCancel();">放棄機會</a>
+                        <p class="note">注意：一旦放棄將不再秀出此優惠</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ren"><img src="/viewer/data/comicViewer/img/ren2.png" alt=""></div>
+        </div>
+        
+    </div>
+    <div class="lastPageBox">
+        <div class="bg"></div>
+        <div class="inner">
+            <div class="closeBox">
+                <a href="javascript:;" class="closeLast" onclick="$('.lastPageBox').hide();"></a>
+            </div>
+            <iframe src="" frameborder="0" id="lastPageBoxInner"></iframe>
+        </div>
+    </div>
+    <div class="scoreBox">
+        <div class="alertMsg">
+            <div class="content">
+                <div class="inner">
+                    <p>您對新版的閱讀器評價如何？</p>
+                    <div class="starBox">
+                        <div class="star star1 star2 star3 star4 star5">
+                            <a class="star-btn" href="javascript:;" data-star="star1" data-num="1"><i class="fa fa-star-o"></i><i class="fa fa-star"></i></a>
+                        </div>
+                        <div class="star star2 star3 star4 star5">
+                            <a class="star-btn" href="javascript:;" data-star="star2" data-num="2"><i class="fa fa-star-o"></i><i class="fa fa-star"></i></a>
+                        </div>
+                        <div class="star star3 star4 star5">
+                            <a class="star-btn" href="javascript:;" data-star="star3" data-num="3"><i class="fa fa-star-o"></i><i class="fa fa-star"></i></a>
+                        </div>
+                        <div class="star star4 star5">
+                            <a class="star-btn" href="javascript:;" data-star="star4" data-num="4"><i class="fa fa-star-o"></i><i class="fa fa-star"></i></a>
+                        </div>
+                        <div class="star star5">
+                            <a class="star-btn" href="javascript:;" data-star="star5" data-num="5"><i class="fa fa-star-o"></i><i class="fa fa-star"></i></a>
+                        </div>
+                    </div>
+                    <div class="mobileOs">
+                        <p>您的行動裝置是使用什麼系統？</p>
+                        <label><input type="radio" name="os" value="iOS" checked onchange="page.changeMobileOs('iOS');"><span class="osText">iOS</span></label>
+                        <label><input type="radio" name="os" value="Android" onchange="page.changeMobileOs('Android');"><span class="osText">Android</span></label>
+                        <label><input type="radio" name="os" value="Android" onchange="page.changeMobileOs('other');"><span class="osText">其它</span></label>
+                    </div>
+                    <textarea id="experience" placeholder="試用心得（選填）"></textarea>
+                    <a class="check-btn" href="javascript:;" onclick="page.pushSurvey();page.newerDepositShow();">確認</a>
+                    <a class="closeBtn" href="javascript:;" onclick="page.notSurvey2();$('.scoreBox').hide();page.newerDepositShow();">關閉視窗</a>
+                    <span class="warning">*請評價星星數</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="viewerMask">
+        <div class="alertMsg">
+            <div class="content">
+                <div class="inner">
+                    <p>親愛的亂民：<br/>瀏覽中無法使用螢幕擷取功能，請關閉視窗重新讀取</p>
+                    <a class="check-btn" href="javascript:;" onclick="window.location.href=location.href;">確認</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/sprintf/1.0.3/sprintf.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+    <script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <script src="/viewer/data/comicViewer/js/script.js?20200205"></script>
+
+    <script>
+        var vals = {
+            key: 'sample',
+            prd_id : '9-154841-84',
+            api: {
+                trace: "",
+                readImg: "/viewer/sc/viewerjs/sample/9-154841-84/RTL001/",
+                getSurvey: "http://tw.myrenta.com/modules/Reader_Survey/countSurveyToday.php",
+                pushSurvey: "http://tw.myrenta.com/modules/Reader_Survey/survey.php",
+                setting: "/viewer/data/comicViewer/plugin/api/setting.json",
+                getDeposit: "http://tw.myrenta.com/modules/charge-lp/vaildUser.php",
+                setDeposit: "http://tw.myrenta.com/modules/charge-lp/close.php",
+            },
+            deposit: false,
+            survey: false
+        }
+
+        var app;
+        var page;
+        $(document).ready(function() {
+            app = new App();
+            page = new Viewer(vals);
+            page.init();
+            window.addEventListener("message", function(event) {
+                if(typeof(event.data) === "string") {
+                    if(event.data.indexOf("open") > -1) {
+                        var url = event.data.split("open")[1];
+                        if(url.indexOf('item')>-1){
+                            if(window.opener) {
+                                window.opener.location.href = url;
+                                window.close();
+                            } else {
+                            window.open(url);
+                            window.close();
+                            }
+                        } else if(url.indexOf('buy_sel')>-1) {
+                            window.open(url);
+                            window.close();
+                        } else {
+                            window.open(url);
+                            window.close();
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- /Script -->
+</body>
+
+</html>
