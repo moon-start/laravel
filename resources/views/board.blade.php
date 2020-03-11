@@ -36,10 +36,10 @@
                 <input type="email" class="col-8 form-control" id="AA" aria-describedby="emailHelp" placeholder="Enter email">
             <div>
             <div class="form-group">
-                <label for="BB" clas="col-2">Email123 address</label>
-                <input type="email" class="col-4 form-control" id="BB" aria-describedby="emailHelp" placeholder="Enter email">
-                <label for="CC" clas="col-2">QQQQ123 ddress</label>
-                <input type="email" class="col-4 form-control" id="CC" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="BB" clas="col-2 m-0 p-0">Email123 address</label>
+                <input type="email" class="col-4 form-control m-0 p-0" id="BB" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="CC" clas="col-2 m-0 p-0">QQQQ123 ddress</label>
+                <input type="email" class="col-4 form-control m-0 p-0" id="CC" aria-describedby="emailHelp" placeholder="Enter email">
             <div>
         </form>
 
