@@ -34,7 +34,7 @@
             <div class="form-group  bg-success">
                 <label for="exampleFormControlInput1" clas="col-2">Email address</label>
                 <label for="AA" clas="col-2">QQQQQQQQQ ddress</label>
-                <input type="email" class="col-8 form-control" id="AA" aria-describedby="emailHelp" placeholder="Enter email">
+                <div class="col-8"><input type="email" class="form-control" id="AA" aria-describedby="emailHelp" placeholder="Enter email"></div>
             <div>
             <div class="form-group  bg-warning">
                 <label for="BB" clas="col-2 m-0 p-0 bg-secondary">Email123 address</label>
