@@ -30,8 +30,8 @@
         </form> -->
 
         <!-- bg-secondary .bg-success .bg-danger .bg-warning. -->
-        <form action="">
-            <div class="form-group row  bg-success m-0 p-0">
+        <form action="" class="form-group row  bg-success m-0 p-0">
+            <!-- <div class="form-group row  bg-success m-0 p-0"> -->
                 <label for="exampleFormControlInput1" clas="col-2">Email address</label>
                 <label for="AA" clas="col-2">QQQQQQQQQ ddress</label>
                 <div class="col-8 m-0 p-0"><input type="email" class="form-control m-0 p-0" id="AA" aria-describedby="emailHelp" placeholder="Enter email"></div>
@@ -41,7 +41,7 @@
                 <div class="col-4 m-0 p-0"><input type="email" class="form-control m-0 p-0 bg-success" id="BB" aria-describedby="emailHelp" placeholder="Enter email"></div>
                 <label for="CC" clas="col-2 m-0 p-0 bg-danger">QQQQ123 ddress</label>
                 <div class="col-4 m-0 p-0"><input type="email" class="form-control m-0 p-0 bg-warning" id="CC" aria-describedby="emailHelp" placeholder="Enter email"></div>
-            <div>
+            <!-- <div> -->
         </form>
 
 
