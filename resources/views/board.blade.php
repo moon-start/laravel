@@ -9,11 +9,11 @@
         <!-- <div class="col-12 card-header">消費列表</div> -->
     
         <!-- justify-content-center -->
-        <form action="{{ action('QBController@storeABC') }}" method="post" class="col-12 row justify-content-center">
+        <!-- <form action="{{ action('QBController@storeABC') }}" method="post" class="col-12 row justify-content-center">
         @csrf
     
 
-                    <div class="col-2 card-header">消費列表</div>
+                    <div class="form-group">">消費列表</div>
                     <label for="payment" class="col-2 card-header col-form-label">月份</label>
                     <div class="col-8 card-header>
 
@@ -27,8 +27,18 @@
                     
                     </div>
                     <input type="submit" class="col-4 card-header btn btn-primary" value="查詢">
+        </form> -->
+
+        <form action="">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <label for="exampleFormControlInput1">QQQQQQQQQ ddress</label>
+            <div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email123 address</label>
+                <label for="exampleFormControlInput1">QQQQ123 ddress</label>
+            <div>
         </form>
-   
 
 
     <!-- <div class="col-12 card-body  p-1"> -->
