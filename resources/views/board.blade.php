@@ -38,9 +38,9 @@
             <div>
             <div class="form-group row bg-warning">
                 <label for="BB" clas="col-2 m-0 p-0 bg-secondary">Email123 address</label>
-                <div class="col-4"><input type="email" class="col-4 form-control m-0 p-0 bg-success" id="BB" aria-describedby="emailHelp" placeholder="Enter email"></div>
+                <div class="col-4 m-0 p-0"><input type="email" class="col-4 form-control m-0 p-0 bg-success" id="BB" aria-describedby="emailHelp" placeholder="Enter email"></div>
                 <label for="CC" clas="col-2 m-0 p-0 bg-danger">QQQQ123 ddress</label>
-                <div class="col-4">input type="email" class="col-4 form-control m-0 p-0 bg-warning" id="CC" aria-describedby="emailHelp" placeholder="Enter email"></div>
+                <div class="col-4 m-0 p-0">input type="email" class="col-4 form-control m-0 p-0 bg-warning" id="CC" aria-describedby="emailHelp" placeholder="Enter email"></div>
             <div>
         </form>
 
