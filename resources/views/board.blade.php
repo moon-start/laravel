@@ -36,11 +36,11 @@
                 <label for="AA" clas="col-2">QQQQQQQQQ ddress</label>
                 <div class="col-8 m-0 p-0"><input type="email" class="form-control m-0 p-0" id="AA" aria-describedby="emailHelp" placeholder="Enter email"></div>
             <div>
-            <div class="form-group  bg-warning">
+            <div class="form-group row bg-warning">
                 <label for="BB" clas="col-2 m-0 p-0 bg-secondary">Email123 address</label>
-                <input type="email" class="col-4 form-control m-0 p-0 bg-success" id="BB" aria-describedby="emailHelp" placeholder="Enter email">
+                <div class="col-4"><input type="email" class="col-4 form-control m-0 p-0 bg-success" id="BB" aria-describedby="emailHelp" placeholder="Enter email"></div>
                 <label for="CC" clas="col-2 m-0 p-0 bg-danger">QQQQ123 ddress</label>
-                <input type="email" class="col-4 form-control m-0 p-0 bg-warning" id="CC" aria-describedby="emailHelp" placeholder="Enter email">
+                <div class="col-4">input type="email" class="col-4 form-control m-0 p-0 bg-warning" id="CC" aria-describedby="emailHelp" placeholder="Enter email"></div>
             <div>
         </form>
 
