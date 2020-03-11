@@ -1,0 +1,80 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+//   /usr/share/nginx/html/laravel/node_modules/
+
+
+
+// @import '_font-awesome.min
+// Font Awesome 
+// @import "node_modules/font-awesome/scss/font-awesome";
+@import "~font-awesome/scss/font-awesome";
+.FFI {
+@extend .fa;
+@extend .fa-heart;
+@extend .fa-2x;
+@extend .mr-3;
+@extend .py-2;
+}
+//.............................
+
+// 自訂
+// @import url('https://bzj7jdmrn8bbwmcy2kazaa-on.drv.tw/www/web/css/style_home.css');
+
+//OK OK OK
+@import 'moon/appB';
+.QQX {
+
+@extend .QQ;
+
+}
+
+//OK
+// @import 'moon/appB';
+// .QQX {
+
+//     @extend .QQ;
+//     @extend .flex-fill;
+    
+// }
+
+//使用這個檔案的 faI 類別
+// @import 'moon/FF';
+// .QQXR {
+
+//     //繼承過來
+//     @extend .faI;
+    
+// }
+
+
+// //使用
+// @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+// @import 'moon/QQ';
+//@import url('./moon/QQ.css');
+
+
+// .QQCC {
+//     /*h +tab*/
+//     /*mh +tab*/
+//     min-height:100vh;  /*vh  vw*/
+       
+//     /*bgi +tab*/
+//     background-image: url(https://bzj7jdmrn8bbwmcy2kazaa-on.drv.tw/www/web/images/%E5%A3%81%E7%B4%99C-okk.png);
+    
+       
+       
+//     /*bgs +tab*/
+//     background-size: cover;
+    
+//     /*bgp +tab*/
+//     background-position: center center;
+       
+//     /*bga +tab 背景固定*//*簡單來說: 不會隨著捲動 而移動*/
+//     background-attachment: fixed;
+// }
