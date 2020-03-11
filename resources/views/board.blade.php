@@ -11,7 +11,7 @@
 
     <!-- 列表 -->
     <!-- card--圓角框 -->
-    <div class="col-12 m-0 p-0 card">   
+    <div class="col-12 m-0 p-0 row card">   
     <!-- <div class="col-12 card-header">消費列表 -->
     <!-- 這是標題內容 start -->
 
