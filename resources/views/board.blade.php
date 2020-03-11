@@ -17,7 +17,7 @@
 
 
     <!-- justify-content-center -->
-    <form action="{{ action('QBController@storeABC') }}" method="post" class="col-6 row justify-content-center  bg-success">
+    <form action="{{ action('QBController@storeABC') }}" method="post" class="col-6   bg-success">
     @csrf
     <!-- <div class="row justify-content-center bg-warning"> -->
     <!-- <div class="col-md-8"> -->
