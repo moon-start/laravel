@@ -7,7 +7,7 @@
 ## row justify-content-cente -->
 
 <div class="row justify-content-center">
-<div class="col-md-10 m-0 p-0">
+<div class="col-md-10 m-0 p-0 row">
 
     <!-- 列表 -->
     <div class="col-12 m-0 p-0 card">
